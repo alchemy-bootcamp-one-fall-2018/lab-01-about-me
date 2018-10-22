@@ -33,6 +33,18 @@ h1 {
     color: #333333;
 }
 
+aside,
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #333333;
+}
+
+aside,
+p {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
 ul,
 li {
     padding: 10px;
@@ -83,6 +95,9 @@ body {
     }
     footer p {
         padding-top: 100px;
+    }
+    aside {
+        clear: both;
     }
 
 }
