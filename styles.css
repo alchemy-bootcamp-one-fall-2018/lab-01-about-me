@@ -1,16 +1,22 @@
 p {
     font-style: initial;
 }
+
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 900;
-    color: teal 
+    color: teal; 
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 .section_title {
@@ -22,5 +28,38 @@ img {
     font-family: monospace;
 }
 
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
 
+
+@media only screen and (min-width: 601px) {
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    body {
+        font-size: 30px;
+    }
+
+    .section {
+        float: left;
+        width: 27%;
+        padding: 10px;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+         font-size: 20px;
+    }
+}
+
+
+
+   
