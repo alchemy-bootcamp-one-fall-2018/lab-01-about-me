@@ -4,6 +4,12 @@ body {
     }
 h1 {color: brown}
 img {border:10px solid purple;}
-@media (max-width: 500px) {
-    background: red
+/*
+*/
+@media screen and (max-width: 500px) {
+    img {
+        max-width: 300px;
+        display: block;
+        margin: auto;
+    }
 }
