@@ -1,0 +1,23 @@
+p {
+    font-style: initial;
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: teal 
+}
+
+image {
+    max-width: 100;
+    height: auto;
+}
+
+.section_title {
+    font-family: monospace;
+    color: rgb(121, 7, 179);
+}
+
+.list {
+    font-family: monospace;
+    
+}
