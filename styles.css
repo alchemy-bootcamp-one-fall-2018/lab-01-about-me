@@ -1,0 +1,79 @@
+h1, h2 {
+    font-family: "amatic SC";
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 4rem;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 0.4;
+    padding-bottom: 40px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+body {
+    font-family: "rajdhani"
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.pic {
+    width: 70%;
+    max-width: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: antiquewhite;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+.bullets {
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+p {
+    margin-left: 10px;
+}
+
+ul li {
+    padding-bottom: 14px;
+}
+
+.title {
+    color: navy;
+}
