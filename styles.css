@@ -15,7 +15,13 @@ img {
     margin: auto;
 }
 
-@media only screen and (min-width: 1024px) {
+#info {
+    box-shadow: 2px 2px 2px 2px pink;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+@media (min-width: 1024px) {
 
     body{
         text-align: left;
@@ -34,7 +40,10 @@ img {
         width: 50%;
     }
 
-    #game {
+    #game h2{
         clear: both;
+        width: 40%;
+        margin: auto;
+        padding-top: 10%;
     }
 }
