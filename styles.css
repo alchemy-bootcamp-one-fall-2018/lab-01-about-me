@@ -1,0 +1,15 @@
+body {
+    width: 90%;
+    background: rgb(202, 126, 209);
+    text-align: center;
+    margin: 5%;
+}
+
+img {
+    width: 200px;
+}
+
+#facts {
+    text-align: left;
+    margin-left: 30%;
+}
