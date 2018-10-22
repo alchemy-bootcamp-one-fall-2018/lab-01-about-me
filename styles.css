@@ -1,0 +1,27 @@
+body { 
+    font-family: 'Mukta', sans-serif;
+    background-color:papayawhip;
+    color:darksalmon;
+    padding: 40px;
+}
+h1 {
+    color:coral;
+}
+h2 {
+    color:coral;
+}
+
+#profile{
+    align-content: center;
+}
+
+img {
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.loves {
+    text-align: center;
+}
