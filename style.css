@@ -7,8 +7,9 @@ header {
     text-align: center;
 }
 img {
-    border: 10px ridge white;
+    border: 10px ridge lightgray;
     border-radius: 20px 0 20px;
+    width: 300px;
 }
 h2 {
     text-align: center;
