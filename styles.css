@@ -1,3 +1,9 @@
-{
-    
+body {
+    background: silver;
+}
+h3 {
+    box-shadow: 2px 2px 7px 1px gray;
+} 
+main {
+    text-align: center;
 }
