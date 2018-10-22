@@ -1,0 +1,40 @@
+h1 {
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%
+}
+.image {
+    margin: 10px;
+    width: 50%;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%;
+}
+.blurb {
+    margin: 10px;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+}
+.facts {
+    margin: 10px;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%
+}
+.game {
+    margin: 10px;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%
+}
+body {
+    background-color: blanchedalmond;
+    text-align: center ;
+}
