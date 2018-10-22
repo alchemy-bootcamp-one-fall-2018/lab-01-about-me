@@ -81,12 +81,10 @@ img {
     #column1    {
         width: 50%;
         float: left;
-
     }
 
     #column2    {
         width: 50%;
-        float: right;
-        
+        float: right; 
     }
 }   
