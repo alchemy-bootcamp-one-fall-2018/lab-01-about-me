@@ -1,6 +1,6 @@
 body { 
     font-family: 'Mukta', sans-serif;
-    background-color:papayawhip;
+    background-color:lightpink;
     color:darksalmon;
     padding: 40px;
 }
@@ -22,6 +22,36 @@ img {
     margin-right: auto;
     width: 50%;
 }
-.loves {
-    text-align: center;
+@media screen and (min-width: 400px) {
+    h1, h2 {
+        color:cornflowerblue;
+    }
+    body {
+        color:cornflowerblue;
+        background-color:lavender;
+    }
+}
+@media screen and (min-width: 500px) {
+    h1, h2 {
+        color:gray;
+    }
+    body {
+        color:gray;
+        background-color:lightcyan;
+    }
+}
+@media screen and (min-width: 600px) {
+    h1, h2 {
+        color:fuchsia;
+    }
+    body {
+        color:fuchsia;
+        background-color:bisque;
+    }
+}
+@media screen and (min-width: 900px) {
+    .left, .right {
+        float: left;
+        width: 50%;
+    }
 }
