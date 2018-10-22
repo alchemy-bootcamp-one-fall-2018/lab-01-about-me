@@ -1,6 +1,7 @@
 .column1 {
   background-color: yellowgreen;
 }
+
 h3 {
   clear: both;
   padding-top: 15px;
@@ -19,15 +20,16 @@ img {
 img { 
   max-width: 300px;
 }
+
 }
 @media screen and (min-width: 600px) {
   body {
     background: red;
   }
 }
+
 @media screen and (min-width: 560px) {
   img {
     float: left;
-    /* margin-right: 100px; */
   }
 }
