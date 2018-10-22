@@ -4,3 +4,6 @@ body {
     }
 h1 {color: brown}
 img {border:10px solid purple;}
+@media (max-width: 500px) {
+    background: red
+}
