@@ -17,3 +17,11 @@ h3 {
     color: purple;
     font-style: italic;
 }
+
+@media screen and (min-width: 500px) {
+
+    img {
+        float:left;
+        max-width: 300px;
+    }
+}
