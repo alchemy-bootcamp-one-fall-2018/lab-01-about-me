@@ -1,0 +1,14 @@
+#pic-border {
+    border-style: ridge;
+}
+.titles {
+    color: royalblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+    background-color: blanchedalmond;
+}
+ul {
+    background-color: paleturquoise;
+    font-style: oblique;
+}
