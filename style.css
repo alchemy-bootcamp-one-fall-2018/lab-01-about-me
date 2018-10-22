@@ -1,21 +1,58 @@
 header {
     border-bottom-style: double;
-    font-size: 25px;
+    font-size: 50px;
     background-color: palevioletred;
-    color: blueviolet;
 }
-#pic-border {
-    border-style: ridge;
+img {
+    border: ridge;
+    clear: both;
+    margin: 0px;
+    float: none; 
 }
-.titles {
-    color: royalblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.little-bit {
+    width: 50%;
+    float: left;
+    clear: both;
+    border-radius: 200px;
+    border-color: blue;
 }
 p {
     background-color: blanchedalmond;
-    margin-top: 30px;
+    text-align: center;
+    width: 50%;
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 2px;
+    clear: both;
+}
+.fun-facts {
+    color: royalblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;
+    float: right;
+    clear: both;
+    border-radius: 30px;
 }
 ul {
     background-color: paleturquoise;
     font-style: oblique;
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+h3 {
+    clear: both;
+}
+
+@media (hover: hover) {
+   min-width: 20px;
+}
+.column {
+    width: 50%;
+    float: right;
 }
