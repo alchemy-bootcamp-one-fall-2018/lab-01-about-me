@@ -5,6 +5,7 @@ body {
 header {
     text-align: center;
 }
+
 h1 {
     color:white;
     text-decoration-line: underline;
@@ -13,15 +14,16 @@ h1 {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
 h2 {
     color: white;
     border-bottom-style: solid;
     border-width: 1px;
     border-color:white;
 }
+
 h3 {
     color: white;
-
 }
 
 ul {
