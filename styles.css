@@ -1,12 +1,22 @@
-li{ 
+li  { 
     color: blue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  }
-img{
-    width:40%;
+img {
+    width: 30%;
 }
-title{
+title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
-body{
+body {
     background: rgb(183, 216, 235);
+}
+
+@media (min-width: 1000px) {
+    #words {
+        float: right;
+    }
+
+header {
+    border-bottom-width: thick; border-block-end-style: double 
+}
 }
