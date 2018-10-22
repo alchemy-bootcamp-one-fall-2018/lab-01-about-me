@@ -57,3 +57,30 @@ p {
 body {
     background-color: #FCFAF9;
 }
+
+@media (min-width: 500px) {
+    .face {
+        height: 200px;
+        width: 200px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    .name {
+        padding-bottom: 20px;
+    }
+    h2 {
+        text-align: center;
+    }
+    header {
+        float: left;
+        width: 50%;
+    }
+    main {
+        padding-top: 20px;
+    }
+    footer p {
+        padding-top: 100px;
+    }
+
+}
