@@ -7,9 +7,10 @@ h1 {
     color: teal 
 }
 
-image {
-    max-width: 100;
+img {
+    max-width: 100%;
     height: auto;
+    border: 1px solid black
 }
 
 .section_title {
@@ -21,6 +22,5 @@ image {
     font-family: monospace;
 }
 
-img {
- border: 5px solid black
-}
+
+
