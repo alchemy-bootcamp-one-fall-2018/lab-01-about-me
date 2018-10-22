@@ -27,8 +27,9 @@ img {
         text-align: left;
     }
 
-    #img {
+    img {
         float: left;
+        width: 300px;
     }
 
     #facts ul{
