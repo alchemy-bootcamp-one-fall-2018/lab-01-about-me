@@ -1,0 +1,28 @@
+img {
+    width: 100%;
+    border-style: double;
+    border-width: 5px;
+}
+p, li {
+    font-size: 18px;
+}
+#blurb {
+    border-style: groove;
+    border-width: 5px;
+    border-color: green;
+}
+#factoids {
+    border-style:groove;
+    border-width: 5px;
+    border-color: darkgreen;
+    margin-top: 5px;
+}
+
+body {
+    background-color : blueviolet;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    font-size: 36px;
+}
