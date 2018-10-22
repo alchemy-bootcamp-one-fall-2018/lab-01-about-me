@@ -36,7 +36,7 @@ Looking For | Points (10)
 :--|--:
 Semantic Element choices in HTML | 1 
 Code is indented / spaced correctly / clean | 2 
-All commits from steps above are present | 3 
+All commits from ste -mps above are present | 3 
 Mobile version has 1 column layout | 1 
 Desktop version has 2 column layout using floats | 1 
 1(+) Media Query breakpoint | 1 

@@ -1,0 +1,63 @@
+img {
+    width: 100%;
+    border-radius: 50%;
+    border-width: 5px;
+}
+p, li {
+    font-size: 18px;
+}
+header {
+    font-size: 72px;
+    color: yellow;
+    border-color: yellow;
+    border-style: groove;
+    border-width: 10px;
+    text-align: center;
+}
+#blurb {
+    border-style: groove;
+    border-width: 5px;
+    border-color: green;
+}
+#factoids {
+    border-style:groove;
+    border-width: 5px;
+    border-color: darkgreen;
+    margin-top: 5px;
+}
+#game {
+    text-align: center;
+}
+body {
+    background-color : blueviolet;
+    border-style: ridge;
+    border-color: black;
+    border-width: 5px;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    font-size: 36px;
+}
+@media (min-width: 600px) {
+    img {
+        width: 65%;
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+    #blurb {
+        float: left;
+        clear: both;
+        width: 45%;
+        margin: 5px;
+    }
+    #factoids {
+        float:right;
+        width: 45%;
+        margin: 5px;
+    }
+    #game {
+        clear: both;
+    }
+}
