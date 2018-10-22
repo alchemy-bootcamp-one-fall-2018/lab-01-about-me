@@ -5,10 +5,9 @@ body {
 }
 
 h1 {
-    color: rgb(5, 102, 102);
     text-align: center;
-
 }
+
 img {
     width: 55%;
     border-radius: 50%;
@@ -26,7 +25,13 @@ ul {
 
 footer {
     text-align: center;
+    clear: both;
 }
+
+article {
+    clear: both;
+}
+
 
 @media screen and (min-width: 600px) {
     body {
@@ -46,4 +51,15 @@ footer {
         margin-right: auto;
         width: 30%;
     }
+
+    #About {
+        width: 50%;
+        float: left;
+    }
+
+    #Takeaways {
+        width: 50%;
+        float: right;
+    }
+
 }
