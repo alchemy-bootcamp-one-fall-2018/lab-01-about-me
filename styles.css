@@ -1,0 +1,81 @@
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+
+h2{
+    color: #5BBBB3;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    border-radius: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: block;
+    margin: 10px auto;
+}
+
+p{
+    text-align: center;
+}
+
+p, ul{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.about-content{
+    border: 8px solid #F39C93;
+    border-radius: 5%;
+    margin-bottom: 25px;
+   
+}
+
+.game{
+    border: 8px solid #F3E2C8;
+    border-radius: 10%;
+}
+
+@media screen and (min-width: 500px){
+    .column-left{
+        width: 50%;
+        float: left;
+        margin: 10px auto;
+    }
+    img{
+        max-width:  80%;
+        border-radius: 5%;
+    }
+    .column-right{
+        width: 50%;
+        float: right;
+    }
+
+    .about-content{
+        margin-top: 36px;
+        margin-bottom: 10px;
+    }
+
+    .game{
+        display: block;
+        clear: both;
+    }
+
+}
+
+@media screen and (max-width: 500) {
+    img{
+        border-radius: 100%;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+
