@@ -9,7 +9,32 @@ img {
     width: 200px;
 }
 
-#facts {
+#facts ul {
     text-align: left;
-    margin-left: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body{
+        text-align: left;
+    }
+
+    #img {
+        float: left;
+    }
+
+    #facts ul{
+        margin: 0;
+    }
+
+    #info {
+        float: right;
+        width: 50%;
+    }
+
+    #game {
+        clear: both;
+    }
 }
