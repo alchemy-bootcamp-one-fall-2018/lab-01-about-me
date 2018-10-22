@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(102, 1, 1);
+    max-width: 500px;
+    margin: auto;
+}
+header {
+    text-align: center;
+}
+img {
+    border: 10px ridge white;
+    border-radius: 20px 0 20px;
+}
+h2 {
+    text-align: center;
+}
+#all-text {
+    color: white;
+    background-color: rgb(54, 54, 54);
+    padding: 10px;
+    border: 15px ridge lightgray;
+    border-radius: 20px 0 20px 0;
+}
