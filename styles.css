@@ -5,6 +5,10 @@
 h1 {
     color:#282828;
     text-align: center;
+    
+}
+
+#main {
     background: #d5d5d5;
     margin: 5px;
     padding: 5px;
@@ -41,4 +45,80 @@ section {
     border: 1px solid black;
     text-align: center;
     font-size: 1.5em;
+}
+
+@media (min-width: 600px){
+    body {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1150px) {
+    img {
+        width: 50%;
+        float: left;
+    }
+
+    #main {
+        width: 48%;
+        float: right;
+    }
+
+   #basic-info {
+       width: 48%;
+       float: right;
+   }
+
+   #blurb {
+       width: 48%;
+       float: right;
+       display: inline;
+       clear: both;
+   }
+
+   #fun-facts {
+       width: 48%;
+       float: left;
+       display: inline;
+   }
+
+   #game {
+    clear: both;
+    }
+   
+}
+
+@media (min-width: 1600px) {
+    img {
+        width: 60%;
+        float: left;
+    }
+
+    #main {
+        width: 38%;
+        float: right;
+    }
+
+    #basic-info {
+        width: 38%;
+        float: right;
+    }
+
+    #blurb {
+        width: 38%;
+        float: right;
+        clear: initial;
+    }
+   
+    #game {
+            width: 60%;
+            float: left;
+            clear: initial;
+    }
+    
+   #fun-facts {
+        width: 38%;
+        float: right;
+    }
+   
 }
