@@ -1,43 +1,55 @@
 body {
-        background-color: Black;
-        color: gray;
-    }
+    background-color: Black;
+    color: gray;
+}
 
-    h1 {
-        color: white;
-        text-align: center;
-    }
+img {
+    width: 100%;
+    display: block; 
+    margin: auto;
+}
 
-    h2 {
-        color: white;
-        text-align: center;
-    }
+h1 {
+    color: white;
+    text-align: center;
+}
 
-    h3 {
-        color: white;
-        text-align: center;
-    }
+h2 {
+    color: white;
+    text-align: center;
+}
 
-    p {
-        text-align: justify;
-    }
+h3 {
+    color: white;
+    text-align: center;
+}
 
-    footer {
-        font-style: italic;
-        text-align: center;
-    }
+p {
+    text-align: justify;
+}
 
-    @media screen and (max-width: 500px) {
-        img {
-            width: 100%;
-            display:block; 
-            margin: 0 auto;
-        }
+footer {
+    font-style: italic;
+    text-align: center;
+    clear: both;
+}
+
+@media screen and (min-width: 501px) {
+    img {
+        width: 50%;
+        display:block; 
+        margin: 0 auto;
     }
-    @media screen and (min-width: 501px) {
-        img {
-            width: 50%;
-            display:block; 
-            margin: 0 auto;
-        }
+}
+
+@media screen and (min-width: 700px) {
+    #facts {
+        width: 50%;
+        float: left;
     }
+    
+    #game {
+        width: 50%;
+        float: right;
+    }
+}
