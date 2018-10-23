@@ -1,0 +1,55 @@
+body {
+    background-color: Black;
+    color: gray;
+}
+
+img {
+    width: 100%;
+    display: block; 
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    clear: both;
+}
+
+@media screen and (min-width: 501px) {
+    img {
+        width: 50%;
+        display:block; 
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #facts {
+        width: 50%;
+        float: left;
+    }
+    
+    #game {
+        width: 50%;
+        float: right;
+    }
+}
