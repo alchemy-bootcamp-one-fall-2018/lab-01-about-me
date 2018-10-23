@@ -9,10 +9,12 @@
 </head>
 <body>
 <section>
+<header>
+        <h1>Dyanna Tolman's Website</h1>
+</header>
 <div class="left">
-    <h1>Dyanna Tolman's Website</h1>
     <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-1/p320x320/13900264_10154450168210530_3929619538182910642_n.jpg?_nc_cat=107&_nc_ht=scontent-sea1-1.xx&oh=9aa879355f1b589107ea4da2d5d7c7d2&oe=5C410484" id="profile" alt="profilepic">
-    <p>Thanks for visiting my website! I currently reside in Portland, OR but was born and raised in Singapore. At the age of 17, I moved to Perth, Australia for school. I came to the US at 19 for college, where I majored in Communications. You can find out more about me in the list of facts below.</p>
+    <p id="blurb">Thanks for visiting my website! I currently reside in Portland, OR but was born and raised in Singapore. At the age of 17, I moved to Perth, Australia for school. I came to the US at 19 for college, where I majored in Communications. You can find out more about me in the list of facts below.</p>
     <h2>List of facts</h2>
         <ul>
             <li>From Singapore</li>
@@ -23,7 +25,7 @@
             <li>Mother to an 11 year old boy, Marley</li>
             <li>I have a fear of heights</li>
             <li>My favorite country that I have been to is Thailand (beach and food!)</li>
-        </l>
+        </ul>
 </div>
 <div class="right">
     <h2>Loves</h2>
@@ -42,41 +44,48 @@
         <a href="https://www.anthropologie.com/?ref=logo">Anthropologie</a>
 </div>
 </section>
+
 <section>
-    <h2>About me quiz</h2>
-    <form id="about-me" name="about-me">
-    </form>
+    <form id="about-me" name="about-me"
+        onsubmit="event.preventDefault(); checkAboutMe();"
+        onreset="resetAboutMe()">
+            <h2>About me quiz</h2>
         <div>
             <label for="country">Which country was I born in?</label>
             <input type="text" id="country" name="country" placeholder="enter country name">
         </div>
 
         <div>
-            <label for="sisters">How many sisters do I have?</label>
-            <input type="radio" id="sisters" name="sisters" value="sisters">
-            <label for="sisters">1</label>
-            <input type="radio" id="sisters" name="sisters" value="sisters">
-            <label for="sisters">8</label>
-            <input type="radio" id="sisters" name="sisters" value="sisters">
-            <label for="sisters">4</label>
+                <label for="sisters">How many sisters do I have?</label>
+                <input type="text" id="sisters" name="sisters" placeholder="enter number">
         </div>
-     <div>
+
+        <div>
             <label for="dessert">What is my favorite dessert?</label>
             <input type="text" id="dessert" name="dessert" placeholder="enter dessert name">
-     </div>
-     <div>
+        </div>
+
+        <div>
             <label for="fear">What is my biggest fear?</label>
             <input type="text" id="fear" name="fear" placeholder="hint:not spiders">
-     </div>
-
-     <div>
-            <label for="noodles">Do I love noodles?</label>
-            <input type="radio" id="noodles" name="noodles" value="noodles">
-            <label for="noodles">yes</label>
-            <input type="radio" id="noodles" name="noodles" value="noodles">
-            <label for="noodles">no</label>
         </div>
+
+        <div>
+                <label for="noodles">Do I like noodles?</label>
+                <input type="text" id="noodles" name="noodles" placeholder="yes/no">
+        </div>
+
+        <div>
+                <button type="submit" name="submit">Submit</button>
+                <button type="reset" name="reset">Reset</button>
+              </div>
     
-</section>
+    
+    </form>
+
+    <p id="about-me-response"></p>
+
+    </section>
+    <script src="about-me.js"></script>
 </body>
 </html>
