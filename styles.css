@@ -1,0 +1,50 @@
+body {
+    width: 90%;
+    background: rgb(202, 126, 209);
+    text-align: center;
+    margin: 5%;
+}
+
+img {
+    width: 200px;
+}
+
+#facts ul {
+    text-align: left;
+    width: 30%;
+    margin: auto;
+}
+
+#info {
+    box-shadow: 2px 2px 2px 2px pink;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+@media (min-width: 1024px) {
+
+    body{
+        text-align: left;
+    }
+
+    img {
+        float: left;
+        width: 300px;
+    }
+
+    #facts ul{
+        margin: 0;
+    }
+
+    #info {
+        float: right;
+        width: 50%;
+    }
+
+    #game h2{
+        clear: both;
+        width: 40%;
+        margin: auto;
+        padding-top: 10%;
+    }
+}
