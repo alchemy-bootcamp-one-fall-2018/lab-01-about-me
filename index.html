@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <title>All About Cheri</title>
-</head>
-<body>
-    <header>Zoiks!</header>
-    <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-1/p480x480/13508948_10206891898831865_1404399611404276603_n.jpg?_nc_cat=107&_nc_ht=scontent-sea1-1.xx&oh=eb6c82aac4ee1e7eb655a72f5b45c191&oe=5C453EED" alt = "Cheri and The Mr at some Canadian garden"/>
-    <section id="blurb">
-        <h1>Cheri's World</h1>
-        <p>It's a good world, full of coffee, tea, and fresh creamer. It's a world where
-            chocolate melts at tongue temperature and apples are crisp and sweet. 
-            It's a world of music, of calloused fingers, of new strings and old 
-            tunes. Here there be dogs. </p>
-    </section>
-    <section id="factoids">
-        <h1>Factoids</h1>
-            <ul>
-                <li>Oldest Child</li>
-                <li> <a href="https://www.goodreads.com/user/show/4706205-cheri" target="_blank" >Goodreads Junkie</a></li>
-                <li>Yarn User</li>
-                <li>Puzzle Game Addict</li>
-                <li>Interior Thinker</li>
-            </ul>    
-    </section>    
-    <section id="game">
-         <h1>Game to Be!</h1>    
-    </section>
-   
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <title>All About Cheri</title>
+    </head>
+    <body>
+        <header>Zoiks!</header>
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-1/p480x480/13508948_10206891898831865_1404399611404276603_n.jpg?_nc_cat=107&_nc_ht=scontent-sea1-1.xx&oh=eb6c82aac4ee1e7eb655a72f5b45c191&oe=5C453EED" alt = "Cheri and The Mr at some Canadian garden"/>
+        <section id="blurb">
+            <h2>Cheri's World</h2>
+            <p>It's a good world, full of coffee, tea, and fresh creamer. It's a world where
+                chocolate melts at tongue temperature and apples are crisp and sweet. 
+                It's a world of music, of calloused fingers, of new strings and old 
+                tunes. Here there be dogs. </p>
+        </section>
+        <section id="factoids">
+            <h2>Factoids</h2>
+                <ul>
+                    <li>Oldest Child</li>
+                    <li> <a href="https://www.goodreads.com/user/show/4706205-cheri" target="_blank" >Goodreads Junkie</a></li>
+                    <li>Yarn User</li>
+                    <li>Puzzle Game Addict</li>
+                    <li>Interior Thinker</li>
+                </ul>    
+        </section>    
+        <section id="about-me">
+            <h2>Let's play! Pop Quiz!</h2>    
+            <form id="about-me-form" onsubmit="event.preventDefault(); 
+                checkAboutMe();" onreset="resetAboutMe();">     
+                <p>Use what you know about me to take this quiz!</p>
+                <p></p>
+
+            </form>    
+        </section>
+        <section id="game2">
+            <h2>Game to Be Two!</h2>
+        </section>
+    </body>
 </html>
