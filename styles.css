@@ -29,11 +29,12 @@ img {
     border-right-color: lightgreen;
     max-width: 438px;
 }
+
  p {
      border-top-style: solid;
      border-top-color: gray;
      border-top-width: 100%;
- }
+}
 
  @media screen and (min-width: 650px) {
     #rightcolumn {
