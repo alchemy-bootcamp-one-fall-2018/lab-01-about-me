@@ -33,3 +33,32 @@ img {
     float: left;
   }
 }
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+form div {
+  padding: 10px 0;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+form:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+button[type="submit"] {
+  color:green;
+}
+
+button[type="reset"] {
+  color: red;
+}

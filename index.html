@@ -27,9 +27,37 @@
       </ul>
     </section>
     <section>
-      <h3>The Game</h3>
-      <p>Coming Soon!</p>
+      <h3>Play the Game: Do You Know Carmen </h3>
+    
+      <form id="about-me-form" name="about-me-form"
+      onsubmit="event.preventDefault(); checkAboutMe();"
+      onreset="resetAboutMe()"
+    >
+      <div>
+        <label for="cats">Do I have a pet cat?</label>
+        <input type="text" id="cats" name="cats" placeholder="yes/no" />
+      </div>
+
+      <div>
+        <label for="food">Name one of my favorite foods</label>
+        <input type="text" id="food" name="food" placeholder="Hint: It is very green" />
+      </div>
+
+      <div>
+        <label for="instrument">Name a string instrument I play</label>
+        <input type="text" id="instrument" name="instrument" placeholder="Hint: It is played with a bow" size="25" />
+      </div>
+
+      <div>
+        <button type="submit">Guess</button>
+        <button type="reset">Play Again</button>
+      </div>
+
+    </form>
+
+    <p id="about-me-response"></p>
     </section>
+    <script src="about-me.js"></script>
   </div>
 </body>
 </html>
