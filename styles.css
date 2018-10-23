@@ -1,0 +1,27 @@
+img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+body {
+    font-size: 9px;
+    background-color: aqua;
+}
+h1 {
+    color: royalblue;
+    text-align: center;
+}
+h2 {
+    color: indigo;
+}
+h3 {
+    color: purple;
+    font-style: italic;
+}
+
+@media screen and (min-width: 500px) {
+
+    img {
+        float:left;
+        max-width: 300px;
+    }
+}
