@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(53, 60, 61);
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 15px;
+}
+
+@media screen and (min-width: 700px) {
+    .sectionFloat {
+        width: 50%;
+        float: left;
+        padding: 15px;
+    }
+   
+}
