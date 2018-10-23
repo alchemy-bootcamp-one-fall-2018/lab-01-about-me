@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box
+
+}
+h1 {
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+li {  
+    list-style: none;
+}
+
+body{
+    background-color: burlywood;  
+       
+}
+img {
+    border-radius: 20%;
+    
+    border: 5pt solid black;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background: brown;
+    }
+    
+    #favLyrics1 {
+        width: 50%;
+        float: left;
+        padding: 10px;
+        
+    }
+    #favLyrics2 {
+        width: 50%;
+        float: left;
+        padding: 10px;
+        
+    }
+    
+
+}
