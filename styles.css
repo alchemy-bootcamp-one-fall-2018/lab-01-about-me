@@ -1,0 +1,73 @@
+body {
+    background-image:url(https://i.pinimg.com/236x/06/42/e3/0642e33d89ec9e7cb2cf6754c36dda54--watercolor-iphone-wallpaper-marble-wallpaper-phone.jpg);
+    background-position: center;  
+    height: 100%;
+    background-size: cover;
+    border-style: groove;
+    padding: 8px;
+    
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+    font-size: 20pt;
+    text-emphasis: bold;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+article {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 25px;
+}
+h1, h2, h3{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+img {
+    width: 50%;
+    height: 50%; 
+    border-radius: 360%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-style: ridge;
+    border-color: black;
+}
+
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+ @media only screen and (min-width: 400px) {
+    body {
+        background-image:url(https://image.freepik.com/free-vector/geometric-abstract-chaotic-triangle-background-mosaic-vector-graphic-design-from-colored-triangles_1164-1478.jpg);
+    }
+    #food {
+        float: right;
+        margin-right: 30%;
+    }
+}
+
