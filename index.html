@@ -12,15 +12,15 @@
 <body>
     <img src="AdamProfile.png" alt="Adam's Profile Photo">
 
-    <div id="about"> 
+    <section id="about"> 
 
         <h1>About Me</h1>
 
             <p>Well...let’s see. I really enjoy traveling and seeing new places. I also like to stay up really late and sleeping in past Noon. My hobbies are scrolling through Instagram for too long and watching TV shows that have been off the air for a few decades. I like to walk in the park and breathe fresh air on cold mornings with hot coffee. I think animals are the answer to a happy life and when I see one the rest of the world gets a little quieter. My dream destination is a beautiful piece of forested land that overlooks the ocean, a camp fire and great WiFi.</p>
+            
+    </section>
 
-    </div>
-
-    <div id="facts">
+    <section id="facts">
     
         <h2>Facts</h2>
 
@@ -31,21 +31,81 @@
                 <li>Animal enthusiast - currently seeking four-legged companions</li>
                 <li>Lover of cars new and old</li>
             </ul>
-    </div>
 
-    <div id="game">
+    </section>
 
-        <h2>Game Time...coming soon!</h2>
+    <section id="game">
 
-            <ul>
-                <li>Content TBD</li>
-                <li>Content TBD</li>
-                <li>Content TBD</li>
-                <li>Content TBD</li>
-                <li>Content TBD</li>
-            </ul>
+        <h2>Game Time...5 Questions About Me: </h2>
+
+        <form id="about-me-form" name="about-me-form" onsubmit="event.preventDefault(); checkAboutMe();" onreset="resetAboutMe()">
+
+            <div>
+                <label for="sign">What is my astrological sign?</label>
+                <br>
+                <input type="text" name="sign" id="sign" placeholder="Enter text here">
+            </div>  
+            
+            <div>
+                <label for="happy">What do I think is the answer to a happy life?</label>
+                <br>
+                <input type="text" name="happy" id="happy" placeholder="Enter text here">
+            </div> 
+            
+            <div>
+                <label for="night">Am I a night owl?</label>
+                <br>
+                <input type="text" name="night" id="night" placeholder="Yes/No">
+            </div>  
+
+            <div>
+                <label for="tv">Current TV or Classic TV?</label>
+                <br>
+                <input type="text" name="tv" id="tv" placeholder="Enter text here">
+            </div>  
+
+            <div>
+                <label for="born">In what year was I born?</label>
+                <br>
+                <input type="text" name="born" id="born" placeholder="Enter text here">
+            </div>  
+
+            <br>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Try Again</button>
+            </div>
         
-    </div>
+        </form>
+
+        <p id="about-me-response"></p>
+        
+    </section>
+
+    <section>
+        <h2>Take a Guess</h2>
+        
+        <form id="guess-state" onsubmit="event.preventDefault(); checkGuessState();" onreset="resetGuessState()">
+        
+            <div>
+                <label for="state">Guess my favorite US State</label>
+                <br>
+                <input type="text" name="state" id="state" placeholder="Enter text here">
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Try Again</button>
+            </div>
+        
+        </form>
+
+        <p id="guess-state-response"></p>
+
+    </section>
 
     <br>
     <br>
