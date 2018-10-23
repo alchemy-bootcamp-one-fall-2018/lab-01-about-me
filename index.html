@@ -20,14 +20,16 @@
         </ul>
         <h3>Guessing Game</h3>
 
-        <form>
+        <form id="random-number-form" name='random-number-form' 
+        onsubmit="event.preventDefault(); checkRandomNumber();" onreset="resetRandomNumber()"
+        >
             <div id="random-number-textbox">
                 <label for="random-number-guessed">Find the random number!</label>
                 <input type="text" id="random-number-guessed" placeholder="Must be digit 1-10">
             </div>
             <div>
                 <button type="submit">Guess</button>
-                <button type="reset" id="">Reset</button>
+                <button type="reset">Reset</button>
             </div>
         </form>
     </div>
