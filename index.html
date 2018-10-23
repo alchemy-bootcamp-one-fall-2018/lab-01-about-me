@@ -7,36 +7,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div id = 'column1'>
-    <header> 
-        <h1>
-        Lance Merrill
-        </h1>
-        <img src="Lance photo.jpg" alt="Picture of the lance">
-    </header>
-</div>
-<div id ='column2'>
-    <h2>
-        The blurb
-    </h2>
-    <h3>
-        Lance Merrill is a 22 year old dude studying web design software development at ACL Portland. 
-    </h3> 
-    <h2>
-        About me
-    </h2>
-    <p>
-        <ul>
-            <li> I practice BJJ.</li>
-            <li> I love to cycle.</li>
-            <li>I am student at Alchemy Code Lab who is interested in pursuing a career in smart contracts/ ethereum development. </li>
-        </ul>
-    </p>
-    <div id="js-game">
-        JS game coming soon 
-    </div>
-</div>
+<body> 
+    <main>
+        <div id = 'column1'>
+            <header> 
+                <h1>
+                Lance Merrill
+                </h1>
+                <img src="Lance photo.jpg" alt="Picture of the lance">
+            </header>
+        </div>
+        <div id ='column2'>
+            <h2>
+                The blurb
+            </h2>
+            <h3>
+                Lance Merrill is a 22 year old dude studying web design and software development at ACL Portland. 
+            </h3> 
+            <h2>
+                About me
+            </h2>
+            <p>
+                <ul>
+                    <li> I practice BJJ.</li>
+                    <li> I love to cycle.</li>
+                    <li>I am student at Alchemy Code Lab who is interested in pursuing a career in smart contracts/ethereum development. </li>
+                </ul>
+            </p>
+            <div id="js-game">
+                JS game coming soon 
+            </div>
 
+
+
+
+            <div id= "gameDiv">
+
+
+                <form id ="about-me-form" onsubmit ="event.preventDefault(); checkAboutMe();" onreset="resetAboutMe();">
+
+                
+                <label for="questionOne"> question 1.</label> <input type="text" placeholder="answer1?" id="questionOne">
+
+                <label for="questionTWo"> question 2.</label> <input type="text" placeholder="answer2?" id="questionTwo">
+
+                <label for="questionThree"> question 3.</label> <input type="text" placeholder="answer3?" id="questionThree">
+
+                <label for="questionFour"> question 4.</label> <input type="text" placeholder="answer4?" id="questionFour">
+
+                <label for="questionFive"> question 5.</label> <input type="text" placeholder="answer5?" id="questionFive">
+
+                 </form>
+
+                     
+                <button type="submit" onclick="insert function"> Submit </button>
+            
+                <button type="reset" onclick="some function"> Reset Game</button>
+            
+                
+              
+            </div>
+            <script src = "index.js"> </script>
+
+
+
+        </div>
+    </main>
 </body>
 </html>

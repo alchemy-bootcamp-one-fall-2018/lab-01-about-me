@@ -87,4 +87,8 @@ img {
         width: 50%;
         float: right; 
     }
+    #gameDiv {
+        text-align: center;
+        color: white;
+    }
 }   
