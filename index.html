@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <script src="index.js"></script>
+    
     <h1>Tyler Corbett</h1>
     <img src="tyler.jpg" alt="Photo of Tyler in front of trees"/>
     <div id="rightcolumn">
@@ -20,18 +20,22 @@
         </ul>
         <h3>Guessing Game</h3>
 
-        <form id="random-number-form" name='random-number-form' 
+        <form id="random-number-form" name="random-number-form" 
         onsubmit="event.preventDefault(); checkRandomNumber();" onreset="resetRandomNumber()"
         >
             <div id="random-number-textbox">
                 <label for="random-number-guessed">Find the random number!</label>
-                <input type="text" id="random-number-guessed" placeholder="Must be digit 1-10">
+                <input name="randomNumberText" type="text" id="random-number-guessed" placeholder="Must be digit 1-10">
             </div>
             <div>
                 <button type="submit">Guess</button>
                 <button type="reset">Reset</button>
             </div>
         </form>
+    
+    
+    
     </div>
+    <script src="index.js"> </script>
 </body>
 </html>

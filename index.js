@@ -1,7 +1,16 @@
+var randomNumberForm = document.getElementById('random-number-form');
+
+console.log(randomNumberForm)
+
+
+// Submit button
 function checkRandomNumber() {
-    console.log('Sunmit button works')
+    var elements = randomNumberForm.elements;
+    var randomNumberInput = elements.randomNumberText;
+    var numberGuessed = randomNumberInput.value;
 }
 
+// Reset button
 function resetRandomNumber() {
     console.log('Reset button works')
 }
