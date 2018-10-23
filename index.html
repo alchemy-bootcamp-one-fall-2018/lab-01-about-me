@@ -7,12 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Rajdhani" rel="stylesheet">
-
-
 </head>
 <body>
 
-    <header>
+    <header class="mainHeader">
         <h2>All About ....</h2>
         <h1>Kristin!</h1>
         <h4>Avid laugher, stalker of cats, sports fan, and lover of the sun</h4>
@@ -21,7 +19,7 @@
     <main>
 
         <div class="pic">
-                <img src="img/IMG_6051.jpg" alt="kristin's beautiful face">
+            <img src="img/IMG_6051.jpg" alt="kristin's beautiful face">
         </div>
         
         <section class="fun-facts">
@@ -35,7 +33,6 @@
                 <li>I <em>just</em> finished reading Crime and Punishment after taking no less than two years to read it....I intend to <em>never</em> read another Dostoyevsky book as long as I live!</li>
             </ul>
         </section>
-
         
         <section class="quotes">
             <h2 class="title">Favorite Quotes from Random TV Shows and Stand-Up Comedians</h2>
@@ -51,20 +48,61 @@
                 <li>"And THAT is how ya pivot!" --SNL</li>
             </ul>
         </section>
-        
-        <h2 class="title">The Game</h2>
-        <h4>Coming soon...<br/>GET EXCITED</h4>
-       
-        <div class="gif">
-            <iframe src="https://giphy.com/embed/2eLAwdushm3cI" frameBorder="0" class="gif"></iframe><p><a href="https://giphy.com/gifs/2eLAwdushm3cI">via GIPHY</a></p>
-        </div>
-       
-    </main>
 
+        <section class="game">
+
+            <header class="gameHeader">
+                <h2 class="title">The Game</h2>
+                <div class="gif">
+                    <iframe src="https://giphy.com/embed/2eLAwdushm3cI" frameBorder="0" class="gif"></iframe><p><a href="https://giphy.com/gifs/2eLAwdushm3cI">via GIPHY</a></p>
+                </div>   
+            </header>
+            
+            <h3>Game 1: All About Kristin Questions</h3>
+
+            <form class="me-quiz">
+                <div>
+                    <label for="question1">1. At what age did I shatter my wrist while longboarding?</label><br/>
+                    <input type="text" name="question1" id="question1">
+                </div>
+
+                <div>
+                    <label for="question2">2. What color is my wildly ferocious cat, Roxy?</label><br/>
+                    <input type="text" name="question2" id="question2">
+                </div>
+
+                <div>
+                    <label for="question3">3. Which author do I never want to read another work from?</label><br/>
+                    <input type="text" name="question3" id="question3">
+                </div>
+                
+                <div>
+                    <label for="question4">4. What place am I currently at in my Pick'Em league?</label><br/>
+                    <input type="text" name="question4" id="question4">
+                </div>
+
+                <div>
+                    <label for="question5">5. How old am I?</label><br/>
+                    <input type="text" name="question5" id="question5">
+                </div>
+            </form>
+
+            <h3>Game 2: Guess the Magic Number</h3>
+
+            <form class="number-quiz">
+                <div>
+                    <label for="numberquiz">What is the magic number I'm thinking of?</label>
+                    <input type="text" name="numberquiz" id="numberquiz">
+                </div>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2018 Kristin Hortsch</p>
     </footer>
     
+    <script src="index.js"></script>
+
 </body>
 </html>

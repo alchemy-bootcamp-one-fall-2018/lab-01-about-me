@@ -4,7 +4,7 @@ body {
     margin: 0px;
 }
 
-header {
+.mainHeader {
     background-color: navy;
     color: white;
     text-align: center;
@@ -14,9 +14,12 @@ main {
     background-color: antiquewhite;
     margin: 0px;
     padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "amatic SC";
     text-align: center;
     margin: 0px;
@@ -35,8 +38,8 @@ h1 {
     padding-bottom: 40px;
 }
 
-h4 {
-    font-size: 1.5rem;
+h3 {
+    font-size: 1.9rem;
     text-align: center;
     font-weight: bold;
     padding-bottom: 30px;
@@ -74,6 +77,10 @@ img {
     text-align: center;
 }
 
+.gameHeader {
+    text-align: center;
+}
+
 p {
     margin-bottom: 0px;
     padding-bottom: 15px;
@@ -85,6 +92,10 @@ footer {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+label {
+    text-align: center;
 }
 
 @media (min-width: 730px) {
