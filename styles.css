@@ -1,0 +1,122 @@
+body {
+    font-family: "rajdhani";
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: antiquewhite;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+h1, h2 {
+    font-family: "amatic SC";
+    text-align: center;
+    margin: 0px;
+    
+}
+
+h2 {
+    font-size: 4rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 0.4;
+    padding-bottom: 40px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+.title {
+    color: navy;
+}
+
+p {
+    margin-left: 10px;
+}
+
+ul li {
+    padding-bottom: 14px;
+    font-size: 1.4rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pic {
+    width: 70%;
+    max-width: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.gif {
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+
+footer {
+    background-color: navy;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 730px) {
+
+    main {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    header {
+        font-size: 6rem;
+    }
+
+    .pic {
+        float: left;
+        margin-right: 10%;
+    }
+
+    .title {
+        font-size: 5rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .quotes {
+        position: relative;
+        display: block;
+        margin-top: 90px;
+    }
+    
+    ul li {
+        padding-bottom: 15px;
+    }
+}
+
