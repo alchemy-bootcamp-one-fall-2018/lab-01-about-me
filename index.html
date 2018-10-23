@@ -32,7 +32,7 @@
     <section id="game">
         <h2>Games</h2>
         
-        <form id="about-me-game" onsubmit="event.preventDefault();">
+        <form id="about-me-game" onsubmit="event.preventDefault(); aboutMe();">
 
             <div>
                 <label for="alive">Am I alive?</label>
@@ -43,46 +43,48 @@
                 How much do I think?
 
                 <label for="lot"></label>
-                <input type="radio" name="lot" value="lot" id="lot">A lot
+                <input type="radio" name="think" value="lot" id="lot">A lot
 
                 <label for="fair"></label>
-                <input type="radio" name="fair" value="fair" id="fair">A fair amount
+                <input type="radio" name="think" value="fair" id="fair">A fair amount
 
                 <label for="little"></label>
-                <input type="radio" name="little" value="little" id="little">A little
+                <input type="radio" name="think" value="little" id="little">A little
             </div>
 
             <div>
                 What do I like?
 
                 <label for="some"></label>
-                <input type="checkbox" name="some" value="some" id="some">Some things
+                <input type="checkbox" name="like" value="some" id="some">Some things
 
                 <label for="doing"></label>
-                <input type="checkbox" name="doing" value="doing" id="doing">Doing cool things
+                <input type="checkbox" name="like" value="doing" id="doing">Doing cool things
 
                 <label for="nothing"></label>
-                <input type="checkbox" name="nothing" value="nothing" id="nothing">Nothing
+                <input type="checkbox" name="like" value="nothing" id="nothing">Nothing
             </div>
 
             <div>
                 <label for="sleep">How often do I sleep?</label>
-                <input type="text" id="sleep">
+                <input type="text" name="sleep" id="sleep">
             </div>
 
             <div>
-                <label for="alive">Am I alive?</label>
-                <input type="text" id="alive" placeholder="yes/no">
+                <label for="ego">Do I have a high ego?</label>
+                <input type="text" name="ego" id="ego" placeholder="yes/no">
             </div>
 
             <div>
-                <button type="submit" name="guess">Guess</button>
+                <button type="submit" name="submit">Submit</button>
                 <button type="reset" name="play-again">Play Again</button>
             </div>
 
+            <p id="feedback"></p>
+
         </form>
 
-        <form id="guess" onsubmit="event.preventDefault();">
+        <form id="guess" onsubmit="event.preventDefault(); guessNumber();">
 
             <label for="number"></label>What is my favorite number?
             <input type="text" name="number" id="number" placeholder="1 - 10">
@@ -92,7 +94,11 @@
                 <button type="reset" name="play-again">Play Again</button>
             </div>
 
+            <p id="numberFeed"></p>
+
         </form>
     </section>
+
+    <script src="index.js"></script>
 </body>
 </html>

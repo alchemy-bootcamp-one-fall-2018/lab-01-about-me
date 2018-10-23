@@ -38,6 +38,18 @@ form {
     margin-top: 5%;
 }
 
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+#feedback, #numberFeed {
+    color: blue;
+}
+
 @media (min-width: 1024px) {
 
     body{
