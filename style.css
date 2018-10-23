@@ -12,12 +12,41 @@ img {
     width: 300px;
 }
 h2 {
-    text-align: center;
+    text-decoration: underline;
 }
 #all-text {
     color: white;
     background-color: rgb(54, 54, 54);
     padding: 10px;
-    border: 15px ridge lightgray;
-    border-radius: 20px 0 20px 0;
+    border: ridge lightgray 10px;
+    border-radius: 10px 0 10px 0;
+    
+}
+@media (max-width: 500px) {
+    img {
+        width: 70%;
+    }
+}
+@media (min-width: 1000px) {
+    body {
+        max-width: 1000px;
+        height: 100%;
+    }
+    header {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    #bottom-info {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    .clearfix:after { 
+        content: "."; 
+        visibility: hidden; 
+        display: block; 
+        height: 0; 
+        clear: both;
+     }
 }
