@@ -1,0 +1,33 @@
+h1 {
+    color: purple; 
+}
+
+img {width: 100%;}
+
+@media screen and (min-width: 300px) {
+    body {
+        background: gray;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background: aqua;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    .title {
+        padding-left: 26px;
+    }
+    .column {
+        width: 50%;
+        float: left;
+    }
+
+}
