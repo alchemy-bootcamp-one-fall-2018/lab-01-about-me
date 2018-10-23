@@ -1,5 +1,52 @@
+/*All Styles*/
+#entries li {
+    list-style-type: none;
+}
+
+.row {
+    background-color: aquamarine;
+    padding: 20px 20px 20px 20px;
+}
+
+/*Mobile Styles*/
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
+    }
+
+   #the_image .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width:800px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .column {
+        float: left;
+        padding: 10px;
+
+    }
+
+    .left {
+        width: 25%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
