@@ -42,7 +42,7 @@ function checkAnswers() {
         jobInput.classList.add("incorrect");
         jobInput.classList.remove("correct");
     }
-    
+
     var countriesInput = elements.countries;
     var countriesAnswer = countriesInput.value;
 
@@ -54,7 +54,7 @@ function checkAnswers() {
         countriesInput.classList.add("incorrect");
         countriesInput.classList.remove("correct");
     }
-    
+
     var yearsInput = elements.years;
     var yearsAnswer = yearsInput.value;
 
@@ -66,33 +66,32 @@ function checkAnswers() {
         yearsInput.classList.add("incorrect");
         yearsInput.classList.remove("correct");
     }
-    
+
 
 
     aboutMeAnswer.textContent = 'You got ' + correct + ' out of 5.';
 }
 
 function resetAnswers() {
-        var elements = aboutMeForm.elements;
-        var sportInput = elements.sport;
-        var foodInput = elements.food;
-        var jobInput = elements.job;
-        var countriesInput = elements.countries;
-        var yearsInput = elements.years;
-    
-        sportInput.classList.remove('correct');
-        sportInput.classList.remove('incorrect');
-        foodInput.classList.remove('correct');
-        foodInput.classList.remove('incorrect');
-        jobInput.classList.remove('correct');
-        jobInput.classList.remove('incorrect');
-        countriesInput.classList.remove('correct');
-        countriesInput.classList.remove('incorrect');
-        yearsInput.classList.remove('correct');
-        yearsInput.classList.remove('incorrect');
-    
-        aboutMeAnswer.textContent = '';
-    
-    
-}
+    var elements = aboutMeForm.elements;
+    var sportInput = elements.sport;
+    var foodInput = elements.food;
+    var jobInput = elements.job;
+    var countriesInput = elements.countries;
+    var yearsInput = elements.years;
 
+    sportInput.classList.remove('correct');
+    sportInput.classList.remove('incorrect');
+    foodInput.classList.remove('correct');
+    foodInput.classList.remove('incorrect');
+    jobInput.classList.remove('correct');
+    jobInput.classList.remove('incorrect');
+    countriesInput.classList.remove('correct');
+    countriesInput.classList.remove('incorrect');
+    yearsInput.classList.remove('correct');
+    yearsInput.classList.remove('incorrect');
+
+    aboutMeAnswer.textContent = '';
+
+
+}

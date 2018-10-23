@@ -131,32 +131,41 @@ form {
         margin: 0 auto;
         display: block;
     }
+
     .quote {
         padding-top: 20px;
     }
+
     .name {
         padding-bottom: 20px;
     }
+
     h2 {
         text-align: center;
     }
+
     header {
         float: left;
         width: 50%;
     }
+
     main {
         padding-top: 20px;
     }
+
     footer p {
         padding-top: 100px;
     }
+
     aside {
         clear: both;
     }
+
     input {
         width: 30%;
         text-align: initial;
     }
+
     .buttons {
         width: 30%;
     }

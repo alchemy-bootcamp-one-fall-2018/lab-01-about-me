@@ -9,13 +9,12 @@ function checkNumber() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
-    if(guess == 8) {
+    if (guess == 8) {
         guessNumberAnswer.textContent = 'You win!';
         submit.disabled = true;
         number.classList.add("correct");
         number.classList.remove("incorrect");
-    }
-    else {
+    } else {
         guessCount = guessCount + 1;
         number.classList.add("incorrect");
         number.classList.remove("correct");
@@ -26,14 +25,14 @@ function checkNumber() {
             guessNumberAnswer.textContent = 'Too high!'
         }
 
-        if(guessCount > 3) {
+        if (guessCount > 3) {
             guessNumberAnswer.textContent = 'You lose';
             submit.disabled = true;
         }
 
 
 
-    }  
+    }
 }
 
 function resetNumber() {
