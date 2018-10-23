@@ -70,6 +70,19 @@ body {
     background-color: #FCFAF9;
 }
 
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+aside {
+    width: 50%;
+    margin: 0 auto;
+}
+
 @media (min-width: 500px) {
     .face {
         height: 200px;
@@ -98,6 +111,10 @@ body {
     }
     aside {
         clear: both;
+    }
+    .buttons {
+        width: 50%;
+        margin: 0 auto;
     }
 
 }
