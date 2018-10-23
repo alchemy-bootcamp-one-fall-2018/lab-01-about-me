@@ -20,19 +20,18 @@ function checkNumber() {
         number.classList.add("incorrect");
         number.classList.remove("correct");
 
-        if(guessCount < 3) {
-            guessNumberAnswer.textContent = 'Try again!';
-        }
-        else {
-            guessNumberAnswer.textContent = 'You lose';
-            submit.disabled = true;
-        }
-
         if (guess < 8) {
             guessNumberAnswer.textContent = 'Too low!'
         } else {
             guessNumberAnswer.textContent = 'Too high!'
         }
+
+        if(guessCount > 3) {
+            guessNumberAnswer.textContent = 'You lose';
+            submit.disabled = true;
+        }
+
+
 
     }  
 }
