@@ -6,7 +6,7 @@
     </header>
     <main>
         <h1>All About Me</h1>
-        <img src="../img/PizzaMe.jpg" width = "250" alt="me eating pizza">
+        <img src="img/PizzaMe.jpg" width = "250" alt="me eating pizza">
         <article >
             Hey! I'm Christina T. Herlocker, but you can just call me <em>Chris.</em><br><br>
             <strong>Here's a little detail about my preferences.</strong><br>
@@ -14,6 +14,59 @@
             2.  My favorite animal is the Snuffleupagus.<br>
             3.  My favorite food is probably cheese pizza.<br><br>
         </article><br>
-        <article><em>This space reserved for Tuesday's lab!</em></article>
+        <section>
+            <h2>Guess more about me!</h2>
+            <form id="about-me-quiz-1" name="about-me-quiz-1"
+            onsubmit="event.preventDefault(); checkAboutMe();"
+            onreset="resetAboutMe()"
+            >
+                <div>
+                    <label for="Do I like snakes?">Do I like snakes?</label>
+                    <input type="text" name="snakes" class="quiz-1" id="snakes" placeholder="yes/no">
+                </div>
+
+                <div>
+                    <label for="Do I like chocolate?">Do I like chocolate?</label>
+                    <input type="text" name="cake" class="quiz-1" id="cake" placeholder="yes/no">
+                </div>
+
+                <div>
+                    <label for="Am I a morning person?">Am I a morning person?</label>
+                    <input type="text" name="morning-person" class="quiz-1" id="morning-person" placeholder="yes/no">
+                </div>
+
+                <div>
+                    <label for="Puppies or kittens">Puppies or kittens?</label>
+                    <input type="text" name="puppies-kittens" class="quiz-1" id="puppies-kittens" placeholder="yes/no">
+                </div>
+
+                <div>
+                    <label for="Dragons?">Am I terrified of dragons?</label>
+                    <input type="text" name="dragons" class="quiz-1" placeholder="yes/no">
+                </div>
+                <div>
+                    <button type="submit">Guess!</button>
+                    <button type="reset">Reset quiz</button>
+                </div>
+            </form>    
+        </section>
+        <section>
+            <h2>Guess my favorite...</h2>
+            <form id="about-me-quiz-2" name="about-me-quiz-2"
+            onsubmit="event.preventDefault(); checkAboutMe();"
+            onreset="resetAboutMe()"
+            >
+                <div>
+                    <label for="favorite-number">What's my favorite number? Three guesses:</label>
+                    <input type="text" name="number" class="quiz-2" placeholder="1 to 10">
+                </div>
+
+                <div>
+                    <button type="submit">Guess!</button>
+                    <button type="reset">Reset quiz</button>
+                </div>
+            </form>
+
+        </section>
     </main>
 </body>

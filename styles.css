@@ -3,10 +3,12 @@ body {
     position: static;
     }
 h1 {color: rgb(75, 12, 12)}
+h2 {color: rgb(62, 12, 75)}
 img {border:10px solid purple;}
 article {
     float: right;
 }
+button {max-width: 30}
 /*
 */
 @media only screen and (max-width: 500px) {
