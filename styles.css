@@ -1,0 +1,75 @@
+h1 {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%;
+}   
+h2 {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%;
+}
+.image {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%;
+}
+.blurb {
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+}
+.facts {
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%
+}
+.game {
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+    border-width: thick;
+    border-style: ridge;
+    border-radius: 25%
+}
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (orientation: landscape) {
+    h1 {
+        float: none;
+        clear: both;
+    }
+    #float-left {
+        width: 45%;
+        float: left;
+        clear: none;
+    }
+    img {
+        float: right;
+        clear: left;
+    }
+/* leaves a little space for the game window to be
+portrait orientation for a landscape screen but the design
+breaks a little right around where it switches
+between portrait and landscape*/
+}
