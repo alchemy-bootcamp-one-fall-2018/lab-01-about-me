@@ -40,8 +40,8 @@
     </main>
 
     <aside>
-        <h1>The Game</h1>
-        <form id="about-me-form" name="about-me-form" onsubmit="event.preventDefault(); checkAnswers();" onreset="resetAnswers()">
+        <h1>About Me Game</h1>
+        <form id="about-me-form" autocomplete="off" name="about-me-form" onsubmit="event.preventDefault(); checkAnswers();" onreset="resetAnswers()">
 
             <div class="questions">
                 <label for="questionOne">What is my favorite kind of food?</label>
@@ -71,6 +71,21 @@
 
         </form>
         <p id="about-me-answer"></p>
+
+        <h1>Guess My Favorite Number</h1>
+        <form id="guess-number-form" autocomplete="off" onsubmit="event.preventDefault(); checkNumber();" onreset="resetNumber()">
+            <div class="questions">
+                <label for="number">What is my favorite number?</label>
+                <input type="text" id="number" name="number" placeholder="1 - 10" />
+            </div>
+
+            <div class="buttons">
+                <button type="submit" name="guess">Guess</button>
+                <button type="reset" name="play-again">Play Again</button>
+            </div>
+        </form>
+        <p id="guess-number-answer"></p>
+
     </aside>
 
     <footer>
@@ -78,6 +93,7 @@
     </footer>
 
     <script src="about-me.js"></script>
+    <script src="guess-number.js"></script>
 </body>
 
 </html>
