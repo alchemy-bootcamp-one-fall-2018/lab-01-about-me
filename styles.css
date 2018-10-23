@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    text-align: center;
+}
+h3 {
+    background-color: rgb(121,189,154);
+    box-shadow: 3px 3px 7px 1px darkslategray;
+} 
+h4 {
+    background-color: rgb(59,134,134);
+}
+
+h2 {
+    color: darkblue;
+}
+footer {
+    background-color: rgb(11,72,107);    
+    text-align: center;
+    padding: 15px;
+}
+.btn:hover {
+    border: 5px;
+    background-color: rgb(73,10,61);
+    padding: 7px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: rgb(207,240,158);
+        display: block;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 300px;
+        /*empty hold space for tomorrow*/
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .columns {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+    }
+}
