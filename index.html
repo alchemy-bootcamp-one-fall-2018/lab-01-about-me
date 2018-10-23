@@ -11,7 +11,7 @@
     <header>Jennifer Ramirez</header>
     <img src="https://avatars2.githubusercontent.com/u/43484852?s=460&v=4" alt="Pic of The Jennifer Ramirez">
     <h1 id="little-bit">A little bit about me</h1>
-    <p>That pic is me...Jennifer. I am currently trying to learn how to code.
+    <p id="pg-bgcolor">That pic is me...Jennifer. I am currently trying to learn how to code.
         This is new and a little scary to me, but <strong>WHY NOT</strong> do it?
         So far it is fun, but stay tuned for how I fee a week from now. Or 6 mos from now.
         I normally like staying home with my two dogs, but I have been trying to get out and meet
@@ -31,7 +31,7 @@
     <!--Game Time-->
     <h3>Ready to Play Some Games?!</h3>
 
-    <h4>Game 1</h4>
+    <h4>Question 1</h4>
     <form id="about-me-form" 
         onsubmit="event.preventDefault(); favoriteThingAboutClass();"
         onreset="resetfavoriteThingsAboutClass";
@@ -45,21 +45,33 @@
             <button type="Reset">One More Guess</button>
         </div>
     </form>
+
+    <p id="about-me-form-response"></p>
+</section>
+
+<section>
+    <h4>Question 2</h4>
     <form id="guess-form"
         onsubmit="event.preventDefault(); guessMyAge();"
         onreset="guessMyAge";
     >
         <div>
             <label for="guess">Guess my age....Really?!</label>
-            <input type="checkbox" name="guess 1" value="21"> I am 21<br>
-            <input type="checkbox" name="guess 2" value="33"> I am 33<br>
-            <input type="checkbox" name="guess 3" value="45"> I am 45<br>
+            <input type="checkbox" name="guess 1" value="21"> I am 21
+            <input type="checkbox" name="guess 2" value="33"> I am 33
+            <input type="checkbox" name="guess 3" value="45"> I am 45
         </div>
         <div>
             <button type="Submit">GO!</button>
             <button type="Reset">One More Guess</button>
         </div>
     </form>
+
+        <p id="guess-form-response"></p>
+</section>
+
+<section>
+    <h4>Question 3</h4>
     <form id="gamethree"
         onsubmit="event.preventDefault(); pickTheRightOne();"
         onreset="pickTheRightOne";
@@ -78,20 +90,32 @@
             <button type="Reset">One More Guess</button>
         </div>
     </form>
+
+        <p id="gamethree-response"></p>
+</section>
+
+<section>
+    <h4>Question 4</h4>
     <form id="gamefour"
         onsubmit="event.preventDefault(); guessMyAge();"
         onreset="guessMyAge";
     >
         <div>
             <label for="gamefour">Would I enjoy teaching the class?</label>
-            <input type="radio" name="gamefour" value="yes">Heck Yes!<br>
-            <input type="radio" name="gamefour" value="no">Ain't Nobody Got Time For That!<br>
+            <input type="radio" name="gamefour" value="yes">Heck Yes!
+            <input type="radio" name="gamefour" value="no">Ain't Nobody Got Time For That!
         </div>
         <div>
             <button type="Submit">GO!</button>
             <button type="Reset">One More Guess</button>
         </div>
     </form>
+
+    <p id="gamefour-response"></p>
+</section>
+
+<section>
+    <h4>Question 5</h4>
     <form id="gamefive"
         onsubmit="event.preventDefault(); guessMyAge();"
         onreset="gamefive";
@@ -106,6 +130,9 @@
         </div>
     </form>
 
+    <p id="gamefive-response"></p>
 </section>
+
+
 </body>
 </html>
