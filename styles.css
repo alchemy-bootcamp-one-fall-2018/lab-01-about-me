@@ -7,15 +7,17 @@ body {
     background-color: aqua;
 }
 h1 {
-    color: royalblue;
+    color: indigo;
     text-align: center;
 }
 h2 {
     color: indigo;
 }
 h3 {
-    color: purple;
-    font-style: italic;
+    color: indigo;
+}
+section {
+    font-size:15px;
 }
 
 @media screen and (min-width: 500px) {
