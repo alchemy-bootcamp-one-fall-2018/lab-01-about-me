@@ -12,9 +12,13 @@ function checkNumber() {
     if(guess == 8) {
         guessNumberAnswer.textContent = 'You win!';
         submit.disabled = true;
+        number.classList.add("correct");
+        number.classList.remove("incorrect");
     }
     else {
         guessCount = guessCount + 1;
+        number.classList.add("incorrect");
+        number.classList.remove("correct");
 
         if(guessCount < 3) {
             guessNumberAnswer.textContent = 'Try again!';
