@@ -1,6 +1,6 @@
-body {
+body { 
     background-color: Black;
-    color: gray;
+    color: white;
 }
 
 img {
@@ -53,3 +53,44 @@ footer {
         float: right;
     }
 }
+
+label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  form div {
+    padding: 10px 0;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgb(61, 55, 119);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  form:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  button[type="submit"] {
+    color:green;
+  }
+  
+  button[type="reset"] {
+    color: red;
+  }
+  
+  .correct {
+    background-color: lightgreen;
+  }
+  
+  .incorrect {
+    background-color: pink;
+  }
+  
+  .hidden {
+    display: none;
+  }
