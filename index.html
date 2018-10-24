@@ -54,8 +54,7 @@
             <h2>Guess my favorite...</h2>
             <form id="about-me-quiz-2" name="about-me-quiz-2"
             onsubmit="event.preventDefault(); checkAboutMe();"
-            onreset="resetAboutMe()"
-            >
+            onreset="resetAboutMe()";>
                 <div>
                     <label for="favorite-number">What's my favorite number? Three guesses:</label>
                     <input type="text" name="number" class="quiz-2" placeholder="1 to 10">
@@ -67,6 +66,21 @@
                 </div>
             </form>
             <p id="about-me-quiz-2-response"></p>
+        </section>
+
+        <!--below adds page interface to allow use to select which elements to count-->
+        <section>
+            <h3>Counting 'html' elements</h3>
+            <form>
+                <fieldset>
+                    <input name="p-box" type="checkbox" id="p" value="p">
+                    <label for="p">p</label>
+                    <input name="section-box" type="checkbox" id="section" value="section">
+                    <label for="section">section</label>
+                    <input name="input-box" type="checkbox" id="input" value="input">
+                    <label for="input">input</label>
+                </fieldset>
+            </form>
         </section>
     </main>
     <script src="aboutMe.js"></script>
