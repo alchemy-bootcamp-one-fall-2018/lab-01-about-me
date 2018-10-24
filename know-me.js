@@ -33,7 +33,7 @@ function checkAboutMe() {
         potterInput.classList.add('correct');
     }
 
-    if(favoriteMovie === 'You\'ve Got Mail') {
+    if(favoriteMovie === "You've Got Mail") {
         correct = correct + 1;
         movieInput.classList.add('correct');
         movieInput.classList.remove('incorrect');
@@ -43,7 +43,7 @@ function checkAboutMe() {
         movieInput.classList.remove('correct');
     }
 
-    if(goldendoodleOrCats.toLowerCase () === 'true') {
+    if(goldendoodleOrCats.toLowerCase () === 'false') {
         correct = correct + 1;
         goldendoodleInput.classList.add('correct');
         goldendoodleInput.classList.remove('incorrect');
@@ -53,7 +53,7 @@ function checkAboutMe() {
         goldendoodleInput.classList.add('correct');
     }
 
-    if(fancyHobbies.toLowerCase () === 'yes') {
+    if(fancyHobbies.toLowerCase () === 'no') {
         correct = correct + 1;
         hobbiesInput.classList.add('correct');
         hobbiesInput.classList.remove('incorrect');
