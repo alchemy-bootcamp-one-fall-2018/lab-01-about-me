@@ -5,14 +5,13 @@ var guessCount = 0;
 var guessRemaining = 3;
 
 function checkGuessNumber() {
-    // this code is specific to when checkAnswers is called
+    // Code is specific to when checkAnswers is called
 
     var elements = guessNumberForm.elements;
     var guess = elements.number.value;
     var submit = elements.guess;
-    console.log('guess remaining is ', guessRemaining);
 
-    // we mean to use == here because inputs return text (strings)
+    // Use == here because inputs return text (strings)
     // eslint-disable-next-line eqeqeq
     if(guess == 7) {
         guessNumberResponse.textContent = 'Congratulations! You got it right!';
@@ -23,7 +22,6 @@ function checkGuessNumber() {
 
         if(guessCount < 3) {
             guessRemaining = guessRemaining - 1;
-            console.log('guess remaining is ', guessRemaining);
             guessNumberResponse.textContent = 'Keep trying! You have ' + guessRemaining + ' guesses left';
 
         }
