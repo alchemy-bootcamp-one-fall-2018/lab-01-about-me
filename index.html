@@ -27,17 +27,47 @@
                     <li>Interior Thinker</li>
                 </ul>    
         </section>    
-        <section id="about-me">
+        <section id="pop-quiz">
             <h2>Let's play! Pop Quiz!</h2>    
-            <form id="about-me-form" onsubmit="event.preventDefault(); 
-                checkAboutMe();" onreset="resetAboutMe();">     
+           <form id="quiz" name="quiz"          
+                onsubmit="event.preventDefault(); 
+                checkAboutMe();" onreset="resetAboutMe();">      
                 <p>Use what you know about me to take this quiz!</p>
-                <p></p>
-
+                <p>At what temperature should chocolate melt?
+                    <input type="text" name="melt" />
+                </p>
+                <p>Can you deduce what Cheri's favorite pet is?
+                    <input type="text" name="pet" />
+                </p>
+                <p>What type of fiber does Cheri like to play with?
+                    <input type="text" name="fiber" />
+                </p>
+                <p>What kinds of games does Cheri enjoy?
+                    <input type="text" name="game" />
+                </p>
+                <p>If Cheri was a junkie, what would her obsession be?
+                    <input type="text" name="junkie" />
+                </p>
+                <input type="submit" name="submit">
             </form>    
+            <p id="quiz-response"></p>
+            <button type="reset" name="reset">Reset!</button>
         </section>
-        <section id="game2">
-            <h2>Game to Be Two!</h2>
+        <section id="genre-game">
+            <h2>Guess Cheri's favorite reading genre!</h2>
+            <form id="genre-guess" onsubmit="event.preventDefault(); 
+            checkAboutMe();" onreset="resetAboutMe();">  
+                <p>Be Bold! Make a guess! Choose from:</p>
+                <p>LitFic, SciFi, WildWest, KissyKissy, History, or Adventure
+                    <input type="text" name="genre" maxlength="50"/>
+                    <button type="submit" name="guess">Am I Right?</button>
+                </p>
+                <p>Want to Try again?
+                    <button type="submit" name="try-again">Yes! Mulligan!</button>
+                </p>
+            </form>
         </section>
+        <script src="PopQuiz.js"></script>
+        <script src="GenreGame.js"></script>
     </body>
 </html>
