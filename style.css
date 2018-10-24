@@ -48,6 +48,24 @@ button[type="reset"]{
 .incorrect {
   background-color: pink;
 }
+#forButtons {
+    background-color: rgb(85, 85, 85);
+    color: white;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#h2, #input {
+    margin-left: 50px;
+}
+#queryButton {
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#forQueryButton {
+    text-align: center;
+}
 
 /* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
 
