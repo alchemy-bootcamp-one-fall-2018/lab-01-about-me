@@ -2,7 +2,8 @@ h1 {
     color: purple; 
 }
 
-img {width: 100%;}
+img {width: 100%;
+    border: 5px solid darkblue;}
 
 @media screen and (min-width: 300px) {
     body {
@@ -29,5 +30,20 @@ img {width: 100%;}
         width: 50%;
         float: left;
     }
+
+    button[type="submit"] {
+        color:green;
+      }
+      
+    button[type="reset"] {
+        color: red;
+      }
+    .correct {
+        background-color: lightgreen;
+      }
+      
+    .incorrect {
+        background-color: pink;
+      }
 
 }
