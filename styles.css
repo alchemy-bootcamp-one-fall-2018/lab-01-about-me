@@ -30,7 +30,6 @@ img {
     text-align:center;
 }
 form div {
-
     padding: 10px;
 }
 
@@ -48,7 +47,17 @@ button[type="reset"]:hover {
     color:red;
 }
 
-    
+#about-me-response {
+    text-align: center;
+}
+
+#guess-number-response {
+    text-align:center;
+}
+
+.forms {
+    padding: 0px 15px;
+}
 @media screen and (min-width: 400px) {
     h1, h2 {
         color:cornflowerblue;

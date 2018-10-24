@@ -34,7 +34,6 @@ function checkAboutMe() {
         countryInput.classList.remove('correct');
     }
     
-
     if(numSisters === '4') {
         correct = correct + 1;
         sistersInput.classList.add('correct');
@@ -45,7 +44,7 @@ function checkAboutMe() {
         sistersInput.classList.remove('correct');
     }
 
-    if(faveDessert.toLowerCase() === 'cake') {
+    if(faveDessert.toLowerCase() === 'red velvet cake') {
         correct = correct + 1;
         dessertInput.classList.add('correct');
         dessertInput.classList.remove('incorrect');
@@ -75,28 +74,28 @@ function checkAboutMe() {
         noodlesInput.classList.remove('correct');
     }
 
-    aboutMeResponse.textContent = 'You got ' + correct + ' out of 5';
-
-    function resetAboutMe() {
-        var elements = aboutMe.elements;
-        var countryInput = elements.country;
-        var sistersInput = elements.sisters;
-        var dessertInput = elements.dessert;
-        var fearInput = elements.fear;
-        var noodlesInput = elements.noodles;
-
-
-    
-        countryInput.classList.remove('correct');
-        sistersInput.classList.remove('incorrect');
-        dessertInput.classList.remove('correct');
-        fearInput.classList.remove('incorrect');
-        noodlesInput.classList.remove('correct');
-    
-        aboutMeResponse.textContent = '';
-    
-    }
+    aboutMeResponse.textContent = 'You got ' + correct + ' out of 5 right!';
 }
+function resetAboutMe() {
+    var elements = aboutMe.elements;
+    var countryInput = elements.country;
+    var sistersInput = elements.sisters;
+    var dessertInput = elements.dessert;
+    var fearInput = elements.fear;
+    var noodlesInput = elements.noodles;
+
+
+    
+    countryInput.classList.remove('correct');
+    sistersInput.classList.remove('incorrect');
+    dessertInput.classList.remove('correct');
+    fearInput.classList.remove('incorrect');
+    noodlesInput.classList.remove('correct');
+    
+    aboutMeResponse.textContent = '';
+    
+}
+
 
 
 

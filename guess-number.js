@@ -19,10 +19,10 @@ function checkGuessNumber() {
         guessCount = guessCount + 1;
 
         if(guessCount < 3) {
-            guessNumberResponse.textContent = 'try again!';
+            guessNumberResponse.textContent = 'Try again!';
         }
         else {
-            guessNumberResponse.textContent = 'you lose!';
+            guessNumberResponse.textContent = 'Game Over! Better luck next time!';
             submit.disabled = true;
         }
     }
