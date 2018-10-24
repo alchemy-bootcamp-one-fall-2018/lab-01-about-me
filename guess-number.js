@@ -7,11 +7,11 @@ function checkGuessNumber() {
 
     var elements = guessNumberForm.elements;
     var guess = elements.number.value;
-    var submit - elements.guess;
+    var submit = elements.guess;
 
     //esLint-disable-next-line eqeqeq
     if(guess ==4) {
-        guessNumberResponse.textContect = 'You Win!';
+        guessNumberResponse.textContext = 'You Win!';
         submit.disabled = true;
     
     }
