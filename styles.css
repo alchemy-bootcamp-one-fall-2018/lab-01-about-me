@@ -56,10 +56,12 @@ form:hover {
 }
 
 button[type="submit"] {
+  border-radius: 30px;
   color:green;
 }
 
 button[type="reset"] {
+  border-radius: 30px;
   color: red;
 }
 
