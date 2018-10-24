@@ -17,9 +17,8 @@
             Teonna Zaragoza
         </h1>
         <img src="teonna.jpg" alt= "image of Teonna with sunglasses flexing" />
-        <p>
-            Holding for GAME!
-        </p>
+         
+        
     </header>
 
      <div>
@@ -48,7 +47,7 @@
                 <li>Favourite Colour: Purple</li>
                 <li>Lucky Number: 27 </li>
                 <li>Favourite Disney Character: Mulan </li>
-                <li>Favourite Disney Movie: Pocahantus</li>
+                <li>Favourite Disney Movie: Pocohantas</li>
             </ul>
         </section>
 
@@ -68,5 +67,35 @@
             </section>
     </div>
     
+    <section>
+        <h2>How Well Did You Pay Attention</h2>
+                 
+        <form id="game-one-form" name= "game-one"
+                onsubmit="event.preventDefault(); checkGameOne();"  
+                onreset="resetGameOne();"
+                >
+
+            <div>
+                <label for= "name">How do you spell my name?</label>
+                <input type= "text" id= "name" name= "name" />
+            </div>
+
+            <div>
+                <label for= "birthday">What month is my birthday?</label>
+                <input type= "text" id= "birthday" name= "birthday" />
+             </div>
+                
+            <div>
+                <button type = "submit">Guess</button>
+                <button type = "reset">Try again</button>
+            </div>
+
+        </form>
+
+        <p id="game-one-response"></p>
+
+    </section>
+<script src="game-one.js"> </script>
+
 </body>
 </html>
