@@ -2,6 +2,7 @@ var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
 var guessCount = 0;
+var guessRemaining = 3;
 
 function checkGuessNumber() {
     // this code is specific to when checkAnswers is called
@@ -9,6 +10,7 @@ function checkGuessNumber() {
     var elements = guessNumberForm.elements;
     var guess = elements.number.value;
     var submit = elements.guess;
+    console.log('guess remaining is ', guessRemaining);
 
     // we mean to use == here because inputs return text (strings)
     // eslint-disable-next-line eqeqeq
@@ -19,8 +21,11 @@ function checkGuessNumber() {
     else {
         guessCount = guessCount + 1;
 
-        if(guessCount < 4) {
-            guessNumberResponse.textContent = 'Keep trying!';
+        if(guessCount < 3) {
+            guessRemaining = guessRemaining - 1;
+            console.log('guess remaining is ', guessRemaining);
+            guessNumberResponse.textContent = 'Keep trying! You have ' + guessRemaining + ' guesses left';
+
         }
         else {
             guessNumberResponse.textContent = 'Sorry! You exceeded the maximum guess limit!';
@@ -35,5 +40,6 @@ function resetGuessNumber() {
     var submit = elements.guess;
     submit.disabled = false;
     guessCount = 0;
+    guessRemaining = 3;
     guessNumberResponse.textContent = '';
 }
