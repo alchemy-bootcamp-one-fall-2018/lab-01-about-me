@@ -40,6 +40,23 @@ p, ul{
     border-radius: 10%;
 }
 
+
+button[type="submit"] {
+    color:green;
+  }
+  
+  button[type="reset"] {
+    color: red;
+  }
+  
+  .correct {
+    background-color: lightgreen;
+  }
+  
+  .incorrect {
+    background-color: pink;
+  }
+  
 @media screen and (min-width: 500px){
     .column-left{
         width: 50%;

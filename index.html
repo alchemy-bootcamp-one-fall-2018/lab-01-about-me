@@ -24,25 +24,94 @@
             <div class="about-content">
                     <h2>About me</h2>
         
-                    <p>Budding developer, musician, on a new journey at Alchemy!</p>
+                    <p>Budding developer, musician, on a new journey at Alchemy! Previously studied cognitive science.</p>
                     <h2>Quick Facts</h2>
                     <ul>
                         <li>Age: 23</li>
-                        <li>Previous Education: Occidental College</li>
-                        <li>Hometown: Chicago, IL (Go Cubs!)</li>
+                        <li>Hometown: Chicago, IL </li>
                         <li>A few hobbies: Playing music, hiking, skiing</li>
                         <li>Instruments I've played: bass, guitar, drums, piano, trumpet</li>
                         <li>Favorite bassists: Flea, James Jamerson, Geddy Lee, Esperanza Spalding</li>
                         <li>Favorite food: Colombian arepas</li>
+                        <li>Favorite color: Blue</li>
                     </ul>
         
                 </div>
             <div class="game">
-                    <h2>The game</h2>
-                    <p>Fill out the following quiz</p>
+                <h2>The games!</h2>
+                <section class="about-me-game">
+                    <h3>About me quiz</h3>
+                    <form id="about-me-form"
+                      onsubmit="event.preventDefault(); checkAboutMe();"
+                      onreset="resetAboutMe()"
+                    >
+                      <div>
+                        <label for="number">How old am I?</label>
+                        <input type="text" name = "number" value="23" />
+                      </div>
+                
+                      <div>
+                          <label for="hometown"> What's my hometown?</label>
+                          <input type="text" id="hometown" name="Chicago" />
+                      </div>
+
+                      <div>
+                          <label for="major">What did I study in college?</label>
+                          <input type="text" id="major" name="cognitive science" />
+                      </div>
+
+                      <div>
+                          <label for="instruments">What is one of the instruments I've played?</label>
+                          <input type="text" name="instruments" id ="instruments">
+                          <!-- <input type="radio" name="instruments" value ="tuba" id="tuba">Tuba 
+                          <input type="radio" name="instruments" value ="trumpet">Trumpet 
+                          <input type="radio" name="instruments" value ="drums">Drums -->
+                      </div>
+                
+                      <div>
+                          <label for="hobbies">Which of the following are some of my hobbies (check all that apply)</label>
+                          <input type="checkbox" name="hobbies" value="hiking"> Hiking
+                          <input type="checkbox" name="hobbies" value="playing music"> Playing music
+                          <input type="checkbox" name="hobbies" value="snowboarding"> Snowboarding
+                          <input type="checkbox" name="hobbies" value="skiing"> Skiing
+
+                      </div>
+
+
+                       <div>
+                        <button type="submit" name="guess">Guess</button>
+                        <button type="reset" name="play-again">Play Again</button>
+                      </div>
+                      <p id="about-me-response"></p>
+                    </form>
+                  </section>
+
+                  <section class="guessing-game">
+                        <h3>Guessing game</h3>
+                    <form id="guessing-game-form"
+
+                    >
+                    <div>
+                        <label for="fav-instrument">Which of the hobbies I listed is my favorite?</label>
+                        <input type="text" id="fav-instrument" name="bass" />
+                    </div>
+
+                    <div>
+                            <label for="fav-instrument">Which instrument is my favorite?</label>
+                            <input type="text" id="fav-instrument" name="bass"/> 
+                    </div>
+
+                    <!-- <div>
+                            <button type="submit" name="guess">Guess</button>
+                            <button type="reset" name="play-again">Play Again</button>
+                    </div> -->
+                    </form>
+                  </section>
+
+                    
             </div>
     </div>
     
-        
+   <script src="about-me.js"></script>     
 </body>
 </html>
