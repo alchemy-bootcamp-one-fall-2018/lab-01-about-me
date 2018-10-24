@@ -1,4 +1,4 @@
-/* exported checkAboutMe, checkGuessingGame */
+/* exported checkAboutMe, checkGuessingGame, resetAboutMe, resetGuessingGame */
 
 var aboutMeForm = document.getElementById('about-me-game');
 var aboutMeAnswerCounter = document.getElementById('about-me-output');
@@ -45,6 +45,7 @@ function checkAboutMe() {
     aboutMeAnswerCounter.textContent = 'you have ' + counter + ' correct!';
 
 }
+
 function resetAboutMe(){
     aboutMeAnswerCounter.textContent = '';
 }
@@ -58,7 +59,7 @@ function checkGuessingGame() {
     
     var elements = guessingGameForm.elements;
     var userGuess = elements.guessNumber.value;
-
+// eslint-disable-next-line eqeqeq
     if(userGuess == 3){
         guessingGameOutput.textContent = 'Correct!';
     
@@ -72,6 +73,7 @@ function checkGuessingGame() {
     }
         
 }
+
 function resetGuessingGame() {
     guessingGameOutput.textContent = '';
     guessingGameCounter = 5;
