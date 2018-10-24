@@ -14,16 +14,20 @@ function checkRandomNumber() {
     var guessButton = elements.guess;
 
     if (numberGuessed == secretNumber) {
+        randomNumberResponse.classList.add('correct')
         randomNumberResponse.textContent = 'You guessed correctly!'
     }
     else {
         if (guessCounter > 0) {
         randomNumberResponse.textContent = 'Incorrect. You have ' + guessCounter + ' guesses left.'
         guessCounter -= 1;
+        randomNumberResponse.classList.add('incorrect')
         }
         else {
+            randomNumberResponse.classList.add('gameOver')
             randomNumberResponse.textContent = 'Game over!'
             guessButton.disabled = true;
+
         }
     }
 
@@ -32,7 +36,15 @@ function checkRandomNumber() {
 // Reset button
 function resetRandomNumber() {
     var elements = randomNumberForm.elements;
-
+    var randomNumberInput = elements.randomNumberText;
+    var numberGuessed = randomNumberInput.value;
+    var guessButton = elements.guess;
+    randomNumberResponse.textContent = ''
+    guessCounter = 3;
+    guessButton.disabled = false;
+    randomNumberResponse.classList.remove('correct')
+    randomNumberResponse.classList.remove('incorrect')
+    randomNumberResponse.classList.remove('gameOver')
 }
 
 
