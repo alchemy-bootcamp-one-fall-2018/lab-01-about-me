@@ -1,32 +1,28 @@
 var guessTravelForm = document.getElementById('guess-travel-form');
 var guessTravelResponse = document.getElementById('guess-travel-response');
 
+var guessCount = 0;
+
 function checkGuessTravel() {
     var elements = guessTravelForm.elements;
     var travelInput = elements.travel;
     var travelSub = travelInput.value;
 
-    var guessCount = 3;
-
     if(travelSub == 9){
-        travelInput.classList.add('correct');
-        travelInput.classList.remove('incorrect');
         guessTravelResponse.textContent = 'Correct!';
+        submit.disabled = true;
     }
     else {
-        guess = guessCount - 1;
+        guessCount = guessCount + 1;
 
-        if(guess < 4){
-            travelInput.classList.add('incorrect');
-            travelInput.classList.remove('correct');
-            guessTravelResponse.textContent = 'You have ' + guess + ' guesses left!'; 
+        if(guessCount < 4){
+            guessTravelResponse.textContent = 'Try again!'; 
         }
         else{
-            guessTravelResponse.textContent = 'The correct answer was 9.';
+            guessTravelResponse.textContent = 'You lose. The correct answer was 9.';
             submit.disabled = true;
         }
     }
-
 
 }
 

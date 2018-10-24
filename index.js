@@ -1,7 +1,7 @@
 var aboutMeForm = document.getElementById('about-me-form');
+var aboutMeResponse = document.getElementById('about-me-response');
 
 function checkAboutMe() {
-    var aboutMeResponse = document.getElementById('about-me-response');
     
     var elements = aboutMeForm.elements;
     
