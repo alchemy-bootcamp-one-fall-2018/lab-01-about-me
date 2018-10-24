@@ -1,6 +1,5 @@
-//animals
 var critters = document.getElementById('critters-form');
-var message = document.getElementById('critter-form-response');
+// var message = document.getElementById('critter-form-response');
 var dogInput = critters.elements.dogs;
 var catInput = critters.elements.cats;
 var parrotInput = critters.elements.parrot;
@@ -8,16 +7,8 @@ var turtleInput = critters.elements.turtle;
 var chickenInput = critters.elements.chicken;
 var correct = 0;
 
-//guess number
-// var guessNumberForm = document.getElementById('guess-number-form');
-// var guessNumberResponse - document.getElementById('guess-number-response');
-// var guessCount = 0;
-
 function checkCritters() {
-    // var likeDogs = dogsInput.value;
-
-    // var name = dogInput.value;
-
+    
     if(dogInput.value.toLowerCase() === 'yes') {
         correct = correct + 1;
         dogInput.classList.add('correct');
@@ -35,7 +26,7 @@ function checkCritters() {
     }  
 
     if(parrotInput.value.toLowerCase() === 'yes') {
-        correct = correct +1;
+        correct = correct + 1;
         parrotInput.classList.add('correct');
     }
     else {
@@ -51,7 +42,7 @@ function checkCritters() {
     }
 
     if(chickenInput.value.toLowerCase() === 'yes') {
-        correct = correct +1;
+        correct = correct + 1;
         chickenInput.classList.add('correct');
     }
     else {

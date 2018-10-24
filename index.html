@@ -77,5 +77,24 @@
 
     <script src="forms.js"></script>
 
+    <section>
+        <h2>Styles of spinning wheels</h2>
+        <form id="guess-number-form" name="guess-number-form" onsubmit="event.preventDefault(); checkGuessNumber();"
+        onreset="resetGuessNumber();">
+        <div>
+            <label for="guess-number-response">How many styles of wheels do I have?</label>
+            <br>
+            <input type="number" id="guess-number-response" name="guess-number-response" placeholder="Enter a number!" />
+        </div>
+        <div>
+            <button type="submit">Guess</button>
+            <button type="reset">Play Again</button>
+        </div>
+
+        </form>
+    </section>
+
+    <script src="guess.js"></script>
+
 </body>
 </html>
