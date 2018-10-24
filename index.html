@@ -35,7 +35,7 @@
     <p>Game time!  Let's see how accurately you can infer information from my short paragraph.</p>
 
     <section>
-        <h2>Quiz on critters</h2>
+        <h2>With what kinds of animals do I share my space?</h2>
         <form id="critters-form" name="critters-form"
         onsubmit="event.preventDefault(); checkCritters();"
         onreset="resetCritters();">
@@ -51,11 +51,28 @@
             </div>
     
             <div>
+                <label for="parrot">Do I have a parrot?</label>
+                <input type="text" id="parrot" name="parrot" placeholder="yes/no" />
+            </div>
+
+            <div>
+                <label for="turtle">Do I have a turtle?</label>
+                <input type="text" id="turtle" name="turtle" 
+                placeholder="yes/no" />
+            </div>
+
+            <div>
+                <label for="chicken">How about chickens?</label>
+                <input type="text" id="chicken" name="chicken"
+                placeholder="yes/no" />
+            </div>
+
+            <div>
                 <button type="submit">Guess</button>
                 <button type="reset">Play Again</button>
             </div>
     </form>
-    <p id="critter-form-response">All green responses are good!</p>
+    <p id="critter-form-response"></p>
     </section>
 
     <script src="forms.js"></script>
