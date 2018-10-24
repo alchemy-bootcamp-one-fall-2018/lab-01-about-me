@@ -32,7 +32,7 @@ function checkNumberQuiz() {
             }
         }
         else {
-            numberQuizResponse.textContent = 'Sorry, you lose! The correct answer was 41!';
+            numberQuizResponse.textContent = 'Sorry, you lose! Try playing again!';
             numberHint.textContent = '';
             numberQuizCounter.textContent = '';
             submit.disabled = true;
