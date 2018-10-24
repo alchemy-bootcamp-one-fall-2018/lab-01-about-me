@@ -1,57 +1,72 @@
+/*main body of website styling*/
+
 body {
     font-family: "rajdhani";
     padding: 0px;
     margin: 0px;
 }
 
-header {
+.mainHeader {
     background-color: navy;
     color: white;
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 main {
     background-color: antiquewhite;
     margin: 0px;
     padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
 }
 
-h1, h2 {
+.heading {
     font-family: "amatic SC";
     text-align: center;
     margin: 0px;
+    font-weight: bold;
+    padding-bottom: 30px;
     
 }
 
-h2 {
+h1 {
     font-size: 4rem;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-h1 {
-    font-size: 6rem;
-    line-height: 0.4;
+.name-heading {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
     padding-bottom: 40px;
+    padding-top: 20px;
+    line-height: 0.9;
 }
 
-h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 30px;
-    margin: 0px;
+.game-title {
+    font-size: 3rem;
+    padding-top: 20px;
+    margin: 30px auto;
+    color: white;
+    background-color: navy;
 }
 
-.title {
-    color: navy;
+.small-heading {
+    font-size: 1.9rem;
 }
 
-p {
-    margin-left: 10px;
+span {
+    font-size: 1.2rem;
 }
 
-ul li {
+ul, li {
     padding-bottom: 14px;
     font-size: 1.4rem;
 }
@@ -69,9 +84,75 @@ img {
     margin-right: auto; 
 }
 
+/*game main section styling*/
+
 .gif {
     width: 100%;
     text-align: center;
+}
+
+.gameHeader {
+    text-align: center;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: #ff6666;
+}
+
+.question {
+    padding-bottom: 20px;
+}
+
+input {
+    width: 190px;
+    height: 25px;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px auto;
+    font-family: "rajdhani";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.game-2 {
+    text-align: center;
+}
+
+.number-question {
+    font-size: 3rem;
+}
+
+/*game button areas styling*/
+
+button {
+    width: 160px;
+    padding: 6px 0px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-family: "rajdhani";
+    font-weight: bold;
+}
+
+button:hover {
+    border: 2px solid black;  
+}
+
+button[type="submit"] {
+    background-color: lightgreen;
+    margin-right: 6px;
+}
+
+button[type="reset"] {
+    background-color: #ff6666;
 }
 
 p {
@@ -79,13 +160,25 @@ p {
     padding-bottom: 15px;
 }
 
+.computer-response {
+    font-size: 1.5rem;
+    padding: 15px auto;
+    font-family: "rajdhani";
+}
+
+
+/*footer styling*/
 
 footer {
     background-color: navy;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
+
+/*larger screen styling*/
+
 
 @media (min-width: 730px) {
 
@@ -94,10 +187,28 @@ footer {
         padding-right: 8%;
     }
 
-    header {
+    
+    h1 {
         font-size: 6rem;
+        padding-bottom: 40px;
     }
 
+    .name-heading {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 5.5rem; 
+    }
+    
+    .game-title {
+        font-size: 3.5rem;
+    }
+    
+    .small-heading{
+        font-size: 2.5rem;
+    }
+    
     .pic {
         float: left;
         margin-right: 10%;
