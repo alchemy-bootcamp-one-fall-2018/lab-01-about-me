@@ -1,4 +1,4 @@
-var aboutMeForm = document.getElementById("about-meform");
+/*var aboutMeForm = document.getElementById("about-meform");
 var aboutMeResponse = document.getElementById("about-me-response");
 
 function checkAboutMe() {
@@ -12,4 +12,4 @@ function checkAboutMe() {
 function submit {
     var newVar = document.getElementById("submitCheckbox");
 }
-console.log ("Help me");
+console.log ("Help me");*/

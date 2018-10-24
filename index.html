@@ -124,8 +124,36 @@
 
 </section>
 
+<section>
+<h6>Begin counting elements</h6>
+<form>
+    <p>
+        <!--<label for="name">element-counter</label>-->
+        <!--<input type="text", name="name id="name">-->
+    </p>
+    <fieldset>
+        <input name="element" type="checkbox" id="p" value="p">
+        <label for="p">P</label>
 
-<script src="about-me.js"></script>
-<script src="guess-number.js"></script>
+        <input name="element" type="checkbox" id="div" value="div">
+        <label for="div">Div</label>
+
+        <input name="element" type="checkbox" id="li" value="li">
+        <label for="li">Li</label>
+
+        <input name="element" type="checkbox" id="input" value="input">
+        <label for="input">Input</label>
+    </fieldset>
+
+    <button onClick="tryQuerySelector()">Show me!</button>
+</form>
+
+
+</section>
+
+
+<script src="aboutMe.js"></script>
+<script src="guessNumber.js"></script>
+<script src="elementCounter.js"></script>
 </body>
 </html>
