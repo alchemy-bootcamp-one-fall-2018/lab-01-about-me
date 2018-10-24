@@ -60,40 +60,55 @@
             
             <h3>Game 1: All About Kristin Questions</h3>
 
-            <form class="me-quiz">
-                <div>
+            <form id="me-quiz-form" name="me-quiz-form" onsubmit="event.preventDefault(); checkMeQuiz();" onreset="resetMeQuiz()">
+                <div class="question">
                     <label for="question1">1. At what age did I shatter my wrist while longboarding?</label><br/>
-                    <input type="text" name="question1" id="question1">
+                    <input type="text" name="question1"  id="question1"><br/>
                 </div>
 
-                <div>
+                <div class="question">
                     <label for="question2">2. What color is my wildly ferocious cat, Roxy?</label><br/>
-                    <input type="text" name="question2" id="question2">
+                    <input type="text" name="question2" id="question2"><br/>
                 </div>
 
-                <div>
+                <div class="question">
                     <label for="question3">3. Which author do I never want to read another work from?</label><br/>
-                    <input type="text" name="question3" id="question3">
+                    <input type="text" name="question3" id="question3"><br/>
                 </div>
-                
-                <div>
+
+                <div class="question">
                     <label for="question4">4. What place am I currently at in my Pick'Em league?</label><br/>
-                    <input type="text" name="question4" id="question4">
+                    <input type="text" name="question4" id="question4"><br/>
+                </div>
+
+                <div class="question">
+                    <label for="question5">5. How old am I?</label><br/>
+                    <input type="text" name="question5" id="question5"><br/>
                 </div>
 
                 <div>
-                    <label for="question5">5. How old am I?</label><br/>
-                    <input type="text" name="question5" id="question5">
+                    <button type="submit">Submit Answer</button>
+                    <button type="reset">Play Again</button>
                 </div>
+
             </form>
+
+            <p id="me-quiz-response"></p>
 
             <h3>Game 2: Guess the Magic Number</h3>
 
-            <form class="number-quiz">
+            <form id="number-quiz-form" name="number-quiz-form" onsubmit="event.preventDefault(); checkNumberQuiz();" onreset="resetNumberQuiz()">
                 <div>
                     <label for="numberquiz">What is the magic number I'm thinking of?</label>
                     <input type="text" name="numberquiz" id="numberquiz">
                 </div>
+
+                <div>
+                    <button type="submit">Submit Answer</button>
+                    <button type="reset">Play Again</button>
+                </div>
+            
+            <p id="number-quiz-response"></p>
             </form>
         </section>
     </main>
@@ -102,7 +117,8 @@
         <p>&copy; 2018 Kristin Hortsch</p>
     </footer>
     
-    <script src="index.js"></script>
+    <script src="me-quiz.js"></script>
+    <script src="number-quiz.js"></script>
 
 </body>
 </html>
