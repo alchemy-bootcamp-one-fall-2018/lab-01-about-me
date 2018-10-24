@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+</head>
+<body>
+         <img src="paige.png" alt="picture of paige with a coffee mug">
+
+    <header id="main">
+        <h1>Paige E. Gorry</h1>
+    </header>
+
+    <section id="basic-info"> 
+        <header>
+            <h2>Basic Info</h2>
+        </header>
+
+        <ul>
+            <li>Occupation: Student</li>
+            <li>School: Alchemy Code Lab</li>
+            <li>Email: <a href="mailto: paigeegorry@gmail.com">paigeegorry@gmail.com</a></li>
+            <li>Twitter: <a href="http://twitter.com/paigeegorry">@paigeegorry</a></li>
+        </ul>
+    </section>
+
+    <section id="blurb">
+        <header>
+            <h2>Blurb</h2>
+        </header>
+            
+        <p>I am new to the PDX coding scene. Most recently, I was a volunteer coordinator for a human services organization and have a passion for diversity and inclusion. I hope to bring my passion of accessibility to my coding work.</p>
+    </section>
+
+    <section id="fun-facts"> 
+        <header>
+            <h2>Fun Facts</h2>
+        </header>
+
+        <ul>
+            <li>I have dual citizenship with US and Ireland.</li>
+            <li>I love pugs and pigs.</li>
+            <li>I'm addicted to coffee and video games.</li>
+            <li>I studied abroad in England for six months.</li>
+            <li>I grew up in New York.</li>
+        </ul>
+    </section>
+
+    <section id="game">
+        <h2>About Me Quiz!</h2>
+        <form id="about-me-form" onsubmit="event.preventDefault(); checkAboutMe();" 
+            onreset="resetAboutMe();"
+        >
+        <div>
+            <label for="hometown">Where am I from?</label>
+            <input type="text" id="hometown" name="hometown" placeholder="home STATE" />
+        </div>
+
+        <div>
+            <label for="dog">What is my favorite king of dog?</label>
+            <input type="text" id="dog" name="dog" placeholder="hint: not shi tzu" />
+        </div>
+
+        <div>
+            <label for="number">What is my favorite number?</label>
+            <input type="text" id="number" name="number" placeholder="1-20" />
+        </div>
+
+        <div>
+            <label for="breakfast">What is my favorite breakfast food?</label>
+            <input type="text" id="breakfast" name="breakfast" placeholder="cereal killer" />
+        </div>
+
+        <div>
+            <label for="twitter">What is my favorite twitter handle?</label>
+            @ <input type="text" id="twitter" name="twitter" placeholder="pst follow me!" />
+        </div>
+        
+        <div>
+            <button type="submit">Submit Answers</button>
+            <button type="reset">Clear Form</button>        
+        </div>
+        
+    </form>
+    
+    <p id="about-me-response"></p>
+
+    </section>
+
+    <section id="guess-travel">
+        <h2>How many countries have I visited?</h2>
+        <form id="guess-travel-form" onsubmit="event.preventDefault(); checkGuessTravel();" 
+            onreset="resetGuessTravel();"
+        >
+            <div>
+                <label for="travel">How many countries have I been to?</label>
+                <input type="text" id="travel" name="travel" placeholder="you only get 3 guesses!" />
+            </div>
+
+            <div>
+                <button type="submit">Make a guess!</button>
+                <button type="reset">Try Again!</button>        
+            </div>
+                
+        </form>
+
+        <p id="guess-travel-response"></p>
+
+    </section> 
+
+    <script src="index.js"></script>
+    <script src="guess.js"></script>
+
+</body>
+</html>

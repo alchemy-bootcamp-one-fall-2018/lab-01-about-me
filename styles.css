@@ -1,0 +1,135 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color:#282828;
+    text-align: center;
+    
+}
+
+#main {
+    background: #d5d5d5;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#basic-info {
+    background-color: #b8b8b8;
+}
+
+#blurb {
+    background: #8e8e8e;
+    text-align: center;
+}
+
+#fun-facts {
+    background: #6a6a6a;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 5px;
+    padding: 2px;
+}
+
+#guess-travel {
+    border: 1px solid gray;
+    text-align:center;
+    padding: 20px 0;
+}
+#game {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+@media (min-width: 1150px) {
+    img {
+        width: 50%;
+        float: left;
+    }
+
+    #main {
+        width: 48%;
+        float: right;
+    }
+
+   #basic-info {
+       width: 48%;
+       float: right;
+   }
+
+   #blurb {
+       width: 48%;
+       float: right;
+       display: inline;
+       clear: both;
+   }
+
+   #fun-facts {
+       width: 48%;
+       float: left;
+       display: inline;
+   }
+
+   #game {
+    clear: both;
+    }
+   
+}
+
+@media (min-width: 1600px) {
+    img {
+        width: 60%;
+        float: left;
+    }
+
+    #main {
+        width: 38%;
+        float: right;
+    }
+
+    #basic-info {
+        width: 38%;
+        float: right;
+    }
+
+    #blurb {
+        width: 38%;
+        float: right;
+        clear: initial;
+    }
+   
+    #game {
+            width: 60%;
+            float: left;
+            clear: initial;
+    }
+    
+   #fun-facts {
+        width: 38%;
+        float: right;
+    }
+   
+}
+
+.correct {
+    background-color:greenyellow;
+  }
+  
+  .incorrect {
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+  }
+  
