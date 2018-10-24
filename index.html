@@ -58,8 +58,51 @@
 
     <!-- Empty hold space for tomorrow's lab (Game time!) -->
     <section class="sectionFloat">
-        <h2 id="hold">Section V - HOLDING FOR TUESDAY LAB (GAME TIME!)</h2>
+        <h2>Quiziness:</h2>
+        <form
+            id="about-me-form"
+            name="about-me-form" 
+            onsubmit="event.preventDefault(); 
+            checkAboutMe();" 
+            onreset="resetAboutMe();"
+        >
+
+            <div>
+                <label for="favColor">Favorite color:</label>
+                <input type="text" id="favColor" name="favColor" placeholder="Pick a ROYGBIV color">
+            </div>
+
+            <div>
+                <label for="favNum">Favorite number:</label>
+                <input type="text" id="favNum" name="favNum" placeholder="Between 1 and 10">
+            </div>
+
+            <div>
+                <label for="favSchool">Favorite school:</label>
+                <input type="text" id="favSchool" name="favSchool" placeholder="Three words">
+            </div>    
+
+            <div>
+                <label for="grayHair">Age hair began turning gray:</label>
+                <input type="text" id="grayHair" name="grayHair" placeholder="Enter a number" />
+            </div>
+
+            <div>
+                <label for="heightJumped">Highest distance jumped from:</label>
+                <input type="text" id="heightJumped" name="heightJumped" placeholder="Answer in feet">
+            </div>
+
+            <div>
+                <button type="submit">Guesses (you get 3)</button>
+                <button type="reset">Play Again</button>
+            </div>
+        
+        </form>
+
+        <p id="about-me-response"></p>
     </section>
 
+    <script src="guess-game-1.js"></script>
+    <script src="guess-game-2.js"></script>
 </body>
 </html>
