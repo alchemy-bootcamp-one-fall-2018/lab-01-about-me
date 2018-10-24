@@ -1,3 +1,6 @@
+h2 {
+    border-bottom-width: thick; border-block-end-style: double 
+}
 li  { 
     color: blue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  }
 img {
@@ -11,12 +14,8 @@ body {
     background: rgb(183, 216, 235);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     #words {
         float: right;
-    }
+}
 
-header {
-    border-bottom-width: thick; border-block-end-style: double 
-}
-}
