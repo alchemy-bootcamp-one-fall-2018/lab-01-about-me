@@ -23,9 +23,13 @@ function checkCheckbox() {
 }
 
 function resetCheckbox() {
+    var uncheck = document.getElementsByName('checkbox');
+    for (var i = 0; i < uncheck.length; i++) {
+        if (uncheck[i].type == 'checkbox')
+            uncheck[i].checked = false;
+    }
     selectedAnswerCheckP.textContent = '';
     selectedAnswerCheckLabel.textContent = '';
     selectedAnswerCheckDiv.textContent = '';
-    checkedTags[i].checked = false;
 }
 
