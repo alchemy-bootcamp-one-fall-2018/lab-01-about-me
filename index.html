@@ -104,7 +104,7 @@
                         <input type="text" name="number" id="number" placeholder="A number less than 100"></br>
                     </div>
 
-                    <div>
+                    <div> ,
                         <button type="submit" name="guess">Submit Answer</button>
                         <button type="reset">Play Again</button>
                     </div>
@@ -117,14 +117,41 @@
                 
             </div>
         </section>
+
+        <section class="element-counter">
+            <form>
+                <fieldset>
+                    <label for="p">p</label>
+                    <input type="checkbox" name="elements" value="p" id="p">
+
+                    <label for="section">section</label>
+                    <input type="checkbox" name="elements" value="section" id="section">
+
+                    <label for="input">input</label>
+                    <input type="checkbox" name="elements" value="input" id="input">
+
+                    <label for="button">button</label>
+                    <input type="checkbox" name="elements" value="button" id="button">
+                </fieldset>
+            </form>
+
+            <div>
+                <button type="submit" onclick="tryElementCounter()">submit</button>
+            </div>
+
+            <p id="response"></p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2018 Kristin Hortsch</p>
     </footer>
     
+    <script src="index.js"></script>
+
     <script src="me-quiz.js"></script>
     <script src="number-quiz.js"></script>
+    <script src="iteration.js"></script>
 
 </body>
 </html>
