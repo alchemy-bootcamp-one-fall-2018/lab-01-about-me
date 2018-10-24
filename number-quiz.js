@@ -1,9 +1,9 @@
 /* exported checkNumberQuiz, resetNumberQuiz */
 
-var numberQuizForm = document.getElementById("number-quiz-form");
-var numberQuizResponse = document.getElementById("number-quiz-response");
-var numberQuizCounter = document.getElementById("number-quiz-counter");
-var numberHint = document.getElementById("number-hint");
+var numberQuizForm = document.getElementById('number-quiz-form');
+var numberQuizResponse = document.getElementById('response1');
+var numberQuizCounter = document.getElementById('number-quiz-counter');
+var numberHint = document.getElementById('number-hint');
 
 var guessCount = 0;
 
@@ -15,7 +15,7 @@ function checkNumberQuiz() {
     var counter = 3 - guessCount;
 
 
-    if(guess == 41) {
+    if(guess === 41) {
         numberQuizResponse.textContent = 'You win! Yay!';
         submit.disabled = true;
     }
@@ -43,6 +43,7 @@ function checkNumberQuiz() {
 function resetNumberQuiz() {
     var elements = numberQuizForm.elements;
     var submit = elements.guess;
+
     submit.disabled = false;
     guessCount = 0;
     numberQuizResponse.textContent = '';
