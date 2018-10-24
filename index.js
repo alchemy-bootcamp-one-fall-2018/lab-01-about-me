@@ -1,4 +1,7 @@
 var correct = 0;
+var numGuess = 3;
+var feedback = document.getElementById('feedback');
+var numberFeed = document.getElementById('numberFeed');
 
 function aboutMe() {
     var el = event.target.elements;
@@ -8,7 +11,6 @@ function aboutMe() {
     var sleep = el.sleep;
     var ego = el.ego;
 
-    var feedback = document.getElementById('feedback');
 
 
     if(alive.value.toLowerCase() === 'yes'){
@@ -43,19 +45,25 @@ function guessNumber() {
     var el = event.target.elements;
     var number = el.number;
 
-    var numberFeed = document.getElementById('numberFeed');
     var msg = '';
-    var j = 3;
 
-    while(j > 0 && msg !== 'Correct!') {
+    if(numGuess > 1){
         if(number == '9') {
             msg = 'Correct!';
         } else {
-            j--;
-            msg = 'Wrong! ' + j + ' guesses left';
+            numGuess--;
+            msg = 'Wrong! ' + numGuess + ' guesses left';
         }
-
         numberFeed.textContent = msg;
-    }
-    
+    } else {
+        numberFeed.textContent = 'You lose. It was 9!';
+    }   
+}
+
+function reset() {
+    numGuess = 3;
+    correct = 0;
+    feedback.textContent = '';
+    numberFeed.textContent = '';
+    console.log(numGuess, correct);
 }
