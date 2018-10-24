@@ -86,6 +86,23 @@
     <p id="about-me-response"></p>
 
     </section>
+    <section>
+        <h2>Guess my favorite number game</h2>
+        <form id="guess-number" 
+        onsubmit="event.preventDefault(); checkGuessNumber();"
+        onreset="resetGuessNumber()">
+        <div>
+            <label for="number">What is my favorite number?</label>
+            <input type="text" id="number" name="number" placeholder="1-10">
+        </div>
+
+        <div>
+            <button type="submit" name="guess">Guess</button>
+            <button type="reset" name="reset">Reset</button>
+        </div>
+        </form>
+    </section>
     <script src="about-me.js"></script>
+    <script src="guess-number.js"></script>
 </body>
 </html>
