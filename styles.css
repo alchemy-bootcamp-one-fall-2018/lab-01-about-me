@@ -55,6 +55,8 @@ img {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    border-spacing: 10%;
+    float: left;
 }
 
 label {
@@ -66,15 +68,14 @@ form{
 
 }
 
-#gameDive2 {
+#gameDivTwo {
     margin: auto;
-    max-width: 20%;
+    max-width: 40%;
     color: white;
     border-style: solid;
     border-width: 1px;
-    border-radius: 10px;
-
 }
+
 #guessingGameOutput{
     color: white;
 }
@@ -131,6 +132,7 @@ form{
         margin: auto;
         max-width: 20%;
         color: white;
+        border-spacing: 10%;
     }
     #about-me-output {
         color: white;
@@ -147,11 +149,12 @@ form{
     }
     #gameDive2 {
         margin: auto;
-        max-width: 20%;
+        max-width: 40%;
         color: white;
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
+        float: right;
     
     }
     #guessingGameOutput{
@@ -161,4 +164,5 @@ form{
         color: white;
     }
     
+
 }  
