@@ -24,21 +24,25 @@ function checkHowWell() {
 
     var correct = 0;
 
-    if (speakLatin.toLowerCase() === 'no') {
+    if(speakLatin.toLowerCase() === 'yes') {
         correct++;
-        aboutMeResponse.textContent = 'tester';
+        alert('of course! Intro_Mode speaks all 6,500 human languages');
         
     }
     if(favColor === 'blue') {
         correct++;
+        alert('correct!');
     }
     if(favBook === 'robot') {
         correct++;
+        alert('I,Robot, of course!');
     }
     if(runSpeed === '4') {
-        correct++
+        correct++;
+        alert('Metal legs are heavy. Though my human version can run it in just under 6 minutes!');
     }
     if(howHelp === 'robot'){
-        correct++
+        correct++;
+        alert('depends on the day');
     }
 }
