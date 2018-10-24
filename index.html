@@ -12,8 +12,8 @@
         <h1>About Cari</h1>        
         <h2>Learning, learning, learning...</h2>
         <nav id="nav-items">
-            <a href="http://cari.pizza/visual-art" class="nav-link">Art</a>
-            <a href="http://cari.pizza/music" class="nav-link">Music</a>
+            <a href="http://cari.pizza/visual-art" target="blank" class="nav-link">Art</a>
+            <a href="http://cari.pizza/music" target="blank" class="nav-link">Music</a>
         </nav>
     </header>
     <main>
@@ -34,7 +34,72 @@
         </ol>
     </section>
     <section id="column-two">
-            Coming soon! Doggo ipsum doggorino pupperino h*ck snoot, long woofer shibe he made many woofs tungg, mlem smol. Doing me a frighten pupper very hand that feed shibe borking doggo, dat tungg tho smol. Noodle horse long bois such treat floofs, doggorino aqua doggo ur givin me a spook adorable doggo, such treat boof. Yapper floofs much ruin diet doggorino much ruin diet you are doing me the shock waggy wags you are doing me a frighten, doggo heckin angery woofer he made many woofs I am bekom fat length boy. Super chub h*ck dat tungg tho ruff long water shoob puggo pupper, heckin good boys and girls lotsa pats doggorino he made many woofs. Shooberino long bois shibe noodle horse the neighborhood pupper, aqua doggo extremely cuuuuuute what a nice floof.
+            Coming soon! Doggo ipsum doggorino pupperino h*ck snoot, long woofer shibe he made many woofs tungg, mlem smol. Doing me a frighten pupper very hand that feed shibe borking doggo, dat tungg tho smol. Noodle horse long bois such treat floofs, doggorino aqua doggo ur givin me a spook adorable doggo, such treat boof. Yapper floofs much ruin diet Shooberino long bois shibe noodle horse the neighborhood pupper, aqua doggo extremely cuuuuuute what a nice floof.
     </section>
+    <section id="aboutquiz">
+        <h2>Quiz About Cari:</h2>
+        <form id="about-me-form" name="about-me-form" 
+         onsubmit="event.preventDefault(); checkAboutMe();" 
+         onreset="resetAboutMe();"
+         >
+            <div>
+                <label for="pizza">Do I like pizza?</label>
+                <input type="text" id="pizza" name="pizza" placeholder=" yes / no " />
+            </div>
+
+            <div>
+                <label for="pie">Do I like pie?</label>
+                <input type="text" id="pie" name="pie" placeholder=" yes / no " />
+            </div>
+
+            <div>
+                <label for="band">Which band do I prefer?</label>
+                <input type="text" id="band" name="band" placeholder=" Beatles / Stones " />
+            </div>
+
+            <div>
+                <label for="art">True or false: I like to ponder art</label>
+                <input type="text" id="art" name="art" placeholder=" true / false " />
+            </div>        
+            
+            <div>
+                <label for="music">Do I enjoy music?</label>
+                <input type="text" id="music" name="music" placeholder=" yes / no " />
+            </div>
+
+            <div>
+                <button type="submit">Guess</button>
+                <button type="reset">Play Again</button>
+            </div>
+    
+        </form>
+    
+        <p id="about-me-response"></p>
+
+      </section>
+    
+      <section id="guessquiz">
+        <h2>Guessing Game: 4 chances</h2>
+        <form id="guess-game-form" 
+         onsubmit="event.preventDefault(); checkGuessGame();" 
+         onreset="resetGuessGame();" 
+         >
+            <div>
+                <label for="past">How many past music projects have I had?</label>
+                <input type="text" id="number" name="number" placeholder=" 1 - 20 " />
+            </div>
+
+            <div>
+                <button type="submit" name="guess">Guess</button>
+                <button type="reset" name="play-again">Play Again</button>
+            </div>
+    
+        </form>
+    
+          <p id="guess-game-response"></p>
+      </section>
+    
+      <script src="aboutme.js"></script>
+      <script src="guessgame.js"></script>
 </body>
 </html>
