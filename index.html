@@ -66,10 +66,14 @@
                     
             </section>
     
-     <p id="game-one-response"></p>
+     
     </div>
     
-    <section id="games">
+    <section id="game1">
+        <div>
+
+         <p id="game-one-response"></p>
+
         <h2>How Well Did You Pay Attention</h2>
                  
         <form id="game-one-form" name= "game-one"
@@ -111,10 +115,35 @@
 
         </form>
 
-        <p id="game-one-response"></p>
+        </div>
 
+    </section id= "game2"> 
+
+    <section>
+        <div>
+            <h2>More Questions</h2>
+
+            <p id= "game-two-response"> </p>
+
+            <form id= "game-two-form" name= "game-two"
+                onsubmit="event.preventDefault(); checkGameTwo()"
+                onreset= "resetGameTwo();"
+                >
+
+            <div>
+                <label for= "gear"> Nike or Adidas?</label>
+                <input for= "text" id= "nike" name= "nike" />
+            </div>
+
+            <div>
+                    <button type = "submit">Guess</button>
+                    <button type = "reset">Try again</button>
+            </div>
+        </div>
     </section>
 <script src="game-one.js"> </script>
+<script src="game-two.js"> </script>
+<script src="guess-number.js"></script>
 
 </body>
 </html>
