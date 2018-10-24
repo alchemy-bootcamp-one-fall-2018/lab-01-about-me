@@ -1,9 +1,10 @@
+/* exported guessNumber, resetNumGame */
 'use strict';
 
 var numGuess = 2;
 var numberFeed = document.getElementById('numberFeed');
 
-// eslint-disable-next-line
+
 function guessNumber() {
     var el = event.target.elements;
     var number = el.number;
@@ -27,7 +28,6 @@ function guessNumber() {
     numGuess--;
 }
 
-// eslint-disable-next-line
 function resetNumGame() {
     var el = event.target.elements;
 

@@ -5,7 +5,6 @@
 var correct = 0;
 var feedbackQuiz = document.getElementById('feedbackQuiz');
 
-// eslint-disable-next-line
 function aboutMe() {
     var el = event.target.elements;
     var alive = el.alive;
@@ -43,7 +42,6 @@ function aboutMe() {
     el.submit.disabled = true;
 }
 
-// eslint-disable-next-line
 function resetQuiz() {
     var el = event.target.elements;
 

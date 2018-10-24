@@ -8,10 +8,9 @@ function howMany() {
 
     for(var i = 0; i < tags.length; i++){
         var el = tags[i].value;
-        console.log(el);
         var amount = document.querySelectorAll(el).length;
-        console.log(amount);
         msg += el + ' - ' + amount + '<br>';
     }
+    msg += 'Checked boxes - ' + tags.length + '<br>';
     answer.innerHTML = msg;
 }
