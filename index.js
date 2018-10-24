@@ -23,6 +23,7 @@ function aboutMe() {
     }
 
     for(var i = 0; i < like.length; i++) {
+        
         if(like[i].value === 'some' || like[i].value === 'doing') {
             correct++;
         }
@@ -45,19 +46,22 @@ function guessNumber() {
     var number = el.number;
     var msg = '';
 
-    numGuess--;
-
-    if(numGuess >= 0) {
+    
+    if(numGuess > 0) {
         if(number.value == '9') {
             msg = 'Correct!';
+            number.classList.add('green');
             number.disabled = true;
         } else {
             msg = 'Wrong! ' + numGuess + ' guesses left';
+            number.classList.add('red');
         }
     } else {
         msg = 'You lose. It was 9!';
+        number.disabled = true;
     }
     numberFeed.textContent = msg;
+    numGuess--;
 }
 
 function resetQuiz() {
@@ -68,4 +72,5 @@ function resetQuiz() {
 function resetNumGame() {
     numGuess = 3;
     numberFeed.textContent = '';
+    event.target.elements.number.disabled = false;
 }

@@ -39,11 +39,11 @@ form {
 }
 
 .red {
-    background-color: red;
+    background-color: rgb(189, 88, 88);
 }
 
 .green {
-    background-color: green;
+    background-color: rgb(119, 194, 119);
 }
 
 #feedbackQuiz, #numberFeed {
