@@ -49,14 +49,14 @@
                     <input type="text" name="junkie" />
                 </p>
                 <input type="submit" name="submit">
+                <input type="reset" name="reset">
             </form>    
             <p id="quiz-response"></p>
-            <button type="reset" name="reset">Reset!</button>
         </section>
         <section id="genre-game">
             <h2>Guess Cheri's favorite reading genre!</h2>
             <form id="genre-guess" onsubmit="event.preventDefault(); 
-            checkAboutMe();" onreset="resetAboutMe();">  
+              checkAboutMe();" onreset="resetAboutMe();">  
                 <p>Be Bold! Make a guess! Choose from:</p>
                 <p>LitFic, SciFi, WildWest, KissyKissy, History, or Adventure
                     <input type="text" name="genre" maxlength="50"/>
