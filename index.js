@@ -1,5 +1,5 @@
 var correct = 0;
-var numGuess = 3;
+var numGuess = 2;
 
 var feedbackQuiz = document.getElementById('feedbackQuiz');
 var numberFeed = document.getElementById('numberFeed');
@@ -12,8 +12,10 @@ function aboutMe() {
     var sleep = el.sleep;
     var ego = el.ego;
 
+    alive.classList.add('green');
+
     if(alive.value.toLowerCase() === 'yes') {
-        // alive.classList.add('green');
+        //alive.classList.add('green');
         correct++;
     }
 
@@ -38,6 +40,8 @@ function aboutMe() {
     }
 
     feedbackQuiz.textContent = 'You got ' + correct + ' /6 correct';
+
+    el.submit.disabled = true;
 }
 
 
@@ -46,12 +50,12 @@ function guessNumber() {
     var number = el.number;
     var msg = '';
 
-    
     if(numGuess > 0) {
         if(number.value == '9') {
             msg = 'Correct!';
             number.classList.add('green');
             number.disabled = true;
+            el.guess.disabled = true;
         } else {
             msg = 'Wrong! ' + numGuess + ' guesses left';
             number.classList.add('red');
@@ -59,16 +63,20 @@ function guessNumber() {
     } else {
         msg = 'You lose. It was 9!';
         number.disabled = true;
+        el.guess.disabled = true;
     }
     numberFeed.textContent = msg;
     numGuess--;
 }
 
 function resetQuiz() {
-    
+    var el = event.target.elements;
+
     correct = 0;
     feedbackQuiz.textContent = '';
-
+    el.alive.classList.remove('green');
+    el.alive.classList.remove('red');
+    el.submit.disabled = false;
 }
 
 function resetNumGame() {
@@ -77,6 +85,7 @@ function resetNumGame() {
     numGuess = 3;
     numberFeed.textContent = '';
     el.number.disabled = false;
+    el.guess.disabled = false;
     el.number.classList.remove('green');
     el.number.classList.remove('red');
 }
