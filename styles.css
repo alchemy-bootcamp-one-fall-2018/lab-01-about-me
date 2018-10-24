@@ -44,6 +44,30 @@ img {
     margin: 20ps;
 }
 
+#about-me-output{
+    color: white;
+}
+
+#gameDiv{ 
+    margin: auto;
+    max-width: 20%;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+label {
+    text-align: center;
+    color: white;
+}
+form{
+    text-align: center;
+
+}
+
+
+
 @media (min-width: 640px) {
 
     body {
@@ -87,8 +111,23 @@ img {
         width: 50%;
         float: right; 
     }
-    #gameDiv {
+    #gameDiv{ 
+        margin: auto;
+        max-width: 20%;
+        color: white;
+    }
+    #about-me-output {
+        color: white;
+    }
+
+    label {
         text-align: center;
         color: white;
     }
-}   
+
+    form{
+        text-align: center;
+
+    }
+
+}  
