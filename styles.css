@@ -8,7 +8,9 @@ img {border:10px solid purple;}
 article {
     float: right;
 }
-button {max-width: 30}
+form {max-width: 75; background-color: aqua; border: groove 5px}
+.quiz-1 {text-emphasis: bold};
+.quiz-2 {font-style: arial};
 /*
 */
 @media only screen and (max-width: 500px) {
