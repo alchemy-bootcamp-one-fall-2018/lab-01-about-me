@@ -107,7 +107,7 @@ img {
     padding-bottom: 20px;
 }
 
-input {
+input[type="text"] {
     width: 190px;
     height: 25px;
     text-align: center;
@@ -168,6 +168,14 @@ p {
 
 /* element counter styling*/
 
+.element-counter {
+    text-align: center;
+}
+
+.element-button {
+    margin-top: 30px;
+}
+
 .elementCounterResponse {
     font-size: 1.5rem;
     text-align: center;
@@ -175,6 +183,18 @@ p {
 
 .directions {
     font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+label {
+    padding-left: 35px;
+}
+
+fieldset {
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*footer styling*/
