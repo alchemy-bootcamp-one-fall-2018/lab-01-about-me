@@ -18,7 +18,8 @@
             <li>Is 6 feet and 5 inches tall</li>
             <li>Favorite color is blue</li>
         </ul>
-        <h3>Guessing Game</h3>
+        <h3>Guessing Games</h3>
+        <h4>Secret Number Game</h4>
 
         <form id="random-number-form" name="random-number-form" 
         onsubmit="event.preventDefault(); checkRandomNumber();" onreset="resetRandomNumber()"
@@ -32,6 +33,24 @@
                 <button name ="reset" type="reset">Reset</button>
             </div>
         </form>
+        <h4>Addition Calculator</h4>
+
+        <form id="addition-calculator" name="addition-calculator">
+            <div id="addition-calculator-first-box">
+                <label name="first-digit">Enter first number here!</label>
+                <input name="firstDigit" type="text" id="firstDigit">
+            </div>
+            <div id="addition-calculator-second-box">
+                    <label name="second-digit">Enter second number here!</label>
+                    <input name="secondDigit" type="text" id="secondDigit">
+            </div>
+            <div>
+                <button name="addition-submit" type="submit">Add Together</button>
+                <button name ="addition-reset" type="reset">Reset</button>
+            </div>
+
+        </form>
+
         <p id="random-number-response"></p>
     </div>
     <script src="index.js"> </script>
