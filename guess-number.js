@@ -1,3 +1,5 @@
+/* exported checkGuessNumber, resetGuessNumber */
+
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
