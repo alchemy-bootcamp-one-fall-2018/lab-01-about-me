@@ -31,53 +31,38 @@
     <!--Game Time-->
     <h3>Ready to Play Some Games?!</h3>
 
+    <h4>Game 1</h4>
     <h4>Question 1</h4>
     <form id="about-me-form" 
-        onsubmit="event.preventDefault(); favoriteThingAboutClass();"
-        onreset="resetfavoriteThingsAboutClass";
+        onsubmit="event.preventDefault(); CheckAboutMe();"
+        onreset="resetAboutMe();
     >
         <div>
-            <label for="favorite">What's my favorite thing about class</label>
+            <label for="questionone">What's my favorite thing about class</label>
             <input type="text" id="favorite" name="favorite">
         </div>
+
         <div>
             <button type="Submit">GO!</button>
             <button type="Reset">One More Guess</button>
         </div>
-    </form>
 
-    <p id="about-me-form-response"></p>
-</section>
-
-<section>
     <h4>Question 2</h4>
-    <form id="guess-form"
-        onsubmit="event.preventDefault(); guessMyAge();"
-        onreset="guessMyAge";
-    >
-        <div>
-            <label for="guess">Guess my age....Really?!</label>
+       <div>
+            <label for="questiontwo">Guess my age....Really?!</label>
             <input type="checkbox" name="guess 1" value="21"> I am 21
             <input type="checkbox" name="guess 2" value="33"> I am 33
             <input type="checkbox" name="guess 3" value="45"> I am 45
         </div>
+
         <div>
             <button type="Submit">GO!</button>
             <button type="Reset">One More Guess</button>
         </div>
-    </form>
 
-        <p id="guess-form-response"></p>
-</section>
-
-<section>
     <h4>Question 3</h4>
-    <form id="gamethree"
-        onsubmit="event.preventDefault(); pickTheRightOne();"
-        onreset="pickTheRightOne";
-    >
         <div>
-            <label for="gamethree">What are my two favorite things?></label>
+            <label for="questionthree">What are my two favorite things?></label>
             <select>
                 <option value="food">All Food</option>
                 <option value="bug">Insects</option>
@@ -85,54 +70,61 @@
                 <option value="people">New people</option>
             </select>
         </div>
+
         <div>
             <button type="Submit">GO!</button>
             <button type="Reset">One More Guess</button>
         </div>
-    </form>
 
-        <p id="gamethree-response"></p>
-</section>
-
-<section>
     <h4>Question 4</h4>
-    <form id="gamefour"
-        onsubmit="event.preventDefault(); guessMyAge();"
-        onreset="guessMyAge";
-    >
         <div>
-            <label for="gamefour">Would I enjoy teaching the class?</label>
+            <label for="questionfour">Would I enjoy teaching the class?</label>
             <input type="radio" name="gamefour" value="yes">Heck Yes!
             <input type="radio" name="gamefour" value="no">Ain't Nobody Got Time For That!
         </div>
+
+        <div>
+            <button type="Submit">GO!</button>
+            <button type="Reset">One More Guess</button>
+        </div>
+
+    <h4>Question 5</h4>
+        <div>
+            <label for="questionfive">Where do I like to be?</label>
+            <input type="text" id="gamefive" name="gamefive" placeholder="hint: It's on planet earth">
+        </div>
+
         <div>
             <button type="Submit">GO!</button>
             <button type="Reset">One More Guess</button>
         </div>
     </form>
 
-    <p id="gamefour-response"></p>
+    <p id="about-me-response"></p>
 </section>
 
 <section>
-    <h4>Question 5</h4>
-    <form id="gamefive"
-        onsubmit="event.preventDefault(); guessMyAge();"
-        onreset="gamefive";
+    <h5>Game 2</h5>
+    <h5>Guess My Favorite Number</h5>
+    <form id="guess-number-form"
+    onsubmit="event.preventDefault(); checkGuessNumber();"
+    onreset="resetGuessNumber()"
     >
         <div>
-            <label for="gamefive">Where do I like to be?</label>
-            <input type="text" id="gamefive" name="gamefive" placeholder="hint: It's on planet earth">
+            <label for="number">What's my favorite number?</label>
+            <input type="text" id="number" name="number" placeholder="hint: it's under 10">
         </div>
-        <div>
-            <button type="Submit">GO!</button>
-            <button type="Reset">One More Guess</button>
-        </div>
-    </form>
 
-    <p id="gamefive-response"></p>
+        <div>
+            <button type="submit" name="guess">Guess!</button>
+            <button type="reset" name="try-again">Try Again!</button>
+        </div>
+</form>
+
 </section>
 
 
+<script src="about-me.js"></script>
+<script src="guess.js"></script>
 </body>
 </html>
