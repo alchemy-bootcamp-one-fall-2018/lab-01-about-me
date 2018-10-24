@@ -1,0 +1,16 @@
+body {
+    background-color: azure; 
+    position: static;
+    }
+h1 {color: rgb(75, 12, 12)}
+img {border:10px solid purple;}
+article {
+    float: right;
+}
+/*
+*/
+@media only screen and (max-width: 500px) {
+        body {
+            background-color: lightblue;
+        }
+    }
