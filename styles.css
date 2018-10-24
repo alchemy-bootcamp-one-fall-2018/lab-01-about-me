@@ -28,6 +28,10 @@ p, ul{
     font-family: 'Noto Sans', sans-serif;
 }
 
+#response{
+    display: block;
+}
+
 .about-content{
     border: 8px solid #F39C93;
     border-radius: 5%;

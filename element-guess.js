@@ -2,7 +2,7 @@
 /*exported tryElementCounter  */
 
 'use strict';
-var response = '';
+var elementResponse = document.getElementById('response');
 
 function tryElementCounter() {
 
@@ -12,12 +12,12 @@ function tryElementCounter() {
     
     for(var i = 0; i < tags.length; i++){
         var tag = document.querySelectorAll(tags[i].value);
-        console.log(tag.length);
+    
         var length = tag.length;
-        response = tags[i].value + ' - ' + length;
-        console.log(response);
+        
+        var response = tags[i].value + ' - ' + length;
+        elementResponse.textContent += response;
     }
     
     
-
 }
