@@ -38,39 +38,34 @@
 
         <h2>Game Time...5 Questions About Me: </h2>
 
-        <form id="about-me-form" name="about-me-form" onsubmit="event.preventDefault(); checkAboutMe();" onreset="resetAboutMe()">
+        <form id="about-me-form" name="about-me-form"
+            onsubmit="event.preventDefault(); checkAboutMe();" 
+            onreset="resetAboutMe();">
 
             <div>
                 <label for="sign">What is my astrological sign?</label>
-                <br>
                 <input type="text" name="sign" id="sign" placeholder="Enter text here">
             </div>  
             
             <div>
                 <label for="happy">What do I think is the answer to a happy life?</label>
-                <br>
                 <input type="text" name="happy" id="happy" placeholder="Enter text here">
             </div> 
             
             <div>
                 <label for="night">Am I a night owl?</label>
-                <br>
                 <input type="text" name="night" id="night" placeholder="Yes/No">
             </div>  
 
             <div>
                 <label for="tv">Current TV or Classic TV?</label>
-                <br>
                 <input type="text" name="tv" id="tv" placeholder="Enter text here">
             </div>  
 
             <div>
                 <label for="born">In what year was I born?</label>
-                <br>
                 <input type="text" name="born" id="born" placeholder="Enter text here">
             </div>  
-
-            <br>
 
             <div>
                 <button type="submit">Submit</button>
@@ -83,18 +78,15 @@
         
     </section>
 
-    <section>
+    <section id="guess">
         <h2>Take a Guess</h2>
         
         <form id="guess-state" onsubmit="event.preventDefault(); checkGuessState();" onreset="resetGuessState()">
         
             <div>
                 <label for="state">Guess my favorite US State</label>
-                <br>
                 <input type="text" name="state" id="state" placeholder="Enter text here">
             </div>
-
-            <br>
 
             <div>
                 <button type="submit">Submit</button>
@@ -107,8 +99,8 @@
 
     </section>
 
-    <br>
-    <br>
+    <script src="AboutMeQuiz.js"></script>
+    <script src="GuessStateQuiz.js"></script>
 
     <footer>Adam Hardy - Est. 1983</footer>
 
