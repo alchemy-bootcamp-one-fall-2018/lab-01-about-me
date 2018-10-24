@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cindy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <h3>
+            Cindy Neilson
+        </h3>
+    <main>
+        <p>
+            A little info about me to follow.
+        </p>
+            <img src='Kauai 2.JPG' alt="photo of Cindy"l/>
+                <div class="columns">
+                   <h2>Blurb</h2>
+                      The blurb is currently a work in progress.  
+                      It will mention that I went to HI so the section below makes sense.
+                  </div>
+           
+        <div class="columns">
+                <div class=container>
+                    <img src="1.jpg" alt="Kauai" class="image">
+                    <div class="overlay">
+                </div>
+
+        
+            <h2>I went to Kauai in 2017 with my family:</h2>
+                <div class=container><br />
+                    <img src="joe.jpg" alt="Joe" class="image">
+                    <div class="overlay">Joe</div>
+                </div>
+                
+                <div class=container><br />
+                    <img src="schuyler.jpg" alt="Schuyler" class="image">
+                    <div class="overlay">Schuyler</div>
+                </div>
+                
+                <div class=container><br />
+                    <img src="zoe.jpg" alt="Zoe" class="image">
+                    <div class="overlay">Zoe</div>
+                </div>
+                
+                <div class=container><br />
+                    <img src="sue.jpg" alt="Sue" class="image">
+                    <div class="overlay">Sue</div>
+                </div>
+
+                <div class=container><br />
+                    <img src="jeff with sue.jpg" alt="Jeff" class="image">
+                    <div class="overlay">Jeff</div>
+                </div>
+        </div>
+
+        <div class="columns">
+            <h2>Things I learned in Kauai</h2>
+                <ul>
+                    <li>Wild chickens roam all over the island                
+                        <div class=container><br />
+                            <img src="rooster.jpg" alt="rooster" class="image">
+                            <div class="overlay">
+                        </div>
+                    </li>
+                    <li>Hawaiians prefer my driving to my brother-in-law's</li>
+                    <li>You can check dogs out for the day from the Kauai Humane Society</li>
+                        <div class=container><br />
+                            <img src="hi doggos.jpg" alt="Lana & Escondido" class="image">
+                        <div class="overlay">
+                    </div>
+
+            
+                    
+                    <li>I am deathly afraid of fish in their natural habitat</li>
+                    <li>You can hear me scream through a snorkel</li>
+                </ul>
+            </div>
+        </p>      
+    </main> 
+    <div class="columns">
+        <form id="hi-form" 
+            onsubmit="event.preventDefault(); checkHi();" 
+            onreset="resetHi();">
+                <h2>Hawaii and You?</h2>
+                
+                <div>
+                    <label for="alreadyBeen">Have You Been to Hawaii?</label>
+                        <input type="radio" name="lucky">Yes</button>
+                        <input type="radio" name="lucky">No</button>
+                </div>
+
+                <div>
+                    <label for="go">Would you like to go?</label>
+                        <input type="radio" name="wanna">Yes</button>
+                        <input type="radio" name="wanna">No</button>
+                </div>
+
+                <div
+                     <div>
+           <!-- center? -->
+            <button type="submit">Submit Answers</button>
+            <br />
+            <button type="reset">Play Again?</button>
+        </div>
+        </form>
+    </div>
+    <form id="pets-form" 
+        onsubmit="event.preventDefault(); checkPets()"
+        onreset="resetPets();">
+        
+            <h2>Guess About My Pets!</h2> 
+
+            <div>
+                <label for="Max">Who is Max's favorite person?</label>
+                    <div class=container>
+                        <img src="joe & Max.jpg" alt="Joe" class="image">
+                        <div class="overlay">Joe</div>
+                   </div>
+                   
+                    <option value="Joe">Joe</option>
+                    <option value="Cindy">Cindy</option>
+                    <option value="Schuyler">Schuyler</option>
+                    <option value="Zoe">Zoe</option>
+            </div>
+     
+            <div>
+                <label for="ats">Cats or Rats?</label>
+                    <button type="submit">Cats</button>
+                    <button type="submit">Rats</button>
+            </div>
+
+            <div>
+                    <label for="allergic">Which animal am I <strong>not</strong> allergic to?</label>
+                        <input type="radio" name="sneeze">Cats</button>
+                        <input type="radio" name="sneeze">Dogs</button>
+                        <input type="radio" name="sneeze">Rats</button>
+            </input
+        >
+                        
+                </div>
+
+        <div>
+           <!-- center? -->
+            <button type="submit">Submit Answers</button>
+            <br />
+            <button type="reset">Play Again?</button>
+        </div>
+
+    </form>
+    </section>
+</body>
+
+<script src="hi.js"></script>
+<script src="pets.js"></script>
+
+    <footer>
+        <!-- Once pics added, rats in hats info here. If can't get pics working as intended, address info
+
+    </footer>
+</html>

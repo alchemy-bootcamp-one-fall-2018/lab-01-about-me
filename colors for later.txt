@@ -1,0 +1,6 @@
+color info
+
+main: (#CFF09E);
+accent 1:(#79BD9A)
+accent 2: (#3B8686)
+footer: (#oB486B); (not sure if lead character alpha / numberic)
