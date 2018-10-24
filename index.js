@@ -2,9 +2,10 @@
 /*exported tryElementCounter */
 'use strict';
 
-var elementResponse = document.getElementById('response');
-
-
+var pResponse = document.getElementById('pResponse');
+var sectionResponse = document.getElementById('sectionResponse');
+var inputResponse = document.getElementById('inputResponse');
+var buttonResponse = document.getElementById('buttonResponse');
 
 
 function tryElementCounter() {
@@ -15,17 +16,21 @@ function tryElementCounter() {
         var tagName = tags[i].value;
         var length = tag.length;
 
-        var test = tagName + ' : ' + length;
-        console.log(test);
-        
-        elementResponse.textContent = test;
-        
-        
-        console.log(tags[i].value, ' : ', length);
+        var answer = tagName + ' : ' + length;
 
-        
+        if(tagName === 'p') {
+            pResponse.textContent = answer;
+        }
+        else if(tagName === 'section') {
+            sectionResponse.textContent = answer;
+        }
+        else if(tagName === 'input') {
+            inputResponse.textContent = answer;
+        }
+        else {
+            buttonResponse.textContent = answer;
+        }
 
-    
     }
     
 }
