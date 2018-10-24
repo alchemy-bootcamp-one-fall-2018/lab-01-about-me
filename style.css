@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(102, 1, 1);
+    background-color: whitesmoke;
     max-width: 500px;
     margin: auto;
 }
@@ -7,8 +7,8 @@ header {
     text-align: center;
 }
 img {
-    border: 10px ridge lightgray;
-    border-radius: 20px 0 20px;
+    border: 10px solid lightgray;
+    border-radius: 200px;
     width: 300px;
 }
 h2 {
@@ -18,10 +18,39 @@ h2 {
     color: white;
     background-color: rgb(54, 54, 54);
     padding: 10px;
-    border: ridge lightgray 10px;
-    border-radius: 10px 0 10px 0;
-    
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.5em;
+    border-radius: 10px;
 }
+#bottom-info {
+    margin: 0 20px;
+}
+.out-of-box {
+    background: lightgrey;
+    max-width: 1000px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+button[type="submit"] {
+    font-size: 1em;
+}
+button[type="reset"]{
+    font-size: 1em;
+}
+#magic-number {
+    margin: 10px 0;
+}
+.correct {
+    background-color: lightgreen;
+}
+.incorrect {
+  background-color: pink;
+}
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
 @media (max-width: 500px) {
     img {
         width: 70%;
@@ -39,14 +68,18 @@ h2 {
     }
     #bottom-info {
         float: left;
-        width: 50%;
+        width: 40%;
         height: 100%;
     }
+    #bdq {
+        width: 10%;
+    }
+    
     .clearfix:after { 
         content: "."; 
         visibility: hidden; 
-        display: block; 
+        display: block;
         height: 0; 
         clear: both;
-     }
+    }
 }

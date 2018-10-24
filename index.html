@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
@@ -12,34 +14,102 @@
     <div id="all-text" class="clearfix">
         <header>
             <img src="connor-in-peru.jpg"  alt="Connor posing next to Machu Picchu">
-            <h2>Heya! I'm Connor!</h2>
+            <h2>Hey! I'm Connor!</h2>
         </header>
         
         <br />
         <div id="bottom-info">
-            <p>
-            I'm an athlete, musician, dancer, nerd, and an<br /> 
-            intellectual.  I also thrive off of deep conversations, and I'm a<br />
-            lover of puns!
-            </p>
-            <br />
-            <br />
-            <u>Martial Art styles  I know:</u>
-            <ul>
-                <li>Kenpo Karate (Black Belt)</li>
-                <li>Krav Maga (3 belts away from Black)</li>
-                <li>Jiu Jitsu</li>
-            </ul>
-            <br />
-            <u>Dance Styles I know:</u>
-            <ul>
-                <li>Fusion (2.5 years)</li>
-                <li>West Coast Swing (4 months)</li>
-            </ul>
+            <div>
+                <p>
+                    I'm an athlete, musician, dancer, nerd, and a
+                    mathematician.  I also thrive off of deep conversations, and I'm a
+                    lover of puns!
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    I went to Western Washington University for 5 years and I went in
+                    wanting to be an astrophysicist.  I have always loved theoretical physics,
+                    the concept of time and space, and what lies beyond the universe.
+                    So I went into college with a physics major.  I quickly learned that I couldn't do physics, partly because I had
+                    really bad professors, so I switched my major to Electrical Engineering.
+                    Unfortunately they required physics as well, so I thought <i>What do I love to do?</i>
+                    Math.  I've always loved math and I've always been good at it.  So
+                    I switched majors to Math and I graduated with a Bachelor's degree in
+                    Mathematics!
+                </p>
+                <hr>
+                <p>
+                    I have a lot of favorite things in life.  I have a favorite food ( Ice Cream) ,
+                    letter ( X ), subject ( Math ), number ( 15 ), and even a car company ( Lamborghini )!
+                </p>
+            </div>
             
         </div>
         
         
     </div>
+    
+    <div class="out-of-box">
+        <h2>
+            How much do you know me?
+        </h2>
+        <!-- TO DO: onreset-->
+        <form id="about-me-form" name="about-me-form" onsubmit="event.preventDefault(); checkAboutMe();" onreset="resetAboutMe()">
+            <div>
+                <label id="bdq" for="birthday">If my sister was born on 01/02/1993, and I was born <i>exactly</i> 1 year, 1 month, 1 week, and 1 day later, when is my birthday?</label>
+                <br>
+                <input type="text" id="birthday" name="birthday" placeholder="mm/dd/yyy">
+            </div>
+            <hr>
+            <div>
+                <label id="fn" for="favNumber">What is my favorite number?</label>
+                <br>
+                <input type="text" id="favNumber" name="favNumber" placeholder="3, 42, 144, etc.">
+            </div>
+            <hr>
+            <div>
+                <label id="dg" for="degree">Do I have a Bachelor's degree in Physics?</label>
+                <br>
+                <input type="text" id="degree" name="degree" placeholder="Yes/No">
+            </div>
+            <hr>
+            <div>
+                <label id="sw" for="switch">How many times did I <i>switch</i> majors?</label>
+                <br>
+                <input type="text" id="switch" name="switch" placeholder="1, 2, 3, etc.">
+            </div>
+            <hr>
+            <div>
+                <label id="math" for="mathematics">Do I like math?</label>
+                <br>
+                <input type="text" id="mathematics" name="mathematics" placeholder="Yes/No">
+                
+            </div>
+            <br>
+            <button type="submit" name="guess">Submit Answers!</button>
+            <button type="reset" name="play-again">Play Again!</button>
+
+            <p id="about-me-response"></p>
+        </form>
+    </div>
+    <div class="out-of-box">
+        <h2>
+            Guessing Game!
+        </h2>
+        <form id="guess-number-form" onsubmit="event.preventDefault(); checkGuessNumber();" onreset="resetGuessNumber()">
+                <label for="magic-number">What is the magic number between 1-10?</label>
+                <br>
+                <input type="text" id="magic-number" name="magic-number" placeholder="Your Guess">
+                <br>
+                <button type="submit" name="guess">Submit Answer!</button>
+                <button type="reset" name="play-again">Play Again!</button>
+        </form>
+
+        <p id="guess-number-response"></p>
+    </div>
+    <script src="know_me.js"></script>
+    <script src="guess-number.js"></script>
 </body>
 </html>
