@@ -37,7 +37,7 @@ img {
     border-bottom-style: solid;
     border-right-style: solid;
     border-right-color: lightgreen;
-    max-width: 438px;
+    max-width: 80%;
 }
 
  p {
@@ -58,7 +58,7 @@ img {
      }
      img {
         float: left;
-        width: 300px;   
+        width: 500px;   
      }
      body {
         margin: 0;
@@ -73,10 +73,7 @@ img {
      h3 {
          text-align: center;
      }
-
-     }
-
- }
+}
 
 
 
