@@ -2,7 +2,7 @@
 /*exported tryElementCounter */
 'use strict';
 
-var response = '';
+var elementResponse = document.getElementById('response');
 
 
 
@@ -12,8 +12,18 @@ function tryElementCounter() {
 
     for(var i = 0; i < tags.length; i++) {
         var tag = document.querySelectorAll(tags[i].value);
+        var tagName = tags[i].value;
         var length = tag.length;
+
+        var test = tagName + ' : ' + length;
+        console.log(test);
+        
+        elementResponse.textContent = test;
+        
+        
         console.log(tags[i].value, ' : ', length);
+
+        
 
     
     }
