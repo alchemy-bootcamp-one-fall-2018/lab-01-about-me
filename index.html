@@ -53,7 +53,7 @@
             </div>
 
             <div>
-                What do I like?
+                What do I like? (Select Multiple)
 
                 <label for="some"></label>
                 <input type="checkbox" name="like" value="some" id="some">Some things
@@ -99,6 +99,33 @@
         </form>
     </section>
 
-    <script src="index.js"></script>
+    <section>
+        <h1>Analyze Elements:</h1>
+        
+        <input type="checkbox" name="searchElms" id="p" value="p">
+        <label for="p">p</label>
+
+        <input type="checkbox" name="searchElms" id="section" value="section">
+        <label for="section">section</label>
+        
+        <input type="checkbox" name="searchElms" id="form" value="form">
+        <label for="form">form</label>
+        
+        <input type="checkbox" name="searchElms" id="div" value="div">
+        <label for="div">div</label>
+
+        <input type="checkbox" name="searchElms" id="h1" value="h1">
+        <label for="h1">h1</label>
+
+        <div>
+            <button onclick="howMany()">Analyze Page</button>
+        </div>
+
+        <p id="answer"></p>
+    </section>
+
+    <script src="quiz.js"></script>
+    <script src="guess.js"></script>
+    <script src="analyze.js"></script>
 </body>
 </html>
