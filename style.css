@@ -120,6 +120,13 @@ form {
 
 }
 
+.checkboxes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
 #about-me-answer {
     padding: 20px;
 }
@@ -176,6 +183,10 @@ form {
         padding: 20px;
         flex-direction: row;
         text-align: initial;
+    }
+    
+    .checkboxes {
+        width: 80%;
     }
 
 }

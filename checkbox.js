@@ -21,3 +21,11 @@ function checkCheckbox() {
         }
     }
 }
+
+function resetCheckbox() {
+    selectedAnswerCheckP.textContent = '';
+    selectedAnswerCheckLabel.textContent = '';
+    selectedAnswerCheckDiv.textContent = '';
+    checkedTags[i].checked = false;
+}
+
