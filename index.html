@@ -45,7 +45,17 @@
 
       <div>
         <label for="instrument">Name a string instrument I play</label>
-        <input type="text" id="instrument" name="instrument" placeholder="Hint: It is played with a bow" size="25" />
+        <input type="text" id="instrument" name="instrument" placeholder="Hint: It is played with a bow" size="23" />
+      </div>
+
+      <div>
+        <label for="country">What is my country of origin?</label>
+        <input type="text" id="country" name="country" placeholder="Hint: It is an island in Asia" size="23"/>
+      </div>
+
+      <div>
+        <label for="color">Name one of my favorite colors</label> 
+        <input type="text" id="color" name="color" placeholder="Hint: One is a primary color" size="23"/>
       </div>
 
       <div>
@@ -57,7 +67,29 @@
 
     <p id="about-me-response"></p>
     </section>
+
+    <section>
+      <h3>Guess Carmen's Favorite Number </h3>
+      <form id="guess-number-form"
+      onsubmit="event.preventDefault(); checkGuessNumber();"
+      onreset="resetGuessNumber()"
+    >
+      <div>
+        <label for="number">What is Carmen's favorite number?</label>
+        <input type="text" id="number" name="number" placeholder="Hint: It is from 1 - 10" />
+      </div>
+
+      <div>
+        <button type="submit" name="guess">Guess</button>
+        <button type="reset" name="play-again">Play Again</button>
+      </div>
+
+    </form>
+
+      <p id="guess-number-response"></p>
+    </section>
     <script src="about-me.js"></script>
+    <script src="guess-number.js"></script>
   </div>
 </body>
 </html>

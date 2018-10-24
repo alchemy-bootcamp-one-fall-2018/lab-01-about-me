@@ -62,3 +62,15 @@ button[type="submit"] {
 button[type="reset"] {
   color: red;
 }
+
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: pink;
+}
+
+.hidden {
+  display: none;
+}
