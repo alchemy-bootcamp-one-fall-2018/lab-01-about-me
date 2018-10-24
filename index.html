@@ -99,13 +99,15 @@
             Guessing Game!
         </h2>
         <form id="guess-number-form" onsubmit="event.preventDefault(); checkGuessNumber();" onreset="resetGuessNumber()">
-                <label id="magic-num" for="magic-number">What is the magic number between 1-10?</label>
+                <label for="magic-number">What is the magic number between 1-10?</label>
                 <br>
                 <input type="text" id="magic-number" name="magic-number" placeholder="Your Guess">
                 <br>
-                <button type="submit">Submit Answer!</button>
+                <button type="submit" name="guess">Submit Answer!</button>
                 <button type="reset" name="play-again">Play Again!</button>
         </form>
+
+        <p id="guess-number-response"></p>
     </div>
     <script src="know_me.js"></script>
     <script src="guess-number.js"></script>

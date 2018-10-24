@@ -5,7 +5,7 @@ var guessCount = 0;
 
 function checkGuessNumber() {
     var elements = guessNumberForm.elements;
-    var guess = elements.number.value;
+    var guess = elements.value;
     var submit = elements.guess;
 
     if (guess == 4) {
@@ -13,8 +13,9 @@ function checkGuessNumber() {
         submit.disabled = true;
     } else {
         guessCount += 1;
-        if (guessCount < 4) {
-            guessNumberResponse.textContent = 'Try Again!';
+        if (guessCount < 6) {
+            guessNumberResponse.textContent = 'Try Again! You have ' + (5 - guessCount) + ' tries left';
+
         }
         else {
             guessNumberResponse.textContent = 'You Lose!';
