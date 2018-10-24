@@ -1,0 +1,39 @@
+@media (max-width: 700px) {
+    body {
+        background-color: azure;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    h4 {
+        float: right;
+    }
+}
+
+img {
+    max-width: 800px;
+}
+
+section {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+
+ul {
+    background-color: grey;
+}
+
+li {
+    background-color: grey;
+}
