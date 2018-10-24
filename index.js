@@ -4,26 +4,21 @@ var aboutMeForm = document.getElementById('about-me-game');
 var aboutMeAnswerCounter = document.getElementById('about-me-output');
 
 function checkAboutMe() {
-    var aboutMeForm = document.getElementById('about-me-game');
-    var elements = aboutMeForm.elements;
-    var questionOneInput = elements.questionOneName.value.toLowerCase();
 
-    var aboutMeForm2 = document.getElementById('about-me-game');
-    var elements2 = aboutMeForm2.elements;
+    var elements1 = aboutMeForm.elements;
+    var questionOneInput = elements1.questionOneName.value.toLowerCase();
+
+    var elements2 = aboutMeForm.elements;
     var questionTwoInput = elements2.questionTwoName.value.toLowerCase();
 
-    var aboutMeForm3 = document.getElementById('about-me-game');
-    var elements3 = aboutMeForm3.elements;
+    var elements3 = aboutMeForm.elements;
     var questionThreeInput = elements3.questionThreeName.value.toLowerCase();
 
-    var aboutMeForm4 = document.getElementById('about-me-game');
-    var elements4 = aboutMeForm4.elements;
+    var elements4 = aboutMeForm.elements;
     var questionFourInput = elements4.questionFourName.value.toLowerCase();
 
-    var aboutMeForm5 = document.getElementById('about-me-game');
-    var elements5 = aboutMeForm5.elements;
+    var elements5 = aboutMeForm.elements;
     var questionFiveInput = elements5.questionFiveName.value.toLowerCase();
-
 
 
     var counter = 0;
@@ -50,6 +45,9 @@ function checkAboutMe() {
     aboutMeAnswerCounter.textContent = 'you have ' + counter + ' correct!';
 
 }
+function resetAboutMe(){
+    aboutMeAnswerCounter.textContent = '';
+}
 
 
 var guessingGameForm = document.getElementById('guessingGame');
@@ -67,10 +65,14 @@ function checkGuessingGame() {
     }
     else {
         guessingGameCounter = guessingGameCounter - 1;
-        if(guessingGameCounter < 4){
+        if(guessingGameCounter < 5){
             guessingGameOutput.textContent = 'Wrong, you have ' + guessingGameCounter + ' guesses left';
         }
             
     }
         
+}
+function resetGuessingGame() {
+    guessingGameOutput.textContent = '';
+    guessingGameCounter = 5;
 }
