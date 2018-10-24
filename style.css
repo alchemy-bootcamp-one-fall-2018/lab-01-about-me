@@ -1,13 +1,51 @@
 /*All Styles*/
-#entries li {
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    color:#fefefe;
+}
+#entries, li {
     list-style-type: none;
+}
+#machine-response, #system-response {
+    color:#4CAF50;
+}
+nav ul li {
+    display:inline-block;
+    padding:0 20px;
+    text-align: center;
+    background-color:aquamarine;
+}
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: .75em;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover {
+    border-bottom: 5px solid rgb(29, 233, 182);
+
+}
+.correct {
+    background-color: lightgreen;
+}
+.incorrect{
+    background-color: lightpink;
 }
 
 .row {
     background-color: aquamarine;
     padding: 20px 20px 20px 20px;
 }
-
+#the_game div{
+    display: block;
+    
+}
 /*Mobile Styles*/
 @media only screen and (max-width: 600px) {
     body {
@@ -49,4 +87,19 @@
         display: table;
         clear: both;
     }
+    input {
+
+        height: 25px;
+        width: 220px;
+        font-size: 14px;
+    }
+    #submit{
+        margin:0px 0px 5px;
+    }
+    label{
+        display:block;
+        text-align:center;
+        padding: .25em;
+    }
+    .buttons {display:inline-block;}
 }
