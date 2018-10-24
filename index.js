@@ -25,6 +25,6 @@ function tryQuerySelector() {
 
     // var tags = document.querySelectorAll('input[name="tags"]:checked');
     // for(var k; k < tags.length; k++) {
-    //  console.log(tags[k].value);
+    //     console.log(tags[k].value);
     // }
 }
