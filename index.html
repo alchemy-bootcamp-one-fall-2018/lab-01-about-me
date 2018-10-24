@@ -80,8 +80,10 @@
 
     <section id="guess">
         <h2>Take a Guess</h2>
-        
-        <form id="guess-state" onsubmit="event.preventDefault(); checkGuessState();" onreset="resetGuessState()">
+
+        <form id="guess-state-form" name="guess-state-form"
+            onsubmit="event.preventDefault(); checkGuessState();" onreset="resetGuessState()"
+        >
         
             <div>
                 <label for="state">Guess my favorite US State</label>
@@ -89,21 +91,20 @@
             </div>
 
             <div>
-                <button type="submit">Submit</button>
-                <button type="reset">Try Again</button>
+                <button type="submit" name="submit">Submit</button>
+                <button type="reset" name="try-again">Try Again</button>
             </div>
         
         </form>
 
-        <p id="guess-state-response"></p>
+            <p id="guess-state-response"></p>
 
     </section>
+    
+    <footer>Adam Hardy - Est. 1983</footer>
 
     <script src="AboutMeQuiz.js"></script>
     <script src="GuessStateQuiz.js"></script>
 
-    <footer>Adam Hardy - Est. 1983</footer>
-
 </body>
-
 </html>

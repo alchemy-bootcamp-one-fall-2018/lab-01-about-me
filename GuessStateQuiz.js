@@ -6,11 +6,12 @@ var guessStateResponse = document.getElementById('guess-state-response');
 var guessCount = 0;
 
 function checkGuessState() {
+
     var elements = guessStateForm.elements;
     var guess = elements.state.value;
     var submit = elements.guess;
 
-    if(guess.toLowerCare() === 'alaska') {
+    if(guess.toLowerCase() === 'alaska') {
         guessStateResponse.textContent = 'Correct!!!';
         submit.disabled = true;
     }
