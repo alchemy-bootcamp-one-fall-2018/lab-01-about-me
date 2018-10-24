@@ -192,9 +192,10 @@ label {
 }
 
 fieldset {
-    border: 2px solid black;
+    border: 4px solid black;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #F0F0F0;
 }
 
 /*footer styling*/
