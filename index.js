@@ -60,11 +60,12 @@ function guessNumber() {
     numberFeed.textContent = msg;
 }
 
-function reset() {
-    numGuess = 3;
+function resetQuiz() {
     correct = 0;
     feedbackQuiz.textContent = '';
+}
+
+function resetNumGame() {
+    numGuess = 3;
     numberFeed.textContent = '';
-    console.log(numGuess, correct);
-    console.log('reset');
 }

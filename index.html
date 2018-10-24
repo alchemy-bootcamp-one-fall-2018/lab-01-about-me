@@ -32,7 +32,7 @@
     <section id="game">
         <h2>Games</h2>
         
-        <form id="about-me-game" onsubmit="event.preventDefault(); aboutMe();" onreset="reset();">
+        <form id="about-me-game" onsubmit="event.preventDefault(); aboutMe();" onreset="resetQuiz();">
 
             <div>
                 <label for="alive">Am I alive?</label>
@@ -84,7 +84,7 @@
 
         </form>
 
-        <form id="guess" onsubmit="event.preventDefault(); guessNumber();">
+        <form id="guess" onsubmit="event.preventDefault(); guessNumber();" onreset="resetNumGame()">
 
             <label for="number"></label>What is my favorite number (3 guesses)?
             <input type="text" name="number" id="number" placeholder="1 - 10">
