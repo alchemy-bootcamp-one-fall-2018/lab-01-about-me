@@ -87,6 +87,31 @@
         </form>
         <p id="guess-number-answer"></p>
 
+        <h1>Elements</h1>
+
+        <div class="checkboxes">
+            <label for="pCheckbox">P Elements</label>
+            <input type="checkbox" id="pbox" name="checkbox" value="p">
+        </div>
+        <div class="checkboxes">
+            <label for="labelCheckbox">Label Elements</label>
+            <input type="checkbox" id="labelbox" name="checkbox" value="label">
+        </div>
+        <div class="checkboxes">
+            <label for="divCheck">Div Elements</label>
+            <input type="checkbox" id="divbox" name="checkbox" value="div">
+        </div>
+
+        <div class="buttons">
+                <button type="submit" name="check" onclick="checkCheckbox()">Check it</button>
+                <button type="reset" name="clear">Clear</button>
+        </div>
+
+        <p id="elements-checkbox-p"></p>
+        <p id="elements-checkbox-label"></p>
+        <p id="elements-checkbox-div"></p>
+
+
     </aside>
 
     <footer>
@@ -95,6 +120,7 @@
 
     <script src="about-me.js"></script>
     <script src="guess-number.js"></script>
+    <script src="checkbox.js"></script>
 </body>
 
 </html>
