@@ -9,30 +9,68 @@
 </head>
 <body>
 <!--
-    ## Required Sections
+BIG DISCLAIMER!
+    The game is non-functional. And, there's only 1 game. Alas, I ran out of time.
 
-- Image
-- Blurb
-- List of facts
-- Empty hold space for tomorrow's lab (Game time!)
+    The browser displays the form as I intended BEFORE the user clicks a button, but there is no output suggesting anything happened.
+
+    If I had more time I would investigate if
+        1.the objects don't get the user's input correctly
+        2.the script doesn't return the expected output
+        3. a combination of. 1 and 2.
+        4. there's some other problem I haven't even conceptualized yet.
 -->
 
 
 
-    <h1>Evan Andrewson</h1> <!--overall header of page--> 
-    <img src='00000PORTRAIT_00000_BURST20181017135654662.jpg' alt = "a picture of Evan Andrewson" class = "image"> <!--Image-->
+    <h1>Evan Andrewson</h1> 
+    <img src='00000PORTRAIT_00000_BURST20181017135654662.jpg' alt = "a picture of Evan Andrewson" class = "image"> 
     <div id="float-left">
-        <section class = "blurb"> Evan is new to coding but has big dreams. <br>
-            One day he hopes to change the world.</section> <!--blurb-->
-         <section class = "facts"> 
+        <p class ="blurb"> Evan is new to coding but has big dreams. <br>
+            One day he hopes to change the world.</section> 
+         <p class = "facts"> 
             <ul>
                 <li> Loves falafel </li>
                 <li> Born and raised in the Bay Area </li>
                 <li> Obsessed with crystals </li>
             </ul>
-        </section> <!-- list of facts-->
-        <h2 class = "gameTitle"> game title TBD</h2> <!--Empty hold space for tomorrow's lab (Game time!)-->
-            <section class = "game"> code for game here!</section>
+        </p> 
+        <h2 class = "gameTitle"> 5 questions no lies</h2> 
+            <section class = "game"> 
+                <form id="about-me-form" name="about-me-form"
+                onsubmit="event.preventDefault(); checkAboutMe();"
+                onreset= resetAboutMe();"
+                >
+                    <div>
+                        <label for="question1"> question1 </label>
+                        <input type= "text" id = "question1" name="question1Input" placeholder= "correct/incorrect" />
+                    </div>
+                    <div>
+                        <label for='question2'> question2 </label>
+                        <input type= "text" id = "question2" name="question2Input" placeholder= "correct/incorrect" />
+                    </div>
+                    <div>
+                        <label for='question3'> question3 </label>
+                        <input type= "text" id="question3" name="question3Input" placeholder= "correct/incorrect" />
+                    </div>
+                    <div>
+                        <label for='question4'> question4 </label>
+                        <input type= "text" id = "question4" name="question4Input" placeholder= "correct/incorrect" />
+                    </div>
+                    <div>
+                        <label for='question5'> question5 </label>
+                        <input type= "text" id = "question5" name="question5Input" placeholder= "correct/incorrect" />
+                    </div>
+                    <div>
+                        <button type="submit">Submit Answers</button>
+                    </div>
+                    <div>
+                        <button type="clear">reset game</button>
+                    </div>
+                </form>
+                <p id="about-me-response"></p>
+            </section>
     </div>
+    <script src="game2.js"> </script>
 </body>
 </html>
