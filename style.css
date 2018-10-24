@@ -10,9 +10,15 @@ h1 {
 li {  
     list-style: none;
 }
+.no-bottom-marg {
+    margin-bottom: 0;
+}
+.no-top-marg {
+    margin-top: 0;
+}
 
 body{
-    background-color: burlywood;  
+    background-color: rgb(189, 114, 159);  
        
 }
 img {
@@ -23,7 +29,7 @@ img {
 
 @media screen and (min-width: 500px) {
     body {
-        background: brown;
+        background: rgb(155, 115, 139);
     }
     
     #favLyrics1 {
@@ -40,4 +46,23 @@ img {
     }
     
 
+}
+form {
+    max-width: 500px;
+    box-align: left;
+    background: rgb(223, 207, 207);
+    padding: 10px;
+
+}
+.game1-form {
+    margin: 20px;
+    padding: 5px;
+    
+}
+
+button[type="submit"] {
+    color:rgb(71, 58, 252)
+}
+button[type="reset"] {
+    color:rgb(71, 58, 252)
 }
