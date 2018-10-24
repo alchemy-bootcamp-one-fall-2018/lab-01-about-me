@@ -45,16 +45,74 @@
             <li>I love pugs and pigs.</li>
             <li>I'm addicted to coffee and video games.</li>
             <li>I studied abroad in England for six months.</li>
-            <li>I am from Long Island, New York.</li>
+            <li>I grew up in New York.</li>
         </ul>
     </section>
 
     <section id="game">
-        Game coming soon!
+        <h2>About Me Quiz!</h2>
+        <form id="about-me-form" onsubmit="event.preventDefault(); checkAboutMe();" 
+            onreset="resetAboutMe();"
+        >
+        <div>
+            <label for="hometown">Where am I from?</label>
+            <input type="text" id="hometown" name="hometown" placeholder="home STATE" />
+        </div>
+
+        <div>
+            <label for="dog">What is my favorite king of dog?</label>
+            <input type="text" id="dog" name="dog" placeholder="hint: not shi tzu" />
+        </div>
+
+        <div>
+            <label for="number">What is my favorite number?</label>
+            <input type="text" id="number" name="number" placeholder="1-20" />
+        </div>
+
+        <div>
+            <label for="breakfast">What is my favorite breakfast food?</label>
+            <input type="text" id="breakfast" name="breakfast" placeholder="cereal killer" />
+        </div>
+
+        <div>
+            <label for="twitter">What is my favorite twitter handle?</label>
+            @ <input type="text" id="twitter" name="twitter" placeholder="pst follow me!" />
+        </div>
+        
+        <div>
+            <button type="submit">Submit Answers</button>
+            <button type="reset">Clear Form</button>        
+        </div>
+        
+    </form>
+    
+    <p id="about-me-response"></p>
+
     </section>
 
+    <section id="guess-travel">
+        <h2>How many countries have I visited?</h2>
+        <form id="guess-travel-form" onsubmit="event.preventDefault(); checkGuessTravel();" 
+            onreset="resetGuessTravel();"
+        >
+            <div>
+                <label for="travel">How many countries have I been to?</label>
+                <input type="text" id="travel" name="travel" placeholder="you only get 3 guesses!" />
+            </div>
+
+            <div>
+                <button type="submit">Make a guess!</button>
+                <button type="reset">Try Again!</button>        
+            </div>
+                
+        </form>
+
+        <p id="guess-travel-response"></p>
+
+    </section> 
 
     <script src="index.js"></script>
+    <script src="guess.js"></script>
 
 </body>
 </html>

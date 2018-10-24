@@ -40,18 +40,18 @@ section {
     padding: 2px;
 }
 
+#guess-travel {
+    border: 1px solid gray;
+    text-align:center;
+    padding: 20px 0;
+}
 #game {
-    font-family: fantasy;
     border: 1px solid black;
     text-align: center;
-    font-size: 1.5em;
+    padding: 20px 0;
 }
 
-@media (min-width: 600px){
-    body {
-        font-size: 2em;
-    }
-}
+
 
 @media (min-width: 1150px) {
     img {
@@ -122,3 +122,14 @@ section {
     }
    
 }
+
+.correct {
+    background-color:greenyellow;
+  }
+  
+  .incorrect {
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+  }
+  
