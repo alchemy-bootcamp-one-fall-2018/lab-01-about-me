@@ -58,7 +58,7 @@ function checkAboutMe() {
         instrumentInput.classList.remove('correct');
     }
 
-    if(originCountry === 'Philippines') {
+    if(originCountry === 'philippines') {
       // Run this code if true
         correct = correct + 1;
         countryInput.classList.add('correct');
