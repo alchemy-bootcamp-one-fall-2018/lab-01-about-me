@@ -1,4 +1,9 @@
 function clickedButton() {
     var tagsChosen = document.querySelectorAll('input[name="element-button"]:checked');    
-    console.log(tagsChosen)
+    
+    for (var i = 0; i < tagsChosen.length; i++) {
+        var tagCount = tagsChosen[i]
+        console.log(tagCount)
+    }
+
 }
