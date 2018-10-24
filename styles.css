@@ -24,7 +24,7 @@ main {
     padding-bottom: 50px;
 }
 
-h1, h2, h3, h4 {
+.heading {
     font-family: "amatic SC";
     text-align: center;
     margin: 0px;
@@ -33,19 +33,24 @@ h1, h2, h3, h4 {
     
 }
 
-h2 {
+h1 {
     font-size: 4rem;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-h1 {
+.name-heading {
     font-size: 5rem;
-    line-height: 0.4;
-    padding-bottom: 40px;
 }
 
-h3 {
+h2 {
+    font-size: 3.5rem;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    line-height: 0.9;
+}
+
+.game-title {
     font-size: 3rem;
     padding-top: 20px;
     margin: 30px auto;
@@ -53,7 +58,7 @@ h3 {
     background-color: navy;
 }
 
-h4 {
+.small-heading {
     font-size: 1.9rem;
 }
 
@@ -61,15 +66,7 @@ span {
     font-size: 1.2rem;
 }
 
-.title {
-    color: navy;
-}
-
-p {
-    margin-left: 10px;
-}
-
-ul li {
+ul, li {
     padding-bottom: 14px;
     font-size: 1.4rem;
 }
@@ -126,7 +123,7 @@ label {
     font-weight: bold;
 }
 
-#number-quiz-form {
+.game-2 {
     text-align: center;
 }
 
@@ -177,6 +174,7 @@ footer {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 /*larger screen styling*/
@@ -189,21 +187,25 @@ footer {
         padding-right: 8%;
     }
 
-    h2 {
-        font-size: 5rem; 
-    }
     
     h1 {
-        font-size: 7rem;
-        line-height: 0.4;
+        font-size: 6rem;
         padding-bottom: 40px;
     }
+
+    .name-heading {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 5.5rem; 
+    }
     
-    h3 {
+    .game-title {
         font-size: 3.5rem;
     }
     
-    h4 {
+    .small-heading{
         font-size: 2.5rem;
     }
     
