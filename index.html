@@ -13,32 +13,108 @@
         <img src="Ivan_Motley.jpg" alt="Ivan_and_Motley">
     </main>
 
-<section>
-    <h1>Ivan Poblete</h1>
+    <section>
+        <h1>Ivan Poblete</h1>
 
-    <p>I'm from Washington, D.C.  My wife and I just moved to Portland 2 years ago.</p>
+        <p>I'm from Washington, D.C.  My wife and I just moved to Portland 2 years ago.</p>
 
-    <h2>Below are a few things I love.</h2>
+        <h2>Below are a few things I love.</h2>
 
-    <ul>
-        <li>Hiking</li>
-        <li>Dogs</li>
-        <li>Basketball</li>
-        <li>My wife!</li>
-    </ul>
+        <ul>
+            <li>Hiking</li>
+            <li>Dogs</li>
+            <li>Basketball</li>
+            <li>My wife!</li>
+        </ul>
 
-    <h3>Here are some other things I like.</h3>
+        <h3>Here are some other things I like.</h3>
 
-    <ul>
-        <li>Music</li>
-        <li>Camping</li>
-        <li>Pizza!</li>
-    </ul>
-</section>
+        <ul>
+            <li>Music</li>
+            <li>Camping</li>
+            <li>Pizza!</li>
+        </ul>
+    </section>
 
-<section>
-    <h4>Game coming soon!</h4>
-</section>
+    <section>
+        <h4>Guess what food I like!</h4>
+        <form id="about-me-form" 
+            onsubmit="event.preventDefault(); checkAboutMe();"  
+            onreset="resetAboutMe();">
+        <div>
+            <label for="pizza">Do I like pizza?</label>
+            <input type="text" id="pizza" placeholder="yes/no"/>
+        </div>
+
+        <div>
+            <label for="cheeseburgers">Do I like cheeseburgers?</label>
+            <input type="text" id="cheeseburgers" placeholder="yes/no"/>
+        </div>
+
+        <div>
+            <label for="sushi">Do I like sushi?</label>
+            <input type="text" id="sushi" placeholder="yes/no"/>
+        </div>
+
+        <div>
+            <label for="spaghetti">Do I like spaghetti?</label>
+            <input type="text" id="spaghetti" placeholder="yes/no"/>
+        </div>
+
+        <div>
+            <label for="">Do I like pizza?</label>
+            <input type="text" id="pizza" placeholder="yes/no"/>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Play Again</button>
+        </div>
+        </form>
+    </section>
+
+    <section>
+        <h5>Guess my favorite TV shows/movies!</h5>
+        <form id="about-me-form" name="about-me-form"
+            onsubmit="event.preventDefault(); checkAboutMe();"  
+            onreset="resetAboutMe();"
+        >
+    
+    <section class="tvshows">
+        <div>
+            <label for="game-of-thrones">I like to watch Game of Thrones.</label>
+            <input type="text" id="game-of-thrones" placeholder="true/false"/>
+        </div>
+
+        <div>
+            <label for="breaking-bad">I like to watch Breaking Bad.</label>
+            <input type="text" id="breaking-bad" placeholder="true/false"/>
+        </div>
+
+        <div>
+            <label for="harry-potter">I like to watch Harry Potter.</label>
+            <input type="text" id="harry-potter" placeholder="true/false"/>
+        </div>
+
+        <div>
+            <label for="judge-judy">I like to watch Judge Judy.</label>
+            <input type="text" id="judge-judy" placeholder="true/false"/>
+        </div>
+
+        <div>
+            <label for="this-is-us">I like to watch This Is Us.</label>
+            <input type="text" id="this-is-us" placeholder="true/false"/>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Play Again</button>
+        </div>
+    </section>
+
+        <p id="guess-number-response"></p>
+    
+    <script src="aboutme.js"></script>
 
 </body>
 </html>
