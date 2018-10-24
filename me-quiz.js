@@ -1,3 +1,4 @@
+/* exported checkMeQuiz, resetMeQuiz*/
 
 
 var meQuizForm = document.getElementById('me-quiz-form');

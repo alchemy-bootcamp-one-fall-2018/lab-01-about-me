@@ -54,7 +54,7 @@
             <header class="gameHeader">
                 <h2 class="title">The Game</h2>
                 <div class="gif">
-                    <iframe src="https://giphy.com/embed/2eLAwdushm3cI" frameBorder="0" class="gif"></iframe><p><a href="https://giphy.com/gifs/2eLAwdushm3cI">via GIPHY</a></p>
+                    <iframe src="https://giphy.com/embed/2eLAwdushm3cI" frameBorder="0" class="gif"></iframe><p><a href="https://giphy.com/gifs/2eLAwdushm3cI"><span>via GIPHY</span></a></p>
                 </div>   
             </header>
             
@@ -63,27 +63,27 @@
             <form id="me-quiz-form" name="me-quiz-form" onsubmit="event.preventDefault(); checkMeQuiz();" onreset="resetMeQuiz()">
                 <div class="question">
                     <label for="question1">1. At what age did I shatter my wrist while longboarding?</label><br/>
-                    <input type="text" name="question1"  id="question1"><br/>
+                    <input type="text" name="question1"  id="question1" placeholder="shattered wrist age">
                 </div>
 
                 <div class="question">
                     <label for="question2">2. What color is my wildly ferocious cat, Roxy?</label><br/>
-                    <input type="text" name="question2" id="question2"><br/>
+                    <input type="text" name="question2" id="question2" placeholder="color">
                 </div>
 
                 <div class="question">
                     <label for="question3">3. Which author do I never want to read another work from?</label><br/>
-                    <input type="text" name="question3" id="question3"><br/>
+                    <input type="text" name="question3" id="question3" placeholder="author">
                 </div>
 
                 <div class="question">
                     <label for="question4">4. What place am I currently at in my Pick'Em league?</label><br/>
-                    <input type="text" name="question4" id="question4"><br/>
+                    <input type="text" name="question4" id="question4" placeholder="place (ie, 1st, 2nd, 3rd, etc.)'">
                 </div>
 
                 <div class="question">
                     <label for="question5">5. How old am I?</label><br/>
-                    <input type="text" name="question5" id="question5"><br/>
+                    <input type="text" name="question5" id="question5" placeholder="current age">
                 </div>
 
                 <div>
@@ -93,14 +93,14 @@
 
             </form>
 
-            <p id="me-quiz-response"></p>
+            <p id="me-quiz-response" class="computer-response"></p>
 
             <h3>Game 2: Guess the Magic Number</h3>
 
             <form id="number-quiz-form" name="number-quiz-form" onsubmit="event.preventDefault(); checkNumberQuiz();" onreset="resetNumberQuiz()">
-                <div>
-                    <label for="number">What is the magic number I'm thinking of?</label>
-                    <input type="text" name="number" id="number">
+                <div class="question">
+                    <label for="number" class="number-question">What is the magic number I'm thinking of?</label><br/><br/>
+                    <input type="text" name="number" id="number" placeholder="A number less than 100"></br>
                 </div>
 
                 <div>
@@ -108,9 +108,9 @@
                     <button type="reset">Play Again</button>
                 </div>
             
-            <p id="number-quiz-response"></p>
-            <p id="number-hint"></p>
-            <p id="number-quiz-counter"></p>
+            <p id="number-quiz-response" class="computer-response"></p>
+            <p id="number-hint" class="computer-response"></p>
+            <p id="number-quiz-counter" class="computer-response"></p>
             </form>
         </section>
     </main>

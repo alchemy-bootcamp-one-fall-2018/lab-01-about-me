@@ -1,10 +1,4 @@
-.correct {
-    background-color: green;
-}
-
-.incorrect {
-    background-color:red;
-}
+/*main body of website styling*/
 
 body {
     font-family: "rajdhani";
@@ -16,6 +10,9 @@ body {
     background-color: navy;
     color: white;
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 main {
@@ -27,10 +24,12 @@ main {
     padding-bottom: 50px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "amatic SC";
     text-align: center;
     margin: 0px;
+    font-weight: bold;
+    padding-bottom: 30px;
     
 }
 
@@ -41,17 +40,25 @@ h2 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 0.4;
     padding-bottom: 40px;
 }
 
 h3 {
+    font-size: 3rem;
+    padding-top: 20px;
+    margin: 30px auto;
+    color: white;
+    background-color: navy;
+}
+
+h4 {
     font-size: 1.9rem;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 30px;
-    margin: 0px;
+}
+
+span {
+    font-size: 1.2rem;
 }
 
 .title {
@@ -80,6 +87,8 @@ img {
     margin-right: auto; 
 }
 
+/*game main section styling*/
+
 .gif {
     width: 100%;
     text-align: center;
@@ -89,11 +98,79 @@ img {
     text-align: center;
 }
 
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: #ff6666;
+}
+
+.question {
+    padding-bottom: 20px;
+}
+
+input {
+    width: 190px;
+    height: 25px;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px auto;
+    font-family: "rajdhani";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#number-quiz-form {
+    text-align: center;
+}
+
+.number-question {
+    font-size: 3rem;
+}
+
+/*game button areas styling*/
+
+button {
+    width: 160px;
+    padding: 6px 0px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-family: "rajdhani";
+    font-weight: bold;
+}
+
+button:hover {
+    border: 2px solid black;  
+}
+
+button[type="submit"] {
+    background-color: lightgreen;
+    margin-right: 6px;
+}
+
+button[type="reset"] {
+    background-color: #ff6666;
+}
+
 p {
     margin-bottom: 0px;
     padding-bottom: 15px;
 }
 
+.computer-response {
+    font-size: 1.5rem;
+    padding: 15px auto;
+    font-family: "rajdhani";
+}
+
+
+/*footer styling*/
 
 footer {
     background-color: navy;
@@ -102,14 +179,7 @@ footer {
     padding-bottom: 10px;
 }
 
-.question {
-    margin-bottom: 20px;
-}
-
-#question1 {
-    margin-left: auto;
-    margin-right: auto;
-}
+/*larger screen styling*/
 
 
 @media (min-width: 730px) {
@@ -119,10 +189,24 @@ footer {
         padding-right: 8%;
     }
 
-    header {
-        font-size: 6rem;
+    h2 {
+        font-size: 5rem; 
     }
-
+    
+    h1 {
+        font-size: 7rem;
+        line-height: 0.4;
+        padding-bottom: 40px;
+    }
+    
+    h3 {
+        font-size: 3.5rem;
+    }
+    
+    h4 {
+        font-size: 2.5rem;
+    }
+    
     .pic {
         float: left;
         margin-right: 10%;
