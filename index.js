@@ -23,7 +23,7 @@ function aboutMe() {
     }
 
     for(var i = 0; i < like.length; i++) {
-        
+
         if(like[i].value === 'some' || like[i].value === 'doing') {
             correct++;
         }
@@ -65,12 +65,18 @@ function guessNumber() {
 }
 
 function resetQuiz() {
+    
     correct = 0;
     feedbackQuiz.textContent = '';
+
 }
 
 function resetNumGame() {
+    var el = event.target.elements;
+
     numGuess = 3;
     numberFeed.textContent = '';
-    event.target.elements.number.disabled = false;
+    el.number.disabled = false;
+    el.number.classList.remove('green');
+    el.number.classList.remove('red');
 }
