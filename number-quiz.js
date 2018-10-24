@@ -15,7 +15,7 @@ function checkNumberQuiz() {
     var counter = 3 - guessCount;
 
 
-    if(guess === 41) {
+    if(guess == 41) {
         numberQuizResponse.textContent = 'You win! Yay!';
         submit.disabled = true;
     }
