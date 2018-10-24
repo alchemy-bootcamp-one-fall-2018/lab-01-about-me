@@ -7,36 +7,120 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div id = 'column1'>
-    <header> 
-        <h1>
-        Lance Merrill
-        </h1>
-        <img src="Lance photo.jpg" alt="Picture of the lance">
-    </header>
-</div>
-<div id ='column2'>
-    <h2>
-        The blurb
-    </h2>
-    <h3>
-        Lance Merrill is a 22 year old dude studying web design software development at ACL Portland. 
-    </h3> 
-    <h2>
-        About me
-    </h2>
-    <p>
-        <ul>
-            <li> I practice BJJ.</li>
-            <li> I love to cycle.</li>
-            <li>I am student at Alchemy Code Lab who is interested in pursuing a career in smart contracts/ ethereum development. </li>
-        </ul>
-    </p>
-    <div id="js-game">
-        JS game coming soon 
-    </div>
-</div>
+<body> 
+    <main>
+        <div id = 'column1'>
+            <header> 
+                <h1>
+                Lance Merrill
+                </h1>
+                <img src="Lance photo.jpg" alt="Picture of the lance">
+            </header>
+        </div>
+        <div id ='column2'>
+            <h2>
+                The blurb
+            </h2>
+            <h3>
+                Lance Merrill is a 22 year old dude studying web design and software development at ACL Portland. 
+            </h3> 
+            <h2>
+                About me
+            </h2>
+            <p>
+                <ul>
+                    <li> I practice BJJ.</li>
+                    <li> I love to cycle.</li>
+                    <li>I am student at Alchemy Code Lab who is interested in pursuing a career in smart contracts/ethereum development. </li>
+                </ul>
+            </p>
+            <div id="js-game">
+                JS Games! 
+            </div>
 
+
+            <div id= "gameDiv">
+                <form id ="about-me-game" 
+                onsubmit ="event.preventDefault(); checkAboutMe();" onreset="resetAboutMe()">
+
+                
+                <label for="questionOne"> What do I love?</label>
+                <input 
+                type="text" 
+                placeholder="answer1?"
+                name="questionOneName" 
+                id="questionOne"
+                >
+                
+                <label for="questionTwo"> What do I practice?</label>
+                <input type="text"
+                placeholder="answer2?"
+                name = "questionTwoName"
+                id="questionTwo"
+                >
+
+                <label for="questionThree"> Where do I study? </label>
+                <input type="text"
+                placeholder="answer2?"
+                name = "questionThreeName"
+                id="questionThree"
+                >
+
+                <label for="questionFour"> What am I Interested in?</label>
+                <input type="text"
+                placeholder="answer2?"
+                name = "questionFourName"
+                id="questionFour"
+                >
+
+                <label for="questionFive"> What is my name? </label>
+                <input type="text"
+                placeholder="answer2?"
+                name = "questionFiveName"
+                id="questionFive"
+                >
+
+                <div>   
+                <button type="submit" name ="submitAnswers"> Submit </button>
+                <button type="reset" name ="resetGame"> Reset Game</button>
+                </div> 
+
+                </form>  
+                <div id ="correctCounter">
+                <p id="about-me-output"></p>
+                </div>
+                
+            </div>
+
+
+            <div id= "gameDivTwo">
+
+                    <form id ="guessingGame" 
+                    onsubmit ="event.preventDefault(); checkGuessingGame();" onreset="resetGuessingGame();">
+                    
+    
+                    <label for="guessNumber"> Guess a random number between 1 and 5</label>
+                    <input 
+                    type="text" 
+                    placeholder="guessNumber"
+                    name="guessNumber" 
+                    id="guessNumber"
+                    >
+    
+                    <div>   
+                        <button type="submit" name ="submitAnswers"> Submit </button>
+                        <button type="reset" name ="resetGame"> Reset Game</button>
+                    </div> 
+                    </form>
+                    <div id ="rightOrWrong">
+                        <p id="guessingGameOutput"></p>
+                    </div>
+            </div>
+            
+            <script src = "index.js"> </script>
+
+        
+        </div>
+    </main>
 </body>
 </html>
