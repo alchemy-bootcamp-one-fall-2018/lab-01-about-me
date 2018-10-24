@@ -36,7 +36,7 @@ img {
 
 label {
   font-weight: bold;
-  display: block;
+ 
 }
 
 form div {
@@ -76,3 +76,6 @@ button[type="reset"] {
 .hidden {
   display: none;
 }
+
+
+
