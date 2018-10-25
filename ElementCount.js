@@ -8,9 +8,11 @@ function tryQuerySelector(){
     //var elementInput = document.querySelectorAll('input[name="element"]');   //looks for checked elements
     var selectedElementInput = document.querySelectorAll('input[name="element"]:checked');   //checks for number of checks per element
     
-    for(var i = 0; i < selectedElementInput.length; i++) {
+    for(var i = 0; i < selectedElementInput.length; i++) {        
         var input = selectedElementInput[i];
-        var elementList = document.querySelectorAll(input[i]);
+        console.log(input);
+        var elementList = document.querySelectorAll(input);
+        console.log(elementList);
         var elementFreq = (elementList.length);
         console.log(elementFreq);
     }
