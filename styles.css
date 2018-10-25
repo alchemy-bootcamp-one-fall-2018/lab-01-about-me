@@ -85,6 +85,18 @@ form{
 
 
 
+#elementFinder {
+    padding: 30px;
+
+}
+#elementReader {
+
+    color: white;
+    text-align: center;
+}
+
+
+
 @media (min-width: 640px) {
 
     body {
@@ -153,9 +165,7 @@ form{
         color: white;
         border-style: solid;
         border-width: 1px;
-        border-radius: 10px;
-        float: right;
-    
+        border-radius: 10px;    
     }
     #guessingGameOutput{
         color: white;

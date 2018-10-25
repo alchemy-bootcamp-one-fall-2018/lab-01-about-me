@@ -9,7 +9,7 @@
 </head>
 <body> 
     <main>
-        <div id = 'column1'>
+        <div id="column1">
             <header> 
                 <h1>
                 Lance Merrill
@@ -17,7 +17,7 @@
                 <img src="Lance photo.jpg" alt="Picture of the lance">
             </header>
         </div>
-        <div id ='column2'>
+        <div id ="column2">
             <h2>
                 The blurb
             </h2>
@@ -116,8 +116,42 @@
                         <p id="guessingGameOutput"></p>
                     </div>
             </div>
+
+            <div id="elementFinder">
+                <form onsubmit="event.preventDefault(); checkElementFinder();" onreset="resetElementFinder()";>
+                    <fieldset>
+
+
+
+                    <label for="elementDiv"> Div </label>
+                    <input type="checkbox" name="elementType" id="divElement" value="div">
+
+                    <label for="elementP"> P </label>
+                    <input type="checkbox" name="elementType" id="pElement" value="p">
+
+                    <label for="elementP"> h1 </label>
+                    <input type="checkbox" name="elementType" id="h1Element" value="h1">
+
+
+
+                    </fieldset>
+                    <div>   
+                            <button type="submit" name ="submitElements"> Submit </button>
+                            <button type="reset" name ="resetElements"> Reset</button>
+                    </div>
+                </form>
+                <div id="outputContainer">
+                    <p id="elementReader">click submit</p>
+                </div>
+            </div>
+
+
+
+
             
-            <script src = "index.js"> </script>
+            <script src = "JSGameOne.js"> </script>
+            <script src = "JSGameTwo.js"> </script>
+            <script src = "Element-Finder.js"> </script>
 
         
         </div>
