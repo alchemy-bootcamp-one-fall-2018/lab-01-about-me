@@ -13,15 +13,11 @@ function tryQuerySelector() {
     if(selectedTagInputs.length > 0) {
         for(var i = 0; i < selectedTagInputs.length; i++) {
             var input = document.querySelectorAll(selectedTagInputs[i].value);
-            console.log(selectedTagInputs[i].id, input.length);
             elementCounterResponse.textContent = elementCounterResponse.textContent + 'Element  ' + selectedTagInputs[i].id + ' is used ' + input.length + ' times \r\n' ;
         }
-       
     }
     else {
-        console.log('No tag selected');
         elementCounterResponse.textContent = 'No tag selected';
     }
-
    
 }
