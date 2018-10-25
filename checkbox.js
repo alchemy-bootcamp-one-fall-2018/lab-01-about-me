@@ -1,6 +1,6 @@
 /* exported checkCheckbox */
 /* exported resetCheckbox */
-
+'use strict';
 
 // eslint-disable-next-line
 var pTags = document.querySelectorAll('p').length;

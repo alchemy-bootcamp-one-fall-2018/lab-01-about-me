@@ -1,5 +1,6 @@
 /* exported checkNumber */
 /* exported resetNumber */
+'use strict';
 
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberAnswer = document.getElementById('guess-number-answer');
@@ -7,11 +8,10 @@ var guessNumberAnswer = document.getElementById('guess-number-answer');
 var guessCount = 0;
 
 function checkNumber() {
-
     var elements = guessNumberForm.elements;
     var guess = elements.number.value;
     var submit = elements.guess;
-// eslint-disable-next-line
+    // eslint-disable-next-line
     if(guess == 8) {
         guessNumberAnswer.textContent = 'You win!';
         submit.disabled = true;

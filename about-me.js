@@ -1,5 +1,6 @@
 /* exported checkAnswers */
 /* exported resetAnswers */
+'use strict';
 
 var aboutMeForm = document.getElementById('about-me-form');
 
@@ -95,6 +96,4 @@ function resetAnswers() {
     yearsInput.classList.remove('incorrect');
 
     aboutMeAnswer.textContent = '';
-
-
 }
