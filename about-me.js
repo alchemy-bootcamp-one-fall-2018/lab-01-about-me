@@ -1,8 +1,10 @@
+/* exported checkAnswers */
+/* exported resetAnswers */
+
 var aboutMeForm = document.getElementById('about-me-form');
 
 var aboutMeAnswer = document.getElementById('about-me-answer');
 
-// eslint-disable-next-line
 function checkAnswers() {
     var elements = aboutMeForm.elements;
 
@@ -72,7 +74,7 @@ function checkAnswers() {
 
     aboutMeAnswer.textContent = 'You got ' + correct + ' out of 5.';
 }
-// eslint-disable-next-line
+
 function resetAnswers() {
     var elements = aboutMeForm.elements;
     var sportInput = elements.sport;

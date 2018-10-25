@@ -28,11 +28,11 @@ function checkCheckbox() {
 }
 // eslint-disable-next-line
 function resetCheckbox() {
-    var uncheck = document.getElementsByName('checkbox');
-    for(var i = 0; i < uncheck.length; i++) {
+    var unchecked = document.getElementsByName('checkbox');
+    for(var i = 0; i < unchecked.length; i++) {
         // eslint-disable-next-line
-        if(uncheck[i].type == 'checkbox')
-            uncheck[i].checked = false;
+        if(unchecked[i].type == 'checkbox')
+            unchecked[i].checked = false;
     }
     selectedAnswerCheckP.textContent = '';
     selectedAnswerCheckLabel.textContent = '';

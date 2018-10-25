@@ -1,8 +1,11 @@
+/* exported checkNumber */
+/* exported resetNumber */
+
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberAnswer = document.getElementById('guess-number-answer');
 
 var guessCount = 0;
-// eslint-disable-next-line
+
 function checkNumber() {
 
     var elements = guessNumberForm.elements;
@@ -35,7 +38,7 @@ function checkNumber() {
         }
     }
 }
-// eslint-disable-next-line
+
 function resetNumber() {
     var elements = guessNumberForm.elements;
     var submit = elements.guess;
