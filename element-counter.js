@@ -1,5 +1,5 @@
 /* eslint no-console: "off" */
-/* exported tryQuerySelector */
+/* exported tryQuerySelector, clearCount */
 'use strict';
 
 // eslint-disable-next-line
@@ -20,4 +20,8 @@ function tryQuerySelector() {
         elementCounterResponse.textContent = 'No tag selected';
     }
    
+}
+
+function clearCount(){
+    window.location.reload();
 }
