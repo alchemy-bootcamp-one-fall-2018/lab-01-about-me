@@ -13,7 +13,7 @@ function tryQuerySelector() {
     if(selectedTagInputs.length > 0) {
         for(var i = 0; i < selectedTagInputs.length; i++) {
             var input = document.querySelectorAll(selectedTagInputs[i].value);
-            elementCounterResponse.textContent = elementCounterResponse.textContent + 'Element  ' + selectedTagInputs[i].id + ' is used ' + input.length + ' times \r\n' ;
+            elementCounterResponse.textContent = elementCounterResponse.textContent + 'Element  ' + selectedTagInputs[i].id + ' used ' + input.length + ' times \r\n' ;
         }
     }
     else {
