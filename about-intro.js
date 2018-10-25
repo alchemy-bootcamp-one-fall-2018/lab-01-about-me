@@ -46,3 +46,4 @@ function checkHowWell() {
         alert('depends on the day');
     }
 }
+
