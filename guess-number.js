@@ -1,4 +1,5 @@
 /* exported checkGuessNumber, resetGuessNumber */
+/* eslint no-console: "off" */
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
@@ -9,6 +10,7 @@ function checkGuessNumber() {
     var guess = elements['magic-number'].value;
     var submit = elements.guess;
 
+    // eslint-disable-next-line
     if(guess == 4) {
         guessNumberResponse.textContent = 'Congratulations! You Win!';
         submit.disabled = true;

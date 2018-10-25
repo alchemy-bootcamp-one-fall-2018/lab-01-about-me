@@ -1,4 +1,5 @@
 /* exported checkAboutMe, resetAboutMe */
+/* eslint no-console: "off" */
 var aboutMeForm = document.getElementById('about-me-form');
 var aboutMeResponse = document.getElementById('about-me-response');
 
