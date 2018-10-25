@@ -3,10 +3,14 @@ body {
     position: static;
     }
 h1 {color: rgb(75, 12, 12)}
+h2 {color: rgb(62, 12, 75)}
 img {border:10px solid purple;}
 article {
     float: right;
 }
+form {max-width: 75; background-color: aqua; border: groove 5px}
+.quiz-1 {text-emphasis: bold};
+.quiz-2 {font-style: arial};
 /*
 */
 @media only screen and (max-width: 500px) {
