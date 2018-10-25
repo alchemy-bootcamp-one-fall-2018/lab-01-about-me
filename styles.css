@@ -15,10 +15,39 @@ img {
     margin: auto;
 }
 
-#info {
+#info, form {
+    border: 2px solid pink;
     box-shadow: 2px 2px 2px 2px pink;
     padding: 2%;
     margin-top: 2%;
+}
+
+#game {
+    margin-top: 10%;
+}
+
+#about-me-game {
+    box-shadow: 2px 2px 2px 2px pink;
+}
+
+div {
+    margin-top: 2%;
+}
+
+form {
+    margin-top: 5%;
+}
+
+.red {
+    background-color: rgb(189, 88, 88);
+}
+
+.green {
+    background-color: rgb(119, 194, 119);
+}
+
+#feedbackQuiz, #numberFeed {
+    color: blue;
 }
 
 @media (min-width: 1024px) {
