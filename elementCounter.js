@@ -10,15 +10,9 @@ var queryResponse = document.getElementById('query-results');
         queryResponse.textContent = queryResponse.textContent + inputCounter[i].id + ' : ' + input.length + ' \r\n ';
 
       }
-      
      
-        
  }
  
-
-        //   queryResponse.textContent = inputCounter[0].id + ': ' + input.length;
-
-        
         
 
         
