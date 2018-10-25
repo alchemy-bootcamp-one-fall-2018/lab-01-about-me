@@ -74,15 +74,15 @@ section {
    }
 
    #blurb {
-       width: 48%;
-       float: right;
+       width:48%;
+       float:right;
        display: inline;
        clear: both;
    }
 
    #fun-facts {
-       width: 48%;
-       float: left;
+       width:48%;
+       float:left;
        display: inline;
    }
 
@@ -114,7 +114,7 @@ section {
         clear: initial;
     }
    
-    #game {
+    .game {
             width: 60%;
             float: left;
             clear: initial;

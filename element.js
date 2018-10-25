@@ -1,7 +1,6 @@
 /* eslint no-console: "off" */
-'use strict';
+/* exported tryQuerySelector */
 
-// eslint-disable-next-line
 function tryQuerySelector() {
     var selectedElementInput = document.querySelectorAll('input[name="element"]:checked');
     console.log(selectedElementInput);

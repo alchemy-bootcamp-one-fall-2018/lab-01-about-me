@@ -1,13 +1,15 @@
+/* exported checkGuessTravel, resetGuessTravel */
+
 var guessTravelForm = document.getElementById('guess-travel-form');
 var guessTravelResponse = document.getElementById('guess-travel-response');
 
 var guessCount = 0;
 
-// eslint-disable-next-line 
 function checkGuessTravel() {
     var elements = guessTravelForm.elements;
     var travelInput = elements.travel;
     var travelSub = travelInput.value;
+    var submit = travelInput.travelSub;
 
     // eslint-disable-next-line eqeqeq
     if(travelSub == 9){
@@ -25,10 +27,8 @@ function checkGuessTravel() {
             submit.disabled = true;
         }
     }
-
 }
 
-// eslint-disable-next-line
 function resetGuessTravel() {
     var elements = guessTravelForm.elements;
     var travelInput = elements.travel;
