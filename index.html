@@ -21,40 +21,40 @@
             >
                 <div>
                     <label for="Do I like snakes?">Do I like snakes?</label>
-                    <input type="text" name="snakes" class="quiz-1" id="snakes" placeholder="yes/no">
+                    <input name="snakes" type="text" class="quiz-1" id="snakes" placeholder="yes/no">
                 </div>
 
                 <div>
                     <label for="Do I like cake?">Do I like cake?</label>
-                    <input type="text" name="cake" class="quiz-1" id="cake" placeholder="yes/no">
+                    <input name="cake" type="text" class="quiz-1" id="cake" placeholder="yes/no">
                 </div>
 
                 <div>
                     <label for="Am I a morning person?">Am I a morning person?</label>
-                    <input type="text" name="morning" class="quiz-1" id="morning" placeholder="yes/no">
+                    <input name="morning" type="text" class="quiz-1" id="morning" placeholder="yes/no">
                 </div>
 
                 <div>
                     <label for="Puppies">Puppies?</label>
-                    <input type="text" name="puppies" class="quiz-1" id="puppies" placeholder="yes/no">
+                    <input name="puppies" type="text" class="quiz-1" id="puppies" placeholder="yes/no">
                 </div>
 
                 <div>
                     <label for="Dragons?">Am I terrified of dragons?</label>
-                    <input type="text" name="dragons" class="quiz-1" placeholder="yes/no">
+                    <input name="dragons" type="text" class="quiz-1" placeholder="yes/no">
                 </div>
                 <div>
                     <button type="submit">Guess!</button>
-                    <button type="reset">Reset quiz</button>
+                    <button type="reset" onclick="resetAboutMe()">Reset quiz</button>
                 </div>
             </form>
-            <p id="about-me-quiz-1-response"></p>    
+            <p id="aboutMeResponse1"></p>    
         </section>
         <section>
             <h2>Guess my favorite...</h2>
             <form id="about-me-quiz-2" name="about-me-quiz-2"
-            onsubmit="event.preventDefault(); checkAboutMe();"
-            onreset="resetAboutMe()";>
+            onsubmit="event.preventDefault(); checkGuessNumber();"
+            onreset="resetGuessNumber()";>
                 <div>
                     <label for="favorite-number">What's my favorite number? Three guesses:</label>
                     <input type="text" name="number" class="quiz-2" placeholder="1 to 10">
@@ -65,13 +65,13 @@
                     <button type="reset">Reset quiz</button>
                 </div>
             </form>
-            <p id="about-me-quiz-2-response"></p>
+            <p id="guessNumResponse"></p>
         </section>
 
         <!--below adds page interface to allow user to select which elements to count-->
         <section>
             <h3>Counting 'html' elements</h3>
-            <form id="count-elements-form" onsubmit="event.preventDefault(); pingMyFile();" onreset="resetAboutMe();">
+            <form id="count-elements-form" onsubmit="event.preventDefault();" onreset="resetAboutMe();">
                 <fieldset>
                     <div>
                         <input name="box" type="checkbox" id="p" value="p" onclick="countPElements()";>

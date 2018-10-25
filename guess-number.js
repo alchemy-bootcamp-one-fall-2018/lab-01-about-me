@@ -1,5 +1,4 @@
 var guessNumForm = document.getElementById('about-me-quiz-2');
-var guessNumResponse = document.getElementById('about-me-quiz-2-response');
 
 var guessCount = 0;
 
@@ -26,7 +25,7 @@ function checkGuessNumber() {
     }  
 }
 
-function resetGuessNum() {
+function resetGuessNumber() {
     var elements = guessNumForm.elements;
     var submit = elements.guess;
     submit.disabled = false;

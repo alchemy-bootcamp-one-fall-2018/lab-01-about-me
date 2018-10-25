@@ -1,18 +1,17 @@
-var aboutMeForm1 = document.getElementById('about-me-quiz-1')
-var aboutMeResponse1 = document.getElementById('about-me-quiz-1-response')
-var correct = 0
+var aboutMeForm1 = document.getElementById('about-me-quiz-1');
+var correct = 0;
+/* exported checkAboutMe */
 
 function checkAboutMe() {
 
     var elements = aboutMeForm1.elements;
-
     var snakesInput = elements.snakes;
     var likeSnakes = snakesInput.value;
 
     var cakeInput = elements.cake;
     var likeCake = cakeInput.value;
 
-    var morningInput = elements['morning'];
+    var morningInput = elements.morning;
     var likeMorning = morningInput.value;
 
     var puppiesInput = elements.puppies;
@@ -61,7 +60,7 @@ function checkAboutMe() {
         puppiesInput.classList.remove('correct');
     }
 
-    if(likeDragons.toLowerCase() === 'yes') {
+    if(likeDragons.toLowerCase() === 'no') {
         correct = correct + 1;
         dragonsInput.classList.add('correct');
         dragonsInput.classList.remove('incorrect');
@@ -94,5 +93,6 @@ function resetAboutMe() {
     dragonsInput.classList.remove('incorrect');
 
     aboutMeResponse1.textContent = '';
+    correct = 0;
 
 }
