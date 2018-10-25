@@ -11,5 +11,16 @@ function tryQuerySelector() {
         console.log(input.value);
         var tag = document.querySelectorAll(input.value);
         console.log(tag.length);
+    
+        if(input.value === 'section') {
+            document.getElementById('section-length').innerHTML = input.value + ' - ' + tag.length;
+        }
+        if(input.value === 'form') {
+            document.getElementById('form-length').innerHTML = input.value + ' - ' + tag.length;
+        }
+        if(input.value === 'div') {
+            document.getElementById('div-length').innerHTML = input.value + ' - ' + tag.length;
+        }
     }
 }
+
