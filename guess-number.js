@@ -1,4 +1,4 @@
-
+/* exported checkGuessNumber, resetGuessNumber */
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
@@ -10,7 +10,7 @@ function checkGuessNumber() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
-    if(guess == 13) {
+    if(guess === 13) {
         guessNumberResponse.textContent = 'you won :O';
         submit.disabled = true;
     }
