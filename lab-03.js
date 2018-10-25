@@ -20,15 +20,7 @@ function whenClicked() {
         var printOutput =document.getElementById('inputEl');
         printOutput.innerHTML = result;
 
-        /*if(elementIndex.value === 'p') {
-            paraValue.textContent = elementIndex.value + '-' + numberofEls;
-        }
-        if(elementInput[i] === 'div') {
-            divValue.textContent = elementIndex.value + '-' + numberofEls;
-        }
-        if(elementInput[i] === 'input') {
-            inputValue.textContent = elementIndex.value + '-' + numberofEls;
-        }*/
+
 
 
         
