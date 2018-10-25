@@ -1,9 +1,13 @@
 /* exported checkAboutMe, resetAboutMe */
 
-var aboutMeForm = document.getElementById('about-me-form');
-var aboutMeResponse = document.getElementById('about-me-response')
+newFunction();
 
-  function resetAboutMe() {
+function newFunction() {
+  var aboutMeForm = document.getElementById('about-me-form');
+  var aboutMeResponse = document.getElementById('about-me-response');
+}
+
+function resetAboutMe() {
     var elements = aboutMeForm.elements;
     var catsInput = elements.cats;
     var boatsInput = elements.motorcycles;
@@ -22,11 +26,7 @@ var aboutMeResponse = document.getElementById('about-me-response')
     sharksInput.classList.remove('correct');
     sharksInput.classList.remove('incorrect');
   }
-
-
-}
-  function newFunction() {
-  aboutMeResponse.textContent = '';
-}
+ 
+ 
 
 
