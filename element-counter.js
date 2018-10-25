@@ -22,3 +22,4 @@ function tryQuerySelector() {
             document.getElementById('h1-length').innerHTML = input.value + ' - ' + tag.length;
         }
     }
+}
