@@ -1,5 +1,5 @@
 'use strict';
-
+/* exported tryQuerySelector */
 var queryResponse = document.getElementById('query-results');
 function tryQuerySelector() {
     var tags = document.querySelectorAll('input[name="tag"]:checked');

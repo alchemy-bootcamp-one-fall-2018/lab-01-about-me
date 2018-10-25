@@ -9,8 +9,8 @@ function checkGuessNumber() {
     var guess = guessNumberForm.element;
     var submit = document.getElementById('submit');
 
-    if(guess == 8) {
-        guessNumberResponse.textContent = 'Congratulations!  Your guess is correct.  The styles of wheels residing with me are castle, charka, great, super slanty, saxony, production, double table and hatbox.'
+    if(guess === 8) {
+        guessNumberResponse.textContent = 'Congratulations!  Your guess is correct.  The styles of wheels residing with me are castle, charka, great, super slanty, saxony, production, double table and hatbox.';
         submit.disabled = true;
     }
     else {
