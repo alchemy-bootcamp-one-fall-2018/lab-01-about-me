@@ -1,3 +1,6 @@
+/* exported checkCheckbox */
+/* exported resetCheckbox */
+
 
 // eslint-disable-next-line
 var pTags = document.querySelectorAll('p').length;
@@ -10,7 +13,6 @@ var selectedAnswerCheckP = document.getElementById('elements-checkbox-p');
 var selectedAnswerCheckLabel = document.getElementById('elements-checkbox-label');
 var selectedAnswerCheckDiv = document.getElementById('elements-checkbox-div');
 
-// eslint-disable-next-line
 function checkCheckbox() {
     var checkedTags = document.querySelectorAll('input[name="checkbox"]:checked');
     var i;
@@ -26,7 +28,7 @@ function checkCheckbox() {
         }
     }
 }
-// eslint-disable-next-line
+
 function resetCheckbox() {
     var unchecked = document.getElementsByName('checkbox');
     for(var i = 0; i < unchecked.length; i++) {
