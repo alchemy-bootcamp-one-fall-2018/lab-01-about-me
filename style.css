@@ -70,6 +70,60 @@ body {
     background-color: #FCFAF9;
 }
 
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.questions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    padding-right: 10px;
+    width: 101%;
+    padding-bottom: 5px;
+}
+
+input {
+    width: 75%;
+    align-items: center;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.buttons {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+#about-me-answer {
+    padding: 20px;
+}
+
 @media (min-width: 500px) {
     .face {
         height: 200px;
@@ -77,27 +131,51 @@ body {
         margin: 0 auto;
         display: block;
     }
+
     .quote {
         padding-top: 20px;
     }
+
     .name {
         padding-bottom: 20px;
     }
+
     h2 {
         text-align: center;
     }
+
     header {
         float: left;
         width: 50%;
     }
+
     main {
         padding-top: 20px;
     }
+
     footer p {
         padding-top: 100px;
     }
+
     aside {
         clear: both;
+    }
+
+    input {
+        width: 30%;
+        text-align: initial;
+    }
+
+    .buttons {
+        width: 30%;
+    }
+
+    .questions {
+        width: 50%;
+        justify-content: space-between;
+        padding: 20px;
+        flex-direction: row;
+        text-align: initial;
     }
 
 }

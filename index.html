@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <h2>I Am...</h2>
         <h1 class="name"><span>Aaron</span> Dennis</h1>
         <img src="https://avatars2.githubusercontent.com/u/17519919?s=400&u=6be8b7071d8d73e25d7192e9f0227f2db1c5264a&v=4"
-        class="face" alt="Picture of Aaron">
+            class="face" alt="Picture of Aaron">
         <p class="quote"><i>The world and back again, my quest to learn to code</i></p>
     </header>
 
@@ -39,14 +40,61 @@
     </main>
 
     <aside>
-            <h1>The Game</h1>
-            <p>Coming Soon...</p>
+        <h1>About Me Game</h1>
+        <form id="about-me-form" autocomplete="off" name="about-me-form" onsubmit="event.preventDefault(); checkAnswers();"
+            onreset="resetAnswers()">
+
+            <div class="questions">
+                <label for="questionOne">What is my favorite kind of food?</label>
+                <input name="food" type="text" id="question-one" placeholder="Favorite Food?">
+            </div>
+            <div class="questions">
+                <label for="questionTwo">What is my favorite sport?</label>
+                <input name="sport" type="text" id="question-two" placeholder="Favorite Sport?">
+            </div>
+            <div class="questions">
+                <label for="questionThree">What was my old profession?</label>
+                <input name="job" type="text" id="question-three" placeholder="Old Job?">
+            </div>
+            <div class="questions">
+                <label for="questionFour">How many countries have I visited?</label>
+                <input name="countries" type="text" id="question-four" placeholder="How Many Countries?">
+            </div>
+            <div class="questions">
+                <label for="questionFive">How many years have I lived in Portland?</label>
+                <input name="years" type="text" id="question-five" placeholder="How Many Years?">
+            </div>
+
+            <div class="buttons">
+                <button class="submit">Submit Answers</button>
+                <button type="reset">Play Again</button>
+            </div>
+
+        </form>
+        <p id="about-me-answer"></p>
+
+        <h1>Guess My Favorite Number</h1>
+        <form id="guess-number-form" autocomplete="off" onsubmit="event.preventDefault(); checkNumber();" onreset="resetNumber()">
+            <div class="questions">
+                <label for="number">What is my favorite number?</label>
+                <input type="text" id="number" name="number" placeholder="1 - 10" />
+            </div>
+
+            <div class="buttons">
+                <button type="submit" name="guess">Guess</button>
+                <button type="reset" name="play-again">Play Again</button>
+            </div>
+        </form>
+        <p id="guess-number-answer"></p>
+
     </aside>
 
     <footer>
         <p>&copy; Aaron Dennis 2018</p>
     </footer>
 
+    <script src="about-me.js"></script>
+    <script src="guess-number.js"></script>
 </body>
 
 </html>
