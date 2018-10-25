@@ -20,6 +20,6 @@ function checkElementFinder()
  
 }
 function resetElementFinder() {
-    // disable eslint next-line undefined
+// eslint-disable-next-line 
     elementReader.textContent = '';
 }
