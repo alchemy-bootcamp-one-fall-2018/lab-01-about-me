@@ -4,17 +4,16 @@
 
 
 function tryQuerySelector() {
-    var buttonInputs = document.querySelectorAll('input[name="button"]:checked');
-
-    for(var i = 0; i < buttonInputs.length; i++) {
-        var input = buttonInputs[i];
+    var buttonChecked = document.querySelectorAll('input[name="button"]');
+    for(var i = 0; i < buttonChecked.length; i++) {
+        var input = buttonChecked[i];
         console.log(input.value, input.id, input.checked);
-        // console.log(buttonInputs[i].id, buttonInputs.length);
+        // console.log(buttonChecked[i].id, buttonChecked.length);
     }
 
-    var selectedButtonInput = document.querySelector('input[name="button"]:checked');
-    if(selectedButtonInput) {
-        console.log('Hey this is the tag', selectedButtonInput.value);
+    var selectedCheckedButton = document.querySelector('input[name="button"]:checked');
+    if(selectedCheckedButton) {
+        console.log('Hey this is the ' + selectedCheckedButton.value + ' tag');
     } else {
         console.log('No Element Selected');
     }
@@ -27,8 +26,9 @@ function tryQuerySelector() {
     var tags = document.querySelectorAll('input[name="button"]:checked');
     for(var k = 0; k < tags.length; k++) {
         var tag = tags[k].value;
-        console.log(tags[k].length);
-        console.log(tag.length);
+        console.log(tag);
+        // console.log(tags[k].length);
+        // console.log(tag.length);
     }
 }
 
