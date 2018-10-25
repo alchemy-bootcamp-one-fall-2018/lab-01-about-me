@@ -24,7 +24,6 @@
                 My career ranges from visual art and graphic design to music production, performance, and education. I am a multi-instrumentalist and songwriter with over 50 songs in my collection and 16 past music projects. I’ve developed all-original music for web and tv, produced and licensed commercial music worldwide, and designed digital branding for small businesses.
             </p>
         </div>
-    </main>
     <section class="section" id="column-one">
         <h3 id="list-of-facts">Things I enjoy:</h3>
         <ol>
@@ -33,9 +32,32 @@
             <li>Art making, pondering</li>
         </ol>
     </section>
-    <section id="column-two">
-            Coming soon! Doggo ipsum doggorino pupperino h*ck snoot, long woofer shibe he made many woofs tungg, mlem smol. Doing me a frighten pupper very hand that feed shibe borking doggo, dat tungg tho smol. Noodle horse long bois such treat floofs, doggorino aqua doggo ur givin me a spook adorable doggo, such treat boof. Yapper floofs much ruin diet Shooberino long bois shibe noodle horse the neighborhood pupper, aqua doggo extremely cuuuuuute what a nice floof.
-    </section>
+</main>
+    <section id="element-counter">
+            <h2>Element Counter</h2>
+            <p>Select html elements to see how many times they appear on this page:</p>
+                <div id="div-checkbox">
+                    <label for="h-one">h1</label>
+                    <input type="checkbox" name="elements" value="h1" />
+                </div>
+                <div>
+                    <label for="sect">section</label>
+                    <input type="checkbox" name="elements" value="section" />
+                </div>
+                <div>
+                    <label for="div">div</label>
+                    <input type="checkbox" name="elements" value="div" />
+                </div>
+                <div>
+                    <label for="inputs">input</label>
+                    <input type="checkbox" name="elements" value="input" />
+                </div>
+                <div id="div-elements-buttons">
+                    <button onclick="tryQuerySelector()" id="element-button">Count it!</button>
+                    <button type="submit" onClick="refreshPage()" id="element-counter-reset">Reset</button>
+                    <pre id="elements-response"></pre>
+                </div>
+        </section>
     <section id="aboutquiz">
         <h2>Quiz About Cari:</h2>
         <form id="about-me-form" name="about-me-form" 
@@ -101,5 +123,6 @@
     
       <script src="aboutme.js"></script>
       <script src="guessgame.js"></script>
+      <script src="elementcount.js"></script>
 </body>
 </html>

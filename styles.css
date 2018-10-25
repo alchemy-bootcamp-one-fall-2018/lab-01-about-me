@@ -11,15 +11,13 @@ body {
     border-image-repeat: repeat;
     margin-top: 0px;
     font-family: Helvetica, sans-serif;
-}
-
-#column-two {
-    font-family: Helvetica, sans-serif;
-    background-color: transparent;
+    text-align: center;
 }
 
 img {
-    width: 100%;
+    width: 80%;
+    margin: 1.5em auto;
+    display: block;
     padding: 2em;
     border: 5px dashed red;
 }
@@ -50,14 +48,20 @@ nav a.nav-link {
     padding: 5px;
 }
 
-button[type="submit"] {
+ol {
+    list-style-position: inside;
+}
+
+form button[type="submit"], #div-elements-buttons #element-button  {
     color:green;
     margin: 5px auto;
+    font-weight: 600;
   }
   
-button[type="reset"] {
+button[type="reset"], #div-elements-buttons button[type="submit"] {
     color: red;
     margin: 5px auto;
+    font-weight: 600;
   }
   
 .correct {
@@ -68,6 +72,15 @@ button[type="reset"] {
     background-color: fuchsia;
   }
 
+section#element-counter {
+   /* font-family: Helvetica, sans-serif;
+    text-align: center; */
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    display: block;
+    overflow: auto;
+}
 section#aboutquiz  {
     background-color: rgba(255, 0, 0, 0.3);
     float: right;
@@ -92,23 +105,23 @@ label {
     padding: 3px 3px 3px 3px;
   }
   
+pre {
+    font-family: Helvetica, sans-serif;
+  }
+
+
 @media screen and (max-width: 600px) {
     img {
-        max-width: 50%;
-        float: right;
-        clear: both;
-        margin: 2px;
+        max-width: 100%;
+        margin-top: 1.5em;
     }
     header {
         width: 100%;
         background-color: yellow;
     }
-    #list-of-facts {
-        text-align: left;
-    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
     img {
         width: 50%;
         display: inline-block;
