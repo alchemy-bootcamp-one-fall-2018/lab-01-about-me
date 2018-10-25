@@ -68,21 +68,31 @@
             <p id="about-me-quiz-2-response"></p>
         </section>
 
-        <!--below adds page interface to allow use to select which elements to count-->
+        <!--below adds page interface to allow user to select which elements to count-->
         <section>
             <h3>Counting 'html' elements</h3>
-            <form>
+            <form id="count-elements-form" onsubmit="event.preventDefault(); pingMyFile();" onreset="resetAboutMe();">
                 <fieldset>
-                    <input name="p-box" type="checkbox" id="p" value="p">
-                    <label for="p">p</label>
-                    <input name="section-box" type="checkbox" id="section" value="section">
-                    <label for="section">section</label>
-                    <input name="input-box" type="checkbox" id="input" value="input">
-                    <label for="input">input</label>
+                    <div>
+                        <input name="box" type="checkbox" id="p" value="p" onclick="countPElements()";>
+                        <label for="p">p</label>
+                    </div>
+                    <div>
+                        <input name="box" type="checkbox" id="section" value="section" onclick="countSectionElements()";>
+                        <label for="section">section</label>
+                    </div>
+                    <div>
+                        <input name="box" type="checkbox" id="input" value="input" onclick="countInputElements()";>
+                        <label for="input">input</label>
+                    </div>
                 </fieldset>
             </form>
+            <p id="countPResponse"></p>
+            <p id="countSectionResponse"></p>
+            <p id="countInputResponse"></p>
         </section>
     </main>
     <script src="aboutMe.js"></script>
     <script src="guess-number.js"></script>
+    <script src="lab-3-element-count.js"></script>
 </body>
