@@ -14,7 +14,7 @@ function checkNumberQuiz() {
     var submit = elements.guess;
     var counter = 3 - guessCount;
 
-
+// eslint-disable-next-line
     if(guess == 41) {
         numberQuizResponse.textContent = 'You win! Yay!';
         submit.disabled = true;
