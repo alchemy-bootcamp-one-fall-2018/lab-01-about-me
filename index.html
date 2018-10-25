@@ -75,8 +75,6 @@
     <p id="critter-form-response"></p>
     </section>
 
-    <script src="forms.js"></script>
-
     <section>
         <h2>Styles of spinning wheels</h2>
         <form id="guess-number-form" name="guess-number-form" onsubmit="event.preventDefault(); checkGuessNumber();"
@@ -87,14 +85,42 @@
             <input type="number" id="guess-number-response" name="guess-number-response" placeholder="Enter a number!" />
         </div>
         <div>
-            <button type="submit">Guess</button>
+            <button id="submit" type="submit">Guess</button>
             <button type="reset">Play Again</button>
         </div>
 
         </form>
     </section>
 
+    <section>
+        <h2>Want to see how many of each type of tag are used?</h2>
+        <fieldset>
+            
+            <input type="checkbox" name="tag" id="p" value="p">
+            <label for="p">p</label>
+
+            <input type="checkbox" name="tag" id="section" value="section">
+            <label for="section">section</label>
+
+            <input type="checkbox" name="tag" id="input" value="input">
+            <label for="input">input</label>
+
+            <input type="checkbox" name="tag" id="div" value="div">
+            <label for="div">div</label>
+            
+            <input type="checkbox" name="tag" id="li" value="li">
+            <label for="li">li</label>
+
+        </fieldset>
+        <div>
+            <button onclick="tryQuerySelector()">Try query selector</button>
+        </div>
+        <pre id="query-results"> 
+    </section>
+
+    <script src="forms.js"></script>
     <script src="guess.js"></script>
+    <script src="elementcounter.js"></script>
 
 </body>
 </html>
