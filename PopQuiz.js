@@ -1,4 +1,4 @@
-/* exported checkAboutMe, quizForm */
+/* exported checkAboutMe, quizForm, resetAboutMe */
 
 var quizForm = document.getElementById('quiz');
 var quizResponse = document.getElementById('quiz-response');
