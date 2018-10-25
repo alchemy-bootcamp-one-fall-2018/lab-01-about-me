@@ -35,11 +35,70 @@
 
     </div>
 
-    <article>
-        <h1>ComingSoon - THE QUIZ!</h1>
-    </article>
+    <section>
+        <h2>How Well Do You Know Me?</h2>
 
-    <footer> &copy DefiantDeb 2018</footer>
+        <form id="know-me-quiz" name="know-me-form" 
+            onsubmit="event.preventDefault(); checkAboutMe();" onreset="resetAboutMe();">
+            <div>
+                <label for="harryPotter">Do I like Harry Potter?</label>
+                <input type="text" id="harryPotter" name="potter" placeholder="yes or no"/>
+            </div>
+
+            <div>
+                <label for="favoriteMovie">What is my favorite movie?</label>
+                <input type="text" id="favoriteMovie" name="movie" placeholder="enter movie title" />
+            </div>
+
+            <div>
+                <label for="dogCats">I love Goldendoodle, but not cats.</label>
+                <input type="text" id="dogCats" name="goldendoodle" placeholder="true or false" />
+            </div>
+
+            <div>
+                <label for="hobbies">Do I have fancy hobbies?</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="yes or no" />
+            </div>
+
+            <div>
+                <label for="nature">Do I like nature?</label>
+                <input type="text" id="nature" name="nature" placeholder="yes or no" />
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+        <p id="know-me-response"></p>
+
+    </section>
+
+    <section>
+        <h2>What's My Favorite Number?</h2>
+
+        <form id="favorite-number" onsubmit="event.preventDefault(); checkFavoriteNumber();" onreset="resetFavoriteNumber();">
+        
+            <div>
+                <label for="number">What is my Favorite Number?</label>
+                <input type="text" id="number" name="number" placeholder="enter number"/>
+            </div>
+
+            <div>
+                <button type="submit">Guess</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+            <p id="favorite-number-response"></p>
+    </section>
+
+    <script src="know-me.js"></script>
+    <script src="favorite-number.js"></script>
+
+    <footer> &copy; DefiantDeb 2018 </footer>
 
 </body>
 </html>

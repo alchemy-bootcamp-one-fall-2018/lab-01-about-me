@@ -32,6 +32,47 @@ article {
     clear: both;
 }
 
+label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  form div {
+    padding: 10px 0;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  form:hover {
+    box-shadow: 10px 10px 10px rgba(54, 14, 34, 0.5);
+  }
+  
+  button[type="submit"] {
+    color:rgb(38, 0, 128);
+  }
+  
+  button[type="reset"] {
+    color: rgb(8, 109, 59);
+  }
+  
+  .correct {
+    background-color: rgb(238, 144, 144);
+  }
+  
+  .incorrect {
+    background-color: rgb(192, 255, 236);
+  }
+  
+  .hidden {
+    display: none;
+  }
+
 
 @media screen and (min-width: 600px) {
     body {
