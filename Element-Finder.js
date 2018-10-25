@@ -1,4 +1,4 @@
-/* exported checkElementFinder */
+/* exported checkElementFinder, resetElementFinder */
 
 
 
@@ -18,4 +18,8 @@ function checkElementFinder()
     var printOutput = document.getElementById('elementReader');
     printOutput.innerHTML = result;
  
+}
+function resetElementFinder() {
+    // disable eslint next-line undefined
+    elementReader.textContent = '';
 }
