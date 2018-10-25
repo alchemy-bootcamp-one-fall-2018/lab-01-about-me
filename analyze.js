@@ -32,7 +32,7 @@ function stretch(tags) {
     var keys = Object.keys(tagCount);
     
     for(var j = 0; j < tags.length; j++){
-        html += '<li>' + keys[j] + tagCount[keys[j]] + '</li>';
+        html += '<li>' + keys[j] + ' - ' + tagCount[keys[j]] + '</li>';
     }
 
     html += '</ul>';
