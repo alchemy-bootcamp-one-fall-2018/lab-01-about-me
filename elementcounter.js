@@ -6,8 +6,7 @@ function tryQuerySelector() {
     
     for(var i = 0; i < tags.length; i++) { 
         var number = document.querySelectorAll(tags[i].value);
-        console.log(tags[i].id, number.length);
-
+        
         queryResponse.textContent = queryResponse.textContent + tags[i].id + '  : ' + number.length + '\r\n'; 
 
     }
