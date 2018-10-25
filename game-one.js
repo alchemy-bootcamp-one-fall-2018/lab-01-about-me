@@ -79,7 +79,7 @@ function checkGameOne () {
     gameOneResponse.textContent = 'You got ' +  correct + ' right!';
 }
 
-function resetGameOne(){
+function resetGameOne() {
     var elements = gameOneForm.elements;
     var nameInput = elements.name;
     var birthdayInput = elements.birthday;

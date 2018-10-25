@@ -146,7 +146,12 @@
         <div>
             <p>Query Selector</p>
             <pre id="query-results"></pre>
-        <form>
+
+        <form id= "query-form" name= "query-form"
+            onsubmit= "event.preventDefault(); tryQuerySelector()"
+            onreset="resetQueryCounter();"
+        >
+            
             <fieldset>
 
                 <input name="counter" type="checkbox" id="p" value="p">
@@ -161,9 +166,21 @@
                 <input name="counter" type="checkbox" id="form" value="form">
                 <label for="form">form</label>
 
+
+            <div>
+                <button onclick="tryQuerySelector()">Do yo thang!</button>
+                <button onclick="reset">Reset</button>
+        
+            onreset= "resetQueryCounter();"
+             </div>
             </fieldset>
         </form>
-        <button onclick="tryQuerySelector()">Do yo thang!</button>
+            <!-- <div>
+                <button onclick="tryQuerySelector()">Do yo thang!</button>
+                <button onclick="reset">Reset</button>
+
+                onreset= "resetQueryCounter();"
+            </div> -->
         <div>
 
     </section>

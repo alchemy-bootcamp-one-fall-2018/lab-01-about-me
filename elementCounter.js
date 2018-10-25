@@ -10,10 +10,16 @@ var queryResponse = document.getElementById('query-results');
         queryResponse.textContent = queryResponse.textContent + inputCounter[i].id + ' : ' + input.length + ' \r\n ';
 
       }
-     
+    
  }
  
-        
+  function resetQueryCounter() {
+    var response = queryResponse.elements;
+
+    response.classList.remove(queryResponse);
+
+    queryResponse.textContent = '';
+}
 
         
 

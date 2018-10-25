@@ -5,7 +5,7 @@ function checkGameTwo () {
 
     var elements = gameTwoForm.elements;
 
-    var gearInput = elements.gear;
+    var gearInput = element.gear;
     var gearPref = gearInput.value;
 
     var correct = 0;
