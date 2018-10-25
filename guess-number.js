@@ -45,4 +45,8 @@ function resetNumber() {
     submit.disabled = false;
     guessCount = 0;
     guessNumberAnswer.textContent = '';
+    // eslint-disable-next-line
+    number.classList.remove('correct');
+    // eslint-disable-next-line
+    number.classList.remove('incorrect');
 }
