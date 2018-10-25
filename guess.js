@@ -15,10 +15,10 @@ function checkGuessTravel() {
     else {
         guessCount = guessCount + 1;
 
-        if(guessCount < 4){
+        if (guessCount < 4){
             guessTravelResponse.textContent = 'Try again!'; 
         }
-        else{
+        else {
             guessTravelResponse.textContent = 'You lose. The correct answer was 9.';
             submit.disabled = true;
         }

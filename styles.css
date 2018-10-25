@@ -40,12 +40,12 @@ section {
     padding: 2px;
 }
 
-#guess-travel {
+/*#guess-travel {
     border: 1px solid gray;
     text-align:center;
     padding: 20px 0;
-}
-#game {
+}*/
+.games {
     border: 1px solid black;
     text-align: center;
     padding: 20px 0;
