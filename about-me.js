@@ -1,3 +1,7 @@
+/* exported checkAnswers */
+/* exported resetAnswers */
+'use strict';
+
 var aboutMeForm = document.getElementById('about-me-form');
 
 var aboutMeAnswer = document.getElementById('about-me-answer');
@@ -45,7 +49,7 @@ function checkAnswers() {
 
     var countriesInput = elements.countries;
     var countriesAnswer = countriesInput.value;
-
+    // eslint-disable-next-line
     if(countriesAnswer == 58) {
         correct = correct + 1;
         countriesInput.classList.add('correct');
@@ -57,7 +61,7 @@ function checkAnswers() {
 
     var yearsInput = elements.years;
     var yearsAnswer = yearsInput.value;
-
+    // eslint-disable-next-line
     if(yearsAnswer == 13) {
         correct = correct + 1;
         yearsInput.classList.add('correct');
@@ -92,6 +96,4 @@ function resetAnswers() {
     yearsInput.classList.remove('incorrect');
 
     aboutMeAnswer.textContent = '';
-
-
 }

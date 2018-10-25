@@ -1,22 +1,29 @@
+/* exported checkNumber */
+/* exported resetNumber */
+'use strict';
+
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberAnswer = document.getElementById('guess-number-answer');
 
 var guessCount = 0;
 
 function checkNumber() {
-
     var elements = guessNumberForm.elements;
     var guess = elements.number.value;
     var submit = elements.guess;
-
+    // eslint-disable-next-line
     if(guess == 8) {
         guessNumberAnswer.textContent = 'You win!';
         submit.disabled = true;
+        // eslint-disable-next-line
         number.classList.add('correct');
+        // eslint-disable-next-line
         number.classList.remove('incorrect');
     } else {
         guessCount = guessCount + 1;
+        // eslint-disable-next-line
         number.classList.add('incorrect');
+        // eslint-disable-next-line
         number.classList.remove('correct');
 
         if(guess < 8) {
@@ -38,4 +45,8 @@ function resetNumber() {
     submit.disabled = false;
     guessCount = 0;
     guessNumberAnswer.textContent = '';
+    // eslint-disable-next-line
+    number.classList.remove('correct');
+    // eslint-disable-next-line
+    number.classList.remove('incorrect');
 }
