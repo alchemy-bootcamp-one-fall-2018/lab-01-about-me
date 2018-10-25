@@ -2,6 +2,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: skyblue;
+}
+
 h1 {
     color:#282828;
     text-align: center;
@@ -45,13 +49,13 @@ section {
     text-align:center;
     padding: 20px 0;
 }*/
+
 .games {
     border: 1px solid black;
     text-align: center;
     padding: 20px 0;
+    background-color: white;
 }
-
-
 
 @media (min-width: 1150px) {
     img {
