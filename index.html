@@ -32,7 +32,96 @@
 
     <div style="clear: both;"></div>
     
-    <p>Holding space for tomorrow's game.</p>
+    <p>Game time!  Let's see how accurately you can infer information from my short paragraph.</p>
+
+    <section>
+        <h2>With what kinds of animals do I share my space?</h2>
+        <form id="critters-form" name="critters-form"
+        onsubmit="event.preventDefault(); checkCritters();"
+        onreset="resetCritters();">
+    
+            <div>
+                <label for="dogs">Do I have dogs?</label>
+                <input type="text" id="dogs" name="dogs" placeholder="yes/no" />
+            </div>
+
+            <div>
+                <label for="cats">Do I have cats?</label>
+                <input type="text" id="cats" name="cats" placeholder="yes/no" />
+            </div>
+    
+            <div>
+                <label for="parrot">Do I have a parrot?</label>
+                <input type="text" id="parrot" name="parrot" placeholder="yes/no" />
+            </div>
+
+            <div>
+                <label for="turtle">Do I have a turtle?</label>
+                <input type="text" id="turtle" name="turtle" 
+                placeholder="yes/no" />
+            </div>
+
+            <div>
+                <label for="chicken">How about chickens?</label>
+                <input type="text" id="chicken" name="chicken"
+                placeholder="yes/no" />
+            </div>
+
+            <div>
+                <button type="submit">Guess</button>
+                <button type="reset">Play Again</button>
+            </div>
+    </form>
+    <p id="critter-form-response"></p>
+    </section>
+
+    <section>
+        <h2>Styles of spinning wheels</h2>
+        <form id="guess-number-form" name="guess-number-form" onsubmit="event.preventDefault(); checkGuessNumber();"
+        onreset="resetGuessNumber();">
+        <div>
+            <label for="guess-number-response">How many styles of wheels do I have?</label>
+            <br>
+            <input type="number" id="guess-number-response" name="guess-number-response" placeholder="Enter a number!" />
+        </div>
+        <div>
+            <button id="submit" type="submit">Guess</button>
+            <button id="reset" type="reset">Play Again</button>
+        </div>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Want to see how many of each type of tag are in this page?</h2>
+        <fieldset>
+            
+            <input type="checkbox" name="tag" id="p" value="p">
+            <label for="p">p</label>
+
+            <input type="checkbox" name="tag" id="section" value="section">
+            <label for="section">section</label>
+
+            <input type="checkbox" name="tag" id="input" value="input">
+            <label for="input">input</label>
+
+            <input type="checkbox" name="tag" id="div" value="div">
+            <label for="div">div</label>
+            
+            <input type="checkbox" name="tag" id="li" value="li">
+            <label for="li">li</label>
+
+        </fieldset>
+        <div>
+            <button onclick="tryQuerySelector()">Try query selector</button>
+            <button onclick="clearMe()" id="element-counter-reset">Reset</button>
+        </div>
+        <pre id="query-results"> 
+    </section>
+
+    <script src="forms.js"></script>
+    <script src="guess.js"></script>
+    <script src="elementcounter.js"></script>
 
 </body>
 </html>
