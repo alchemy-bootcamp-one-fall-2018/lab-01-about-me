@@ -23,7 +23,7 @@ function checkHowWell() {
     var howHelp = helpInput.value;
 
    
-
+   // eslint-disable-next-line
     var correct = 0;
 
     if(speakLatin.toLowerCase() === 'yes') {
