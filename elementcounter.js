@@ -1,5 +1,5 @@
 'use strict';
-/* exported tryQuerySelector */
+/* exported tryQuerySelector reset */
 var queryResponse = document.getElementById('query-results');
 function tryQuerySelector() {
     var tags = document.querySelectorAll('input[name="tag"]:checked');
@@ -11,7 +11,12 @@ function tryQuerySelector() {
 
     }
 }
-
-
-
-
+/* exported clearMe */
+function clearMe() {
+    queryResponse.textContent = '';
+    document.getElementById('p').checked = false;
+    document.getElementById('section').checked = false;
+    document.getElementById('input').checked = false;
+    document.getElementById('div').checked = false;
+    document.getElementById('li').checked = false;
+}

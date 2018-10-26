@@ -33,9 +33,6 @@ function checkGuessNumber() {
 
 }
 
-
-
-
 // line below is not yet functional
 // function resetGuessNumber() {
     // var element = guessNumberForm.elements;
