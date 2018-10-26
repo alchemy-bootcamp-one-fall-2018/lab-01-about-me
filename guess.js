@@ -1,16 +1,19 @@
+/* exported checkGuessNumber resetGuessNumber */
+
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
 var guessCount = 0;
 
 function checkGuessNumber() {
-
-    var element = guessNumberForm.elements;
+// line below is not yet functional coding
+//    var element = guessNumberForm.elements;
     var guess = guessNumberForm.element;
     var submit = guessNumberResponse.element;
 
+// eslint-disable-next-line
     if(guess == 8) {
-        guessNumberResponse.textContent = 'Congratulations!  Your guess is correct.  The styles of wheels residing with me are castle, charka, great, super slanty, saxony, production, double table and hatbox.'
+        guessNumberResponse.textContent = 'Congratulations!  Your guess is correct.  The styles of wheels residing with me are castle, charka, great, super slanty, saxony, production, double table and hatbox.';
         submit.disabled = true;
     }
     else {
@@ -28,11 +31,12 @@ function checkGuessNumber() {
     }
 
 }
-
-function resetGuessNumber() {
-    var elements = guessNumberForm.elements;
-    var submit = elements.guess;
+// line below is not yet functional
+// function resetGuessNumber() {
+    // var element = guessNumberForm.elements;
+    
+    // var submit = elements.guess;
     // submit.disabled = false;
-    guessCount = 0;
-    guessNumberResponse.textContent = '';
-}
+    // guessCount = 0;
+    // guessNumberResponse.textContent = '';
+// }

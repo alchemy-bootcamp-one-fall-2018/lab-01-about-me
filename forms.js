@@ -1,5 +1,7 @@
+/* exported checkCritters resetCritters */
+
 var critters = document.getElementById('critters-form');
-// var message = document.getElementById('critter-form-response');
+var message = document.getElementById('critter-form-response');
 var dogInput = critters.elements.dogs;
 var catInput = critters.elements.cats;
 var parrotInput = critters.elements.parrot;
