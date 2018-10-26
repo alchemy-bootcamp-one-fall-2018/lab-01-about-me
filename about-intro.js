@@ -1,5 +1,7 @@
+/* exported checkHowWell */
+
 var aboutMeForm = document.getElementById('how-well');
-var aboutMeResponse = document.getElementById('how-well-response');
+//var aboutMeResponse = document.getElementById('how-well-response');
 
 function checkHowWell() {
 

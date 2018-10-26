@@ -1,11 +1,5 @@
 /* exported whenClicked */ 
 
-var inputValue = document.getElementById('inputEl');
-
-
-
-
-
 function whenClicked() {
     var elementInput = document.querySelectorAll('input[name="element"]:checked');
     var result = '';
@@ -13,11 +7,11 @@ function whenClicked() {
 
         var elementIndex = elementInput[i]; 
         var elementList = (document.querySelectorAll(elementIndex.value));
-        var numberofEls = elementList.length; 
+        var elementNumber = elementList.length; 
 
-        result += elementIndex.value + ' ' + numberofEls + '<br>';
+        result += elementIndex.value + ' ' + elementNumber + '<br>';
 
-        var printOutput =document.getElementById('inputEl');
+        var printOutput = document.getElementById('inputEl');
         printOutput.innerHTML = result;
 
 
