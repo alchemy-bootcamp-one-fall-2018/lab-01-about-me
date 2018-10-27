@@ -62,12 +62,12 @@ label {
   }
   
   .correct {
-    background-color: rgb(238, 144, 144);
-  }
-  
-  .incorrect {
     background-color: rgb(192, 255, 236);
-  }
+    }
+    
+    .incorrect {
+    background-color: rgb(238, 144, 144);
+    }
   
   .hidden {
     display: none;
