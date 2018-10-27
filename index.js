@@ -2,9 +2,6 @@
 
 var randomNumberForm = document.getElementById('random-number-form');
 var randomNumberResponse = document.getElementById('random-number-response');
-
-
-
 var guessCounter = 3;
 
 function checkRandomNumber() {

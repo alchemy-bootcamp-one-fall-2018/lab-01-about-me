@@ -75,5 +75,11 @@ img {
      }
 }
 
+#response li {
+    list-style: none;
+}
 
+.is-big {
+    color: green;
+}
 
