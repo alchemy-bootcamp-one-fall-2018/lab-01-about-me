@@ -44,8 +44,8 @@
                     <input name="dragons" type="text" class="quiz-1" placeholder="yes/no">
                 </div>
                 <div>
-                    <button type="submit">Guess!</button>
-                    <button type="reset" onclick="resetAboutMe()">Reset quiz</button>
+                    <button type="submit" id="submit-game-1">Guess!</button>
+                    <button type="reset" id="reset-game-1" onclick="resetAboutMe()">Reset quiz</button>
                 </div>
             </form>
             <p id="aboutMeResponse1"></p>    
@@ -61,8 +61,8 @@
                 </div>
 
                 <div>
-                    <button type="submit">Guess!</button>
-                    <button type="reset">Reset quiz</button>
+                    <button type="submit" id="submit-game-2" name="submit-game-2">Guess!</button>
+                    <button type="reset" id="reset-game-2" name="reset-game-2" onclick="resetGuessNumber()">Reset quiz</button>
                 </div>
             </form>
             <p id="guessNumResponse"></p>
@@ -71,7 +71,7 @@
         <!--below adds page interface to allow user to select which elements to count-->
         <section>
             <h3>Counting 'html' elements</h3>
-            <form id="count-elements-form" onsubmit="event.preventDefault();" onreset="resetAboutMe();">
+            <form id="count-elements-form" onsubmit="event.preventDefault();">
                 <fieldset>
                     <div>
                         <input name="box" type="checkbox" id="p" value="p" onclick="countPElements()";>

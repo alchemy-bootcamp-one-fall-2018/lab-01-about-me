@@ -1,8 +1,9 @@
 var aboutMeForm1 = document.getElementById('about-me-quiz-1');
-var correct = 0;
 /* exported checkAboutMe */
 
 function checkAboutMe() {
+
+    var correct = 0;
 
     var elements = aboutMeForm1.elements;
     var snakesInput = elements.snakes;

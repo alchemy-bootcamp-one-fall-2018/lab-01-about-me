@@ -9,8 +9,18 @@ article {
     float: right;
 }
 form {max-width: 75; background-color: aqua; border: groove 5px}
-.quiz-1 {text-emphasis: bold};
+.about-me-quiz-1 {font-weight: bold};
 .quiz-2 {font-style: arial};
+
+button[type="submit"] {
+    background: green;
+}
+
+button[type="reset"] {
+    background: red;
+    font-weight: bold;
+}
+
 /*
 */
 @media only screen and (max-width: 500px) {
