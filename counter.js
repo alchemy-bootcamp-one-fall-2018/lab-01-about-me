@@ -1,8 +1,5 @@
 /* exported clickedButton*/ 
 var elementCounterResponse = document.getElementById('response');
-var elementCounterResponseInput = document.getElementById('element-counter-response-input');
-
-
 function clickedButton() {
     var tagsChosen = document.querySelectorAll('input[name="element-button"]:checked');    
     var printThis = '';
