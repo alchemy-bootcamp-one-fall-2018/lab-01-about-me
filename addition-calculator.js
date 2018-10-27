@@ -1,5 +1,5 @@
 var additionCalculatorForm = document.getElementById('addition-calculator');
-
+var randomNumberResponse = document.getElementById('addition-calculator-response')
 
 function addNumbers() {
     var elements = additionCalculatorForm.elements;
@@ -12,7 +12,7 @@ function addNumbers() {
 
     var answer = parseInt(firstNumber) + parseInt(secondNumber);
 
-    console.log(answer);
+    randomNumberResponse.textContent = answer;
     
 }
 
