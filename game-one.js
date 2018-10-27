@@ -1,3 +1,5 @@
+/* exported checkAboutMe, resetAboutMe */
+
 var gameOneForm = document.getElementById('game-one-form');
 var gameOneResponse = document.getElementById('game-one-response');
 
