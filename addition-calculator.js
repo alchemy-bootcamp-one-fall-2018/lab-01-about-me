@@ -5,12 +5,14 @@ function addNumbers() {
     var elements = additionCalculatorForm.elements;
     var firstNumberInput = elements.firstDigit;
     var firstNumber = firstNumberInput.value;
-    
     var secondNumberInput = elements.secondDigit;
     var secondNumber = secondNumberInput.value;
 
     var submitButton = elements.submit;
-    console.log(firstNumber, secondNumber);
+
+    var answer = parseInt(firstNumber) + parseInt(secondNumber);
+
+    console.log(answer);
     
 }
 
