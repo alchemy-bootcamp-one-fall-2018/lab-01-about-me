@@ -42,20 +42,19 @@
         <h4>Addition Calculator</h4>
 
         <form id="addition-calculator" name="addition-calculator"
-        onsubmit="event.preventDefault(); addNumbers();" onreset="resetCalculator()">
+        onsubmit="event.preventDefault(); addNumbers();">
             <div id="addition-calculator-first-box">
                 <label name="first-digit">Enter first number here!</label>
-                <input name="firstDigit" type="text" id="firstDigit">
+                <input name="firstDigit" type="text" id="firstDigit" placeholder="Must be digit">
             </div>
 
             <div id="addition-calculator-second-box">
                     <label name="second-digit">Enter second number here!</label>
-                    <input name="secondDigit" type="text" id="secondDigit">
+                    <input name="secondDigit" type="text" id="secondDigit" placeholder="Must be digit">
             </div>
 
             <div>
                 <button name="submit" type="submit">Add Together</button>
-                <button name ="reset" type="reset">Reset</button>
             </div>
 
         </form>
