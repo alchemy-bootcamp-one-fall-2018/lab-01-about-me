@@ -1,4 +1,5 @@
 var queryResponse = document.getElementById('query-results');
+var queryForm = document.getElementByeId('query-form');
 
   function tryQuerySelector() {
       var inputCounter = document.querySelectorAll('input[name="counter"]:checked');
