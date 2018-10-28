@@ -9,7 +9,7 @@ var genreResponse = document.getElementById('genre-response');
 function genreCheck() {
     if(document.getElementById('scifi').checked === false) {
         console.log('you lose');
-        resetGenreCheck();
+        genreResponse.textContent = 'try again!';
     } else {
         if(document.getElementById('scifi').checked === true) {
             console.log('you win');
@@ -17,8 +17,8 @@ function genreCheck() {
     }
 }
 
+genreResponse.textContent = 'You win!';
 
-//genreResponse.textContent = 'You scored ' + score + ' percent!';
 function resetGenreCheck() {
-    genreResponse.textContent = 'bummer';
+    genreResponse.textContent = '';
 }
