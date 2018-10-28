@@ -5,34 +5,20 @@
 
 var genreResponse = document.getElementById('genre-response');
 
-var wrong = 0;
 
 function genreCheck() {
-    if(document.getElementById('litfic').checked === true) {
-        console.log('you win');
+    if(document.getElementById('scifi').checked === false) {
+        console.log('you lose');
+        resetGenreCheck();
     } else {
-        console.log('try again');
+        if(document.getElementById('scifi').checked === true) {
+            console.log('you win');
+        } 
     }
+}
 
 
-
-  /*  if(chocMelt === 'tongue'){
-        wrong++;
-    }   
-    if(favPet === 'dog'){
-        wrong++;
-    }
-    if(favFiber === 'yarn'){
-        wrong++;
-    }
-    if(likeGame === 'puzzle') {
-        wrong++;
-    }
-    if(kindaJunkie === 'books') {
-        wrong++;
-    }
-    */
-    var score = (wrong / 5) * 100;
-    genreResponse.textContent = 'You scored ' + score + ' percent!';
-    wrong = 0;
+//genreResponse.textContent = 'You scored ' + score + ' percent!';
+function resetGenreCheck() {
+    genreResponse.textContent = 'bummer';
 }
