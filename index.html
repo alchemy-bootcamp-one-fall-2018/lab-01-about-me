@@ -29,96 +29,99 @@
         <li>I wish I had a pet elephant</li>
     </ul>
     </div>
+
 <section>
     <!--Game Time-->
     <h3>Ready to Play Some Games?!</h3>
 
-    <h4>Game 1</h4>
+    <h3>Game 1</h3>
     <h4>Question 1</h4>
-    <form id="about-me-form" id="about-me-form"
-        onsubmit="event.preventDefault(); CheckAboutMe();"
+    <form id="about-me-form" name="about-me-form"
+        onsubmit="event.preventDefault(); checkAboutMe();"
         onreset="resetAboutMe();
     >
         <div>
-            <label for="class">What's my favorite thing about class</label>
-            <input type="text" id="class" name="class" placeholder="hint:it's not the reading">
+            <label for='class'>What's my favorite thing about class</label>
+            <input type='text' id='class' name='class' placeholder='hint:it is not the reading'/>
         </div>
 
         <div>
-            <button type="Submit">GO!</button>
-            <button type="Reset">Guess</button>
+            <button type='Submit'>Guess</button>
+            <button type='Reset'>Try Again</button>
         </div>
+    </form>
+</section>
 
     <h4>Question 2</h4>
        <div>
-            <label for="age">Guess my age....Really?!</label>
-            <input type="text" id="guess" name="guess" placeholder="hint:I'm not in my 40's yet">
+            <label for='age'>Guess my age....Really?!</label>
+            <input type='text' id='guess' name='guess' placeholder='hint:I am not in my 40s yet'/>
         </div>
 
         <div>
-            <button type="Submit">GO!</button>
-            <button type="Reset">Guess</button>
+            <button type='Submit'>Guess</button>
+            <button type='Reset'>Try Again</button>
         </div>
 
     <h4>Question 3</h4>
         <div>
-            <label for="thing">What is one of favorite things?</label>
-            <input type="text" id="thing" name="thing" placeholder="hint:it keeps you alive">
+            <label for='thing'>What is one of favorite things?</label>
+            <input type='text' id='thing' name='thing' placeholder='hint:it keeps you alive'/>
         </div>
 
         <div>
-            <button type="Submit">GO!</button>
-            <button type="Reset">Guess</button>
+            <button type='Submit'>Guess</button>
+            <button type='Reset'>Try Again</button>
         </div>
 
     <h4>Question 4</h4>
         <div>
-            <label for="teaching">Would I enjoy teaching the class?</label>
-            <input type="text" id="teach" name="teach" placeholder="yes/no">
+            <label for='teaching'>Would I enjoy teaching the class?</label>
+            <input type='text' id='teach' name='teach' placeholder='yes/no'/>
         </div>
 
         <div>
-            <button type="Submit">GO!</button>
-            <button type="Reset">Guess</button>
+            <button type='Submit'>Guess</button>
+            <button type='Reset'>Try Again</button>
         </div>
 
     <h4>Question 5</h4>
         <div>
-            <label for="place">Where do I like to be?</label>
-            <input type="text" id="place" name="place" placeholder="hint: It's on planet earth">
+            <label for='place'>Where do I like to be?</label>
+            <input type='text' id='place' name='place' placeholder='hint: It is on planet earth'/>
         </div>
 
         <div>
-            <button type="Submit">GO!</button>
-            <button type="Reset">One More Guess</button>
+            <button type='Submit'>Guess</button>
+            <button type='Reset'>Try Again</button>
         </div>
     </form>
 
-    <p id="about-me-response"></p>
+    <p id='about-me-response'></p>
 </section>
 
 <section>
     <h5>Game 2</h5>
     <h5>Guess My Favorite Number</h5>
-    <form id="guess-number-form"
-    onsubmit="event.preventDefault(); checkGuessNumber();"
-    onreset="resetGuessNumber()"
+    <form id='guess-number-form'
+    onsubmit='event.preventDefault(); checkGuessNumber();'
+    onreset='resetGuessNumber()'
     >
         <div>
-            <label for="number">What's my favorite number?</label>
-            <input type="text" id="number" name="number" placeholder="hint: it's under 10">
+            <label for='number'>What's my favorite number?</label>
+            <input type='text' id='number' name='number' placeholder='hint: it is under 10'/>
         </div>
 
         <div>
-            <button type="submit" name="guess">Guess!</button>
-            <button type="reset" name="try-again">Try Again!</button>
+            <button type='submit' name='guess'>Guess!</button>
+            <button type='reset' name='try-again'>Try Again!</button>
         </div>
 </form>
 
 </section>
 
 
-<script src="about-me.js"></script>
-<script src="guess-number.js"></script>
+<script src='about-me.js'></script>
+<script src='guess-fav-num.js'></script>
 </body>
 </html>

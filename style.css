@@ -33,7 +33,7 @@ p {
     clear: both;
     border-radius: 200px;
     font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: serif;
 }
 h2 {
     background-color: blanchedalmond;
@@ -49,7 +49,7 @@ ul {
     padding-left: 20px;
     border-radius: 20px;
     font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: serif;
 }
 h3 {
     background-color: aquamarine;
