@@ -1,7 +1,7 @@
 /* eslint no-console: "off" */
 /* exported tryQuerySelector */
 'use strict';
-//I'm still working on this code; it works but I want to more fully understand this, will resubmit
+
 function tryQuerySelector() {
     var selectedElementInput = document.querySelectorAll('input[name="element"]:checked');
     console.log(selectedElementInput);

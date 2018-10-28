@@ -1,10 +1,7 @@
 /* eslint no-console: "off" */
 /*exported genreCheck, resetGenreCheck, guessForm*/
 
-//var genreForm = document.getElementById('genre').checked; 
-
 var genreResponse = document.getElementById('genre-response');
-
 
 function genreCheck() {
     if(document.getElementById('scifi').checked === false) {
