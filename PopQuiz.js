@@ -40,7 +40,7 @@ function checkAboutMe() {
         correct++;
     }
     var score = (correct / 5) * 100;
-    quizResponse.textContent = 'You scored ' + score + 'percent';
+    quizResponse.textContent = 'You scored ' + score + ' percent!';
     correct = 0;
     
 }

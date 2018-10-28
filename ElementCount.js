@@ -10,7 +10,6 @@ function tryQuerySelector() {
         var input = selectedElementInput[i];
         console.log(input.value);
         var tag = document.querySelectorAll(input.value);
-        console.log(tag.length);
 
         if(input.value === 'p') {
             document.getElementById('p-output').innerHTML = input.value + ' - ' + tag.length;
