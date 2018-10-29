@@ -1,4 +1,4 @@
-/* exported checkAboutMe, quizForm */
+/* exported checkAboutMe, quizForm, resetAboutMe */
 
 var quizForm = document.getElementById('quiz');
 var quizResponse = document.getElementById('quiz-response');
@@ -40,8 +40,9 @@ function checkAboutMe() {
         correct++;
     }
     var score = (correct / 5) * 100;
-    quizResponse.textContent = 'You scored ' + score + 'percent';
-    correct = 0;    
+    quizResponse.textContent = 'You scored ' + score + ' percent!';
+    correct = 0;
+    
 }
 
 function resetAboutMe() {
