@@ -16,3 +16,5 @@ function clickedButton() {
     }
     elementCounterResponse.textContent = printThis;
 }
+
+//MODIFIED FOR INJOONG
