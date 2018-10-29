@@ -88,8 +88,46 @@
 
       <p id="guess-number-response"></p>
     </section>
+
+    <section>
+        <h3>Run Element Counter </h3>
+      
+        <div>
+          <p>Select Element Tag To Count
+            <fieldset>
+                <input name="tag" type="checkbox" id="p" value="p">
+                <label for="p">P</label>
+    
+                <input name="tag" type="checkbox" id="h3" value="h3">
+                <label for="h3">H3</label>
+                
+                <input name="tag" type="checkbox" id="section" value="section">
+                <label for="section">Section</label>
+
+                <input name="tag" type="checkbox" id="input" value="input">
+                <label for="input">Input</label>
+
+                <input name="tag" type="checkbox" id="button" value="button">
+                <label for="button">Button</label>
+
+                <input name="tag" type="checkbox" id="script" value="script">
+                <label for="script">Script</label>
+            </fieldset>
+          </p>  
+        </div>
+
+        <div>
+            <button onclick="tryQuerySelector()">try query selector</button>
+            <button onclick="clearCount()">Clear Count</button>
+        </div>
+
+        <pre id="element-counter-response"></pre>        
+      
+
+    </section>
     <script src="about-me.js"></script>
     <script src="guess-number.js"></script>
+    <script src="element-counter.js"></script>
   </div>
 </body>
 </html>
