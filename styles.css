@@ -19,7 +19,17 @@ h3 {
     
 }
 
+.incorrect {
+    color: red;
+}
 
+.correct {
+    color: green;
+}
+
+.gameOver {
+    background: black;
+}
 img {
     display: block;
     margin: auto;
@@ -27,13 +37,14 @@ img {
     border-bottom-style: solid;
     border-right-style: solid;
     border-right-color: lightgreen;
-    max-width: 438px;
+    max-width: 80%;
 }
+
  p {
      border-top-style: solid;
      border-top-color: gray;
      border-top-width: 100%;
- }
+}
 
  @media screen and (min-width: 650px) {
     #rightcolumn {
@@ -47,7 +58,7 @@ img {
      }
      img {
         float: left;
-        width: 300px;   
+        width: 500px;   
      }
      body {
         margin: 0;
@@ -62,10 +73,13 @@ img {
      h3 {
          text-align: center;
      }
+}
 
-     }
+#response li {
+    list-style: none;
+}
 
- }
-
-
+.is-big {
+    color: green;
+}
 

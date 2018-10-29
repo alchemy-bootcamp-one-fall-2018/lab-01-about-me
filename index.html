@@ -8,17 +8,85 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    
     <h1>Tyler Corbett</h1>
     <img src="tyler.jpg" alt="Photo of Tyler in front of trees"/>
     <div id="rightcolumn">
+
         <p>Born March 1st, 1997 in Vancouver Washington. Has two sisters and a dog.</p>
+
         <ul>
             <li>Is 21 years old</li>
             <li>Is 6 feet and 5 inches tall</li>
             <li>Favorite color is blue</li>
         </ul>
-    
-    <h3>Game coming soon!</h3>
+
+        <h3>Guessing Games</h3>
+
+        <h4>Secret Number Game</h4>
+
+        <form id="random-number-form" name="random-number-form" 
+        onsubmit="event.preventDefault(); checkRandomNumber();" onreset="resetRandomNumber()"
+        >
+            <div id="random-number-textbox">
+                <label for="random-number-guessed">Find the secret number!</label>
+                <input name="randomNumberText" type="text" id="random-number-guessed" placeholder="Must be digit 1-10">
+            </div>
+
+            <div>
+                <button name="guess" type="submit">Guess</button>
+                <button name ="reset" type="reset">Reset</button>
+            </div>
+        </form>
+
+        <h4>Addition Calculator</h4>
+
+        <form id="addition-calculator" name="addition-calculator"
+        onsubmit="event.preventDefault(); addNumbers();">
+            <div id="addition-calculator-first-box">
+                <label name="first-digit">Enter first number here!</label>
+                <input name="firstDigit" type="text" id="firstDigit" placeholder="Must be digit">
+            </div>
+
+            <div id="addition-calculator-second-box">
+                    <label name="second-digit">Enter second number here!</label>
+                    <input name="secondDigit" type="text" id="secondDigit" placeholder="Must be digit">
+            </div>
+
+            <div>
+                <button name="submit" type="submit">Add Together</button>
+            </div>
+
+        </form>
+        <p id="addition-calculator-response"></p>
+        <p id="random-number-response"></p>
+
+        <h4>Element Counter</h4>
+
+        <div id='element-counter'>
+            <div id="p-tag-counter">
+                <label for="p-tag-counter-value">P</label>
+                <input type="checkbox" name="element-button" id="p-tag-counter-value" value="p">
+            </div>
+
+            <div id="input-tag-counter">
+                <label for="input-tag-counter-value">Input</label>
+                <input type="checkbox" name="element-button" id="input-tag-counter-value" value="input">
+            </div>
+
+            <div id="div-tag-counter">
+                <label for="div-tag-counter-value">Div</label>
+                <input type="checkbox" name="element-button" id="div-tag-counter-value" value="div">
+            </div>
+
+            <button onclick="clickedButton()">Check</button>
+
+            <ul id="response"></ul>
+
+        </div>
     </div>
+    <script src="addition-calculator.js"></script>
+    <script src="index.js"> </script>
+    <script src="counter.js"></script>
 </body>
 </html>
