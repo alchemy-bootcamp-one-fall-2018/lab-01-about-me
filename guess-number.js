@@ -9,7 +9,7 @@ function checkGuessNumber() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
-    //esLint-disable-next-line eqeqeq
+    //esLint-disable-next-line 
     if(guess ==4) {
         guessNumberResponse.textContext = 'You Win!';
         submit.disabled = true;

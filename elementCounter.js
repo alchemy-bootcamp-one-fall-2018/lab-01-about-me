@@ -1,3 +1,4 @@
+/*export query-results query-form */ 
 var queryResponse = document.getElementById('query-results');
 var queryForm = document.getElementByeId('query-form');
 
