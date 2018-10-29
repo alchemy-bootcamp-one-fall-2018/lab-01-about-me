@@ -27,15 +27,15 @@
                 Basic
             </h2> 
 
-            <ul class="list">
-                <li>Name: Teonna Zaragoza</li>
-                <li>DOB: October 19, 1987</li>
-                <li>Birth Place: South Korea</li>
-                <li>Status: Happily married</li>
-                <li>Kids: Someday</li>
-            
-            </ul>
+                <ul class="list">
+                    <li>Name: Teonna Zaragoza</li>
+                    <li>DOB: October 19, 1987</li>
+                    <li>Birth Place: South Korea</li>
+                    <li>Status: Happily married</li>
+                    <li>Kids: Someday</li>
                 
+                </ul>
+                    
         </section>
 
         <section>
@@ -43,12 +43,14 @@
                 Plus
             </h2>
 
-            <ul class="list">
-                <li>Favorite Color: Purple</li>
-                <li>Lucky Number: 27 </li>
-                <li>Favorite Disney Character: Mulan </li>
-                <li>Favorite Disney Movie: Pocohantas</li>
-            </ul>
+                <ul class="list">
+                    <li>Hobbies: Running, knitting and wakeboarding</li>
+                    <li>Pets: 2 adorable cats</li>
+                    <li>Favorite Color: Purple</li>
+                    <li>Favorite Disney Character: Mulan </li>
+                    <li>Favorite Disney Movie: Pocohantas</li>
+                </ul>
+
         </section>
 
         <section>
@@ -56,15 +58,16 @@
                 Premium
             </h2> 
         
-            <ul class="list">
-                <li>Hobbies: running, knitting and wakeboarding</li>
-                <li>Pets: 2 adorable cats</li>
-                <li>Nike or Adidas: Nike</li>
-                <li>Pepsi or Coke: Neither</li>                    <li>Toyota or Honda: Toyota</li>
-                
+                <ul class="list">
+                    <li>Nike or Adidas: Nike</li>
+                    <li>Pepsi or Coke: Neither</li>                   
+                    <li>Toyota or Honda: Toyota</li>
+                    <li>Chocolate or Vanilla: Vanilla</li>
+                    <li>Work hard or Play hard: Play</li>
+                    
                 </ul>
                     
-            </section>
+         </section>
     
      
     </div>
@@ -117,79 +120,73 @@
 
         </div>
 
-    </section id= "game2"> 
+    </section> 
 
-    <section>
+    <section id="game2">
         <div>
-            <h2>More Questions</h2>
+            <h2>Guess My Lucky Number</h2>
 
-            <p id= "game-two-response"> </p>
+            <p id= "guess-number-response"> </p>
 
-            <form id= "game-two-form" name= "game-two"
-                onsubmit="event.preventDefault(); checkGameTwo()"
-                onreset= "resetGameTwo();"
+            <form id= "guess-number-form" name= "game-two"
+                onsubmit="event.preventDefault(); checkGuessNumber()"
+                onreset= "resetGuessNumber();"
                 >
 
             <div>
-                <label for= "gear"> Nike or Adidas?</label>
-                <input for= "text" id= "nike" name= "nike" />
+                <label for= "number"> 0-50</label>
+                <input for= "guess" id= "guess" name= "guess" />
             </div>
 
             <div>
                     <button type = "submit">Guess</button>
                     <button type = "reset">Try again</button>
-            </div>
+            </div> 
         </div>
-    </section>
 
     <section>
-        <div>
-            <p>Query Selector</p>
-            <pre id="query-results"></pre>
-
-        <form id= "query-form" name= "query-form"
-            onsubmit= "event.preventDefault(); tryQuerySelector()"
-            onreset="resetQueryCounter();"
-        >
-            
-            <fieldset>
-
-                <input name="counter" type="checkbox" id="p" value="p">
-                <label for="p">p</label>
-
-                <input name="counter" type="checkbox" id="div" value="div">
-                <label for="div">div</label>
-
-                <input name="counter" type="checkbox" id="section" value="section">
-                <label for="section">section</label>
-
-                <input name="counter" type="checkbox" id="form" value="form">
-                <label for="form">form</label>
-
-
+        <section>
             <div>
-                <button onclick="tryQuerySelector()">Do yo thang!</button>
-                <button onclick="reset">Reset</button>
-        
-             </div>
-            </fieldset>
-        </form>
-        // moved it outside of the form to see if it changed
-            <!-- <div>
-                <button onclick="tryQuerySelector()">Do yo thang!</button>
-                <button onclick="reset">Reset</button>
+                'use strict';
+                <p>Query Selector</p>
+                <pre id="query-results"></pre>
+    
+            <form id= "query-form" name= "query-form"
+                onsubmit= "event.preventDefault(); tryQuerySelector()"
+                onreset="resetQueryCounter();"
+            >
+                
+                <fieldset>
+    
+                    <input name="counter" type="checkbox" id="p" value="p">
+                    <label for="p">p</label>
+    
+                    <input name="counter" type="checkbox" id="div" value="div">
+                    <label for="div">div</label>
+    
+                    <input name="counter" type="checkbox" id="section" value="section">
+                    <label for="section">section</label>
+    
+                    <input name="counter" type="checkbox" id="form" value="form">
+                    <label for="form">form</label>
 
-                onreset= "resetQueryCounter();"
-            </div> -->
-        <div>
-
-    </section>
-<script src="game-one.js"> </script>
-<script src="game-two.js"> </script>
-<script src="guess-number.js"></script>
-<script src="elementCounter.js"></script>
-
-
-
+                    <div>
+                        <button onclick="tryQuerySelector()">Do yo thang!</button>
+                        <button onclick="reset()" id="element-counter-reset">Reset</button>
+                        onreset= "resetQueryCounter();"
+                        <div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    <script src="game-one.js"> </script>
+    <script src="game-two.js"> </script>
+    <script src="guess-number.js"></script>
+    <script src="elementCounter.js"></script>
+    
+    </section>     
 </body>
 </html>
+
+
+ }

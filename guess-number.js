@@ -1,3 +1,4 @@
+/*export guess-number-form guess-number-response*/
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
@@ -9,7 +10,7 @@ function checkGuessNumber() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
-    //esLint-disable-next-line 
+    /* esLint-disable-next-line eqeqeq */
     if(guess ==4) {
         guessNumberResponse.textContext = 'You Win!';
         submit.disabled = true;
