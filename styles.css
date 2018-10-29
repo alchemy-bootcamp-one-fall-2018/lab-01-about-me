@@ -2,6 +2,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: skyblue;
+}
+
 h1 {
     color:#282828;
     text-align: center;
@@ -40,18 +44,18 @@ section {
     padding: 2px;
 }
 
-#guess-travel {
+/*#guess-travel {
     border: 1px solid gray;
     text-align:center;
     padding: 20px 0;
-}
-#game {
+}*/
+
+.games {
     border: 1px solid black;
     text-align: center;
     padding: 20px 0;
+    background-color: white;
 }
-
-
 
 @media (min-width: 1150px) {
     img {
@@ -70,15 +74,15 @@ section {
    }
 
    #blurb {
-       width: 48%;
-       float: right;
+       width:48%;
+       float:right;
        display: inline;
        clear: both;
    }
 
    #fun-facts {
-       width: 48%;
-       float: left;
+       width:48%;
+       float:left;
        display: inline;
    }
 
@@ -110,7 +114,7 @@ section {
         clear: initial;
     }
    
-    #game {
+    .game {
             width: 60%;
             float: left;
             clear: initial;
