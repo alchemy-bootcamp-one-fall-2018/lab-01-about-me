@@ -1,35 +1,39 @@
 body {
-    background-image:url(https://i.pinimg.com/236x/06/42/e3/0642e33d89ec9e7cb2cf6754c36dda54--watercolor-iphone-wallpaper-marble-wallpaper-phone.jpg);
+    background-image:url(https://i.pinimg.com/originals/cc/0e/ca/cc0eca52c8cc9f546a8a5ccba5be02f1.jpg);
     background-position: center;  
     height: 100%;
     background-size: cover;
     border-style: groove;
     padding: 8px;
+    z-index: -15;
+    opacity: .8;
     
 }
 
 header {
-    font-family: 'Playfair Display', serif;
-    font-size: 20pt;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30pt;
     text-emphasis: bold;
     text-align: center;
-    text-decoration-line: underline;
 }
 
 article {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 12pt;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 14pt;
     text-align: center;
     margin-top: 25px;
+    background-color:lavender; 
 }
-h1, h2, h3{
-    font-family: 'Hind Siliguri', sans-serif;
+h1, h2, h3, h4,h5 {
+    font-family: 'BenchNine', sans-serif;
     font-size: 12pt;
     text-align: center;
+    text-emphasis: bold;
+    background-color:lavender; 
 }
 
 p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Martel', serif;
 }
 
 ul {
@@ -37,21 +41,30 @@ ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Martel', serif;
 }
 
 img {
-    width: 50%;
-    height: 50%; 
+    width: 35%;
+    height: 75vh; 
     border-radius: 360%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     border-style: ridge;
-    border-color: black;
+    border-color:lavender;
 }
 
+#image {
+    float:left;
+    margin: 25px, 100px,  0, 0; 
+}
+
+img:hover {
+    width: 70%; 
+    border-radius: 15%; 
+}
 
 .clearfix:after { 
     content: "."; 
@@ -63,11 +76,68 @@ img {
 
  @media only screen and (min-width: 400px) {
     body {
-        background-image:url(https://image.freepik.com/free-vector/geometric-abstract-chaotic-triangle-background-mosaic-vector-graphic-design-from-colored-triangles_1164-1478.jpg);
-    }
-    #food {
-        float: right;
-        margin-right: 30%;
-    }
+        background-image:url(https://static.vecteezy.com/system/resources/previews/000/236/205/large_2x/abstract-colorful-hand-draw-watercolor-background-vector.jpg);
+        background-repeat: no-repeat;
 }
 
+#food {
+        float: right;
+        margin-right: 30%;
+}
+
+form div {
+    text-align: center;
+    font-family: 'Martel', serif;
+}
+
+#about-me {
+    background-color: plum;
+    margin: 0 auto; 
+    margin-top: 20px; 
+}
+#about-me:hover {
+    width: 75%;
+    font-size: 16pt;
+}
+
+#buttons {
+    text-align: center;
+}
+
+.correct {
+    background-color: green;
+  }
+
+.incorrect {
+    background-color: red;
+  }
+#label {
+    text-align:center;
+}
+.content {
+    text-align:center;
+    font-family: 'BenchNine', sans-serif;
+    text-emphasis: bold;
+}
+
+
+#guess-form {
+    background-color: plum; 
+    margin: 0 auto; 
+    margin-top: 20px; 
+}
+#guess-form:hover {
+    width: 75%;
+    font-size: 16pt;
+}
+#label {
+    background-color: plum; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    
+}
+#label:hover {
+    width: 75%;
+    font-size: 16pt;
+}
+ }

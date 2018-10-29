@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
     <title>About Me</title>
 </head>
 <body>
 
 <header>Everything You Need to Know About Me</header>
     <article> Coding Student, Food Enthusiast, and Professional Dog Petter.</article>
-    <img src="IMG_3112.jpg" alt="Me in a Pumpkin Patch"/> 
+    <img id="image" src="IMG_3112.jpg" alt="Me in a Pumpkin Patch"/> 
     <main>
         <section>
         <h1> About Me</h1>
@@ -46,6 +46,93 @@
                 </ul>
             </div>
         </section>
+    <section>
+        <div id="about-me-game">
+        <h4> Let's Play a Game!</h4>
+        <form id="about-me" name="about-me"
+            onsubmit="event.preventDefault(); checkAboutMe();"
+            onreset="resetAboutMe()">
+        
+        <div>
+            <label for="dogs"> Do I like dogs? </label>
+            <input type="text" id="dogs" name="dogs" placeholder="you know the answer"> 
+        </div>
+
+        <div>
+            <label for="color"> What is my favorite color?</label>
+            <input type="text" id="color" name="color" placeholder="hint: it's not yellow">
+        </div>
+
+        <div>
+            <label for="country"> What is my favorite country that I have ever been to?</label>
+            <input type="text" id="country" name="country" placeholder="It's a country in Asia"> 
+        </div>  
+
+        <div>
+            <label for="name"> What would be the perfect dog name?</label>
+            <input type="text" id="name" name="name" placeholder="Think of food items">
+        </div>
+        
+        <div>   
+            <label for="age"> How old am I?</label>
+            <input type="text" id="age" name="age" placeholder="I am under 25">
+        </div>
+        
+        <div id="buttons"> 
+                <button id="submit" type="submit"> Submit </button> 
+                <button type="reset">Play Again</button>
+        </div>          
+     </form>
+    </div> 
+    <p id="correct-response"></p>
+</section>
+        <section>
+        <h5>Guess My Favorite Number</h2>
+        <form id="guess-form"
+          onsubmit="event.preventDefault(); checkGuessNumber();"
+          onreset="resetGuessNumber()"
+        >
+          <div>
+            <label for="number">What is my favorite number?</label>
+            <input type="text" id="number" name="number" placeholder="1 - 10" />
+          </div>
+    
+          <div>
+            <button type="submit" name="guess">Guess</button>
+          </div>
+    
+        </form>
+    
+          <p id="guess-number-response"></p>
+      </section>
+    
+      <script src="./aboutme.js"></script>
+      <script src="./guess.js"></script>
+      <script src="./element-count.js"></script>
+
+      <p class="content">My Code</p>
+
+      <form id="label"
+      onsubmit="event.preventDefault()"
+      >
+          <p>
+              <input name="section" type="checkbox" id="div" value="div">
+              <label for="div">div</label>
+  
+              <input name="section" type="checkbox" id="p" value="p">
+              <label for="p">p</label>
+              
+              <input name="section" type="checkbox" id="form" value="form">
+              <label for="form">form</label>
+
+              <input name="section" type="checkbox" id="body" value="body">
+              <label for="body">body</label>
+              <p id="total-count"></p>
+              <div>
+              <button onclick="tryQuerySelector()">Submit</button>
+              <button type="reset" name="play-again">Play Again</button>
+              </div>
+      </form>
     </main>
 </body>
 </html>
