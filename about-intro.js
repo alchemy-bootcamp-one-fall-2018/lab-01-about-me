@@ -1,5 +1,7 @@
+/* exported checkHowWell */
+
 var aboutMeForm = document.getElementById('how-well');
-var aboutMeResponse = document.getElementById('how-well-response');
+//var aboutMeResponse = document.getElementById('how-well-response');
 
 function checkHowWell() {
 
@@ -21,7 +23,7 @@ function checkHowWell() {
     var howHelp = helpInput.value;
 
    
-
+   // eslint-disable-next-line
     var correct = 0;
 
     if(speakLatin.toLowerCase() === 'yes') {
@@ -46,3 +48,4 @@ function checkHowWell() {
         alert('depends on the day');
     }
 }
+
