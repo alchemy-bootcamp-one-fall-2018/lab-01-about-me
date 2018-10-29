@@ -15,8 +15,97 @@
         <li>Shibas are one of the 25 smartest dog breeds.</li>
         <li>Shibas are one of the most beautiful dog breeds.</li>
         <li>Shibas are one of the most loyal dog breeds.</li>
+        <li>Shibas are better than cats.</li>
     </h2>
     </div>
-    <h3>Dog game coming soon!</h3>
+
+    <section>
+        <h2>Quiz about Shibas!</h2>
+        <form id="about-me-form" name="about-me-form"
+          onsubmit="event.preventDefault(); checkAboutMe();"
+          onreset="resetAboutMe()"
+        >
+          <div>
+            <label for="breed">Are Shibas the best breed of dog?</label>
+            <input type="text" id="breed" name="breed" placeholder="yes/no" />
+          </div>
+    
+          <div>
+            <label for="smart">Are Shibas the smartest breed of dog?</label>
+            <input type="text" id="smart" name="smart" placeholder="yes/no" />
+          </div>
+
+          <div>
+            <label for="beautiful">Are Shibas one of the most beautiful breeds of dog?</label>
+            <input type="text" id="beautiful" name="beautiful" placeholder="yes/no" />
+          </div>
+
+          <div>
+            <label for="loyal">Are Shibas one of the most loyal breeds of dog?</label>
+            <input type="text" id="loyal" name="loyal" placeholder="yes/no" />
+          </div>
+
+          <div>
+            <label for="cats">Are cats better than Shibas?</label>
+            <input type="text" id="cats" name="cats" placeholder="yes/no" />
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear answers</button>
+          </div>
+    
+        </form>
+    
+        <p id="about-me-response"></p>
+      </section>
+      
+      <section>
+        <h2>Guess my Shiba's age!</h2>
+          <form id="guess-number-form"
+            onsubmit="event.preventDefault(); checkGuessNumber();"
+            onreset="resetGuessNumber()"
+          >
+            <div>
+              <label for="number">How old is Niko?</label>
+              <input type="text" id="number" name="number" placeholder="1 - 15" />
+            </div>
+                
+            <div>
+              <button type="submit" name="guess">Guess</button>
+              <button type="reset" name="play-again">Play Again</button>
+            </div>
+          </form> 
+
+        <p id="guess-number-response"></p>
+      </section>
+
+      <section>
+        <h2>Element Counter:</h2>
+        <form id="element-count-form"
+        onsubmit="event.preventDefault(); tryQuerySelector();"
+        onreset="tryQueryReset()"
+        >
+            <input name="element" type="checkbox" id="p" value="p">
+            <label for="p">p</label>
+        
+            <input name="element" type="checkbox" id="section" value="section">
+            <label for="section">section</label>
+        
+            <input name="element" type="checkbox" id="div" value="div">
+            <label for="div">div</label>
+
+            <div>
+              <button onclick="tryQuerySelector()">Submit</button>
+            </div>
+          </form>
+          
+          
+        <p id="response"> </p>
+      </section>
+
+    <script src="about-me.js"></script>
+    <script src="guess-number.js"></script>
+    <script src="element-count.js"></script>
 </body>
 </html>
