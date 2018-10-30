@@ -1,4 +1,4 @@
-/*export guess-number-form guess-number-response*/
+/*exported checkGuessNumber resetGuessNumber */
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
@@ -10,8 +10,8 @@ function checkGuessNumber() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
-    /* esLint-disable-next-line eqeqeq */
-    if(guess ==4) {
+    // eslint-disable-next-line
+    if(guess == 4) {
         guessNumberResponse.textContext = 'You Win!';
         submit.disabled = true;
     
@@ -28,8 +28,8 @@ function checkGuessNumber() {
 }
 
 function resetGuessNumber() {
-    var elements = guessNumberForm.elements;
-    var submit = elements.guess;
-    guessCount = 0;
+
+    guessCount = 3;
+    document.getElementById('guess-btn').disabled = false;
     guessNumberResponse.textContent = '';
 }

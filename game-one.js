@@ -46,7 +46,7 @@ function checkGameOne() {
         correct = correct + 1;
     }
 
-    gameOneResponse.textContent = 'You got ' + correct + ' right!';
+    gameOneResponse.textContent = 'You got ' + correct + '/5 right!';
 }
 
 function resetGameOne() {
