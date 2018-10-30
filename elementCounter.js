@@ -1,21 +1,21 @@
-/*export query-results query-form */ 
+/*exported tryQuerySelector query-results query-form  resetQueryCounter */ 
 var queryResponse = document.getElementById('query-results');
-var queryForm = document.getElementByeId('query-form');
+// var queryForm = document.getElementByeId('query-form');
 
-  function tryQuerySelector() {
-      var inputCounter = document.querySelectorAll('input[name="counter"]:checked');
+function tryQuerySelector() {
+    var inputCounter = document.querySelectorAll('input[name="counter"]:checked');
     
-      for(var i=0; i < inputCounter.length; i++) {
+    for(var i = 0; i < inputCounter.length; i++) {
         var input = document.querySelectorAll(inputCounter[i].value);
         console.log(inputCounter[i].id, input.length);
 
         queryResponse.textContent = queryResponse.textContent + inputCounter[i].id + ' : ' + input.length + ' \r\n ';
 
-      }
+    }
     
- }
+}
  
-  function resetQueryCounter() {
+function resetQueryCounter() {
     var response = queryResponse.elements;
 
     response.classList.remove(queryResponse);
