@@ -100,9 +100,41 @@
         </form>
 
         <p id="about-me-response"></p>
+
+    </section>
+
+    <section class="sectionFloat">
+
+        <form onsubmit="event.preventDefault()">
+            
+            <fieldset>
+                <legend>HTML Tag Counter:</legend>
+
+                <label for="countHeader"><input name="tagName" type="checkbox" id="countHeader" value="header"># of header tags</label>
+
+                <label for="countH1"><input name="tagName" type="checkbox" id="countH1" value="h1"># of h1 tags</label>
+                
+                <label for="countH2"><input name="tagName" type="checkbox" id="countH2" value="h2"># of h2 tags</label>
+
+                <label for="countSection"><input name="tagName" type="checkbox" id="countSection" value="section"># of section tags</label>
+
+                <label for="countDiv"><input name="tagName" type="checkbox" id="countDiv" value="div"># of div tags</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How many?</legend>
+
+                <div>
+                    <button onclick="countQuerySelector()">Push here</button>
+                </div>
+            </fieldset>
+
+        </form>
+
     </section>
 
     <script src="guess-game-1.js"></script>
     <script src="guess-game-2.js"></script>
+    <script src="element-count.js"></script>
 </body>
 </html>
