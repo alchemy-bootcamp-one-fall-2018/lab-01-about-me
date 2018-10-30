@@ -1,27 +1,25 @@
 /*exported checkGuessNumber resetGuessNumber */
+'use strict';
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
-
-var guessCount = 0;
+var guessCount = 3;
 
 function checkGuessNumber() {
 
     var elements = guessNumberForm.elements;
-    var guess = elements.number.value;
-    var submit = elements.guess;
+    var userGuess = elements.guess.value;
 
     // eslint-disable-next-line
-    if(guess == 4) {
-        guessNumberResponse.textContext = 'You Win!';
-        submit.disabled = true;
-    
-    }
-    else {
-        guessCount = guessCount + 1;
+    if(userGuess == '27') {
+        guessNumberResponse.textContent = 'You Win!';
+        document.getElementById('guess-btn').disabled = true;
+    } else {
+        guessCount = guessCount - 1;
+        guessNumberResponse.textContent = 'Try again! You have ' + guessCount + ' guesses left';
 
-        if(guessCount < 4) {
-            guessNumberResponse.textContent = 'You lose';
-            submit.disabled = true;
+        if(guessCount === 0) {
+            guessNumberResponse.textContent = 'No more tries';
+            document.getElementById('guess-btn').disabled = true;
         }
     }
 
