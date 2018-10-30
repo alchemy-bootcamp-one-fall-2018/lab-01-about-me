@@ -8,7 +8,7 @@ function checkAboutMe() {
     var classInput = elements.class;
     var likeClassmates = classInput.value;
 
-    /*var guessInput = elements.guess;
+    var guessInput = elements.guess;
     var age = guessInput.value;
 
     var thingInput = elements.thing;
@@ -18,7 +18,7 @@ function checkAboutMe() {
     var teachingClass = teachInput.value;
 
     var placeInput = elements.place;
-    var favoritePlace = placeInput.value;*/
+    var favoritePlace = placeInput.value;
 
     var correct = 0;
 

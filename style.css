@@ -22,7 +22,7 @@ h1 {
     background-color: blanchedalmond;
     border-radius: 30px;
 }
-p {
+.paragraph {
     background-color: paleturquoise;
     text-align: center;
     float: right;
