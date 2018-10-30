@@ -17,9 +17,8 @@
             Teonna Zaragoza
         </h1>
         <img src="teonna.jpg" alt= "image of Teonna with sunglasses flexing" />
-        <p>
-            Holding for GAME!
-        </p>
+         
+        
     </header>
 
      <div>
@@ -28,15 +27,15 @@
                 Basic
             </h2> 
 
-            <ul class="list">
-                <li>Name: Teonna Zaragoza</li>
-                <li>DOB: October 19</li>
-                <li>Birth Place: South Korea</li>
-                <li>Status: Happily married</li>
-                <li>Kids: Someday</li>
-            
-            </ul>
+                <ul class="list">
+                    <li>Name: Teonna Zaragoza</li>
+                    <li>DOB: October 19, 1987</li>
+                    <li>Birth Place: South Korea</li>
+                    <li>Status: Happily married</li>
+                    <li>Kids: Someday</li>
                 
+                </ul>
+                    
         </section>
 
         <section>
@@ -44,12 +43,14 @@
                 Plus
             </h2>
 
-            <ul class="list">
-                <li>Favourite Colour: Purple</li>
-                <li>Lucky Number: 27 </li>
-                <li>Favourite Disney Character: Mulan </li>
-                <li>Favourite Disney Movie: Pocahantus</li>
-            </ul>
+                <ul class="list">
+                    <li>Hobbies: Running, knitting and wakeboarding</li>
+                    <li>Pets: 2 adorable cats</li>
+                    <li>Favorite Color: Purple</li>
+                    <li>Favorite Disney Character: Mulan </li>
+                    <li>Favorite Disney Movie: Pocohantas</li>
+                </ul>
+
         </section>
 
         <section>
@@ -57,16 +58,127 @@
                 Premium
             </h2> 
         
-            <ul class="list">
-                <li>Hobbies: running, knitting and wakeboarding</li>
-                <li>Pets: 2 adorable cats</li>
-                <li>Nike or Adidas: Nike</li>
-                <li>Pepsi or Coke: Neither</li>                    <li>Toyota or Honda: Toyota</li>
-                
+                <ul class="list">
+                    <li>Nike or Adidas: Nike</li>
+                    <li>Pepsi or Coke: Neither</li>                   
+                    <li>Toyota or Honda: Toyota</li>
+                    <li>Chocolate or Vanilla: Vanilla</li>
+                    <li>Work hard or Play hard: Play</li>
+                    
                 </ul>
                     
-            </section>
+         </section>
+    
+     
     </div>
     
+    <section id="game1">
+        <div>
+            <h2>How Well Did You Pay Attention</h2>
+            
+            <form id="game-one-form" name= "game-one"
+            onsubmit="event.preventDefault(); checkGameOne();"  
+            onreset="resetGameOne();"
+            >
+            
+            <div>
+                <label for= "name">How do you spell my name?</label>
+                <input type= "text" id= "name" name= "name" />
+            </div>
+            
+            <div>
+                <label for= "birthday">How old am I?</label>
+                <input type= "text" id= "birthday" name= "birthday" />
+            </div>
+            
+            <div>
+                <label for= "color">Is my favorite color gray?</label>
+                <input for= "text" id= "color" name= "color" placeholder= "yes or no" />
+            </div>
+            
+            <div>
+                <label for= "number">What is my favorite number?</label>
+                <input for= "text" id= "number" name= "number" />
+            </div>
+            
+            <div>
+                <label for= "dogs">Do I like dogs?</label>
+                <input for= "text" id= "dogs" name= "dogs" placeholder= "yes or no"/>
+            </div>
+            
+            <div>
+                <p id="game-one-response"></p>
+                <button type = "submit">Guess</button>
+                <button type = "reset">Try again</button>
+            </div>
+
+        </form>
+
+        </div>
+
+    </section> 
+
+    <section id="game2">
+        <div>
+            <h2>Guess My Lucky Number</h2>
+
+            <p id= "guess-number-response"> </p>
+
+            <form id= "guess-number-form" name= "game-two"
+                onsubmit="event.preventDefault(); checkGuessNumber()"
+                onreset= "resetGuessNumber();"
+                >
+
+            <div>
+                <label for= "number"> 0-50</label>
+                <input for= "guess" id= "guess" name= "guess" />
+            </div>
+
+            <div>
+                    <button type="submit" id="guess-btn">Guess</button>
+                    <button type="reset">Try again</button>
+            </div> 
+        </div>
+
+    <section>
+        <section>
+            <div>
+                <p>Query Selector</p>
+                <pre id="query-results"></pre>
+    
+                <form id= "query-form" name= "query-form"
+                onsubmit= "event.preventDefault(); tryQuerySelector()"
+                onreset="resetQueryCounter();"
+                >
+                
+                    <fieldset>
+        
+                        <input name="counter" type="checkbox" id="p" value="p">
+                        <label for="p">p</label>
+        
+                        <input name="counter" type="checkbox" id="div" value="div">
+                        <label for="div">div</label>
+        
+                        <input name="counter" type="checkbox" id="section" value="section">
+                        <label for="section">section</label>
+        
+                        <input name="counter" type="checkbox" id="form" value="form">
+                        <label for="form">form</label>
+
+                        <div>
+                            <button onclick="tryQuerySelector()">Do yo thang!</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>  
+        </section>
+    <script src="game-one.js"> </script>
+    <script src="guess-number.js"></script>
+    <script src="elementCounter.js"></script>
+    
+    </section>     
 </body>
 </html>
+
+
+ 
