@@ -22,7 +22,6 @@ function checkGuessNumber() {
             document.getElementById('guess-btn').disabled = true;
         }
     }
-
 }
 
 function resetGuessNumber() {

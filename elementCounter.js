@@ -7,7 +7,7 @@ function tryQuerySelector() {
     
     for(var i = 0; i < inputCounter.length; i++) {
         var input = document.querySelectorAll(inputCounter[i].value);
-        console.log(inputCounter[i].id, input.length);
+    
 
         queryResponse.textContent = queryResponse.textContent + inputCounter[i].id + ' : ' + input.length + ' \r\n ';
 
@@ -15,13 +15,13 @@ function tryQuerySelector() {
     
 }
  
-function resetQueryCounter() {
-    var response = queryResponse.elements;
+// // function resetQueryCounter() {
+// //     var response = queryResponse.elements;
 
-    response.classList.remove(queryResponse);
+// //     response.classList.remove(queryResponse);
 
-    queryResponse.textContent = '';
-}
+// //     queryResponse.textContent = '';
+// }
 
         
 
