@@ -1,9 +1,10 @@
-/* exported checkAboutMe, resetAboutMe */
+/* exported checkGameOne checkAboutMe resetAboutMe resetGameOne */
+'use strict';
 
 var gameOneForm = document.getElementById('game-one-form');
 var gameOneResponse = document.getElementById('game-one-response');
 
-function checkGameOne () {
+function checkGameOne() {
 
     var elements = gameOneForm.elements;
 
@@ -22,13 +23,13 @@ function checkGameOne () {
     var dogsInput = elements.dogs;
     var likeDogs = dogsInput.value.toLowerCase();
 
-    var correct= 0;
+    var correct = 0;
 
     
     if(correctName === 'Teonna'){
-         correct = correct + 1;
-         nameInput.classList.add('correct');
-         nameInput.classList.remove('incorrect');
+        correct = correct + 1;
+        nameInput.classList.add('correct');
+        nameInput.classList.remove('incorrect');
          
     } else if(nameInput !== 'Teonna') {
         nameInput.classList.add('incorrect');
@@ -52,7 +53,7 @@ function checkGameOne () {
         colorInput.classList.add('correct'); 
         colorInput.classList.remove('incorrect');
     
-    }else if(colorPurple !== 'yes') {
+    } else if(colorPurple !== 'yes') {
         colorInput.classList.add('incorrect');
         colorInput.classList.remove('correct');
 
@@ -60,10 +61,10 @@ function checkGameOne () {
 
     if(number27 === '27'){
         correct = correct + 1;
-        numberInput.classList.add('correct')
+        numberInput.classList.add('correct');
         numberInput.classList.remove('incorrect');
 
-    }else if(number27 !== '27'){
+    } else if(number27 !== '27'){
         numberInput.classList.add('incorrect');
         numberInput.classList.remove('correct');
     }
@@ -73,12 +74,12 @@ function checkGameOne () {
         dogsInput.classList.add('correct');
         dogsInput.classList.remove('incorrect');
 
-    }else if(likeDogs !== 'yes'){
+    } else if(likeDogs !== 'yes'){
         dogsInput.classList.add('incorrect');
         dogsInput.classList.remove('correct');
     }
 
-    gameOneResponse.textContent = 'You got ' +  correct + ' right!';
+    gameOneResponse.textContent = 'You got ' + correct + ' right!';
 }
 
 function resetGameOne() {
