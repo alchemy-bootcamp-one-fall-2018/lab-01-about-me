@@ -10,30 +10,97 @@
 </head>
 
 <body>
-    <section id="entries">
-        <div class="row">
-            <div class="column left">
-                <section id="the_image" class="center">
-                    <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/1898227_10152229487196061_704653479_n.jpg?_nc_cat=111&_nc_ht=scontent-sea1-1.xx&oh=d95d9afba279d8b9ca1afd027502543b&oe=5C545561" alt="profile picture">
-                </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="x">HERE</a></li>
+                <li><a href="x">THERE</a></li>
+                <li><a href="x">EVERYWHERE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="entries">
+            <div class="row">
+                <div class="column left">
+                    <section id="the_image" class="center">
+                        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/1898227_10152229487196061_704653479_n.jpg?_nc_cat=111&_nc_ht=scontent-sea1-1.xx&oh=d95d9afba279d8b9ca1afd027502543b&oe=5C545561"
+                            alt="profile picture">
+                    </section>
+                </div>
+                <div class="column right">
+                    <section id="the_blurb">
+                        <p>I think I have the best recipe for the best freakin s'more ever </p>
+                    </section>
+                    <section id="the_list">
+                        <ul>
+                            <li>Cooking Food</li>
+                            <li>Hiking</li>
+                            <li>Jaming on the drums or the drummers</li>
+                            <li>Swimming</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
-            <div class="column right">
-                <section id="the_blurb">
-                    <p>I think I have the best recipe for the best freakin s'more ever </p>
-                </section>
-                <section id="the_list">
-                    <ul>
-                        <li>Cooking Food</li>
-                        <li>Hiking</li>
-                        <li>Jaming on the drums or the drummers</li>
-                        <li>Swimming</li>
-                    </ul>
-                </section>
+        </section>
+        <br>
+        <section id="the_game">
+            <div class="row">
+                <form id="about-me" onsubmit="event.preventDefault(); answerSystem();" onreset="resetUserInput();">
+                    <div class="column left">
+                        <label for="burgers">Do I like to eat Hamburgers?
+                            <input type="text" id="burgers" name="burgers" placeholder="Absolutely Not">
+                        </label>
+                        <label for="tour">Have I ever been to Greenland?
+                            <input type="text" id="tour" name="tour" placeholder="Absolutely Not">
+                        </label>
+                        <label for="learn">Will I ever Learn?
+                            <input type="text" id="learn" name="learn" placeholder="Absolutely Not">
+                        </label>
+                        <br>
+                        <div class="buttons">
+                            <input type="submit" value="submit" id="submit">
+
+                            <input type="reset" value="reset">
+                        </div>
+                    </div>
+
+
+
+                </form>
+                <p id="system-response"></p>
             </div>
-        </div>
-    </section>
-    <section id="the_game">
-    </section>
+        </section>
+        <br>
+        <section>
+            <div class="row">
+                <h3>Can you guess the secret of what may pass through to the <i>Green, Glass, Door</i>? Choose a word
+                    that fits to win! </h3>
+                <form id="wordAnswer" onsubmit="event.preventDefault(); wordCheck();" onreset="resetWordAnswer();">
+
+                    <div class="column left">
+                        <label>Enter a word
+                            <input type="text" id="answer" name="answer" placeholder="Enter a Word" />
+                        </label>
+                        <input type="submit" value="submit" id="submit">
+                        <input type="reset" value="reset">
+                    </div>
+
+
+
+                </form>
+                <p id="machine-response"></p>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/game_01.js"></script>
+    <script src="/game_02.js"></script>
+    
 </body>
 
 </html>
