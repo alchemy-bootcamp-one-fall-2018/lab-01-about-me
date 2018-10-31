@@ -52,9 +52,23 @@ ul {
     font-family: serif;
 }
 h3 {
-    background-color: aquamarine;
+    background-color: plum;
     clear: both;
 }
+h5 {
+    background-color: plum;
+    clear: both;
+    font-size: 1em;
+}
+#about-me-form {
+    background-color: plum;
+    border: 5px double black;
+}
+#guess-number-form {
+    background-color: plum;
+    border: 5px double black;
+}
+
 @media (min-width: 600px) {
     .little-bit {
         float: left;
