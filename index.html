@@ -77,18 +77,22 @@
 
     <section>
         <h2>Styles of spinning wheels</h2>
-        <form id="guess-number-form" name="guess-number-form" onsubmit="event.preventDefault(); checkGuessNumber();"
-        onreset="resetGuessNumber();">
+        <form id="guess-number-form" 
+        onsubmit="event.preventDefault(); checkGuessNumber();"
+        onreset="resetGuessNumber()">
+        
         <div>
-            <label for="guess-number-response">How many styles of wheels do I have?</label>
+            <label for="number">How many styles of spinning wheels do I have?</label>
             <br>
-            <input type="number" id="guess-number-response" name="guess-number-response" placeholder="Enter a number!" />
+            <input type="text" id="number" name="number" placeholder="Enter a number!" />
         </div>
+       
         <div>
-            <button id="submit" type="submit">Guess</button>
-            <button id="reset" type="reset">Play Again</button>
+            <button type="submit" name="guess">Guess</button>
+            <button type="reset" name="play-again">Play Again</button>
         </div>
 
+        <p id="guess-number-response"></p>
         </form>
     </section>
 

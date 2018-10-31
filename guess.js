@@ -6,10 +6,11 @@ var guessNumberResponse = document.getElementById('guess-number-response');
 var guessCount = 0;
 
 function checkGuessNumber() {
-// line below is not yet functional coding
-//    var element = guessNumberForm.elements;
-    var guess = guessNumberForm.element;
-    var submit = document.getElementById('submit');
+
+    var elements = guessNumberForm.elements;
+    var guess = elements.number.value;
+    var submit = elements.guess;
+    console.log(guess);
 
 // eslint-disable-next-line
     if(guess == 8) {
@@ -18,28 +19,24 @@ function checkGuessNumber() {
         submit.disabled = true;
     }
     else {
-        guessCount = guessCount + 1;
-
-        if(guessNumberResponse < 8) {
+        if(guess < 8) {
             guessNumberResponse.textContent = 'Too low!';
         }
-        if(guessNumberResponse > 8 && guessNumberResponse < 12) {
+        if(guess > 8 && guess < 12) {
             guessNumberResponse.textContent = 'Too high!';
         }
-        if(guessNumberResponse > 12) {
-            guessNumberResponse.textContent = 'Just how many wheels do you think I have?!';
+        if(guess > 12) {
+            guessNumberResponse.textContent = 'I cannot have more styles of wheels than wheels themselves!';
+        }
+        if(guessCount === 5) {
+            guessNumberResponse.textContent = 'You lose!';
         }
     }
-
 }
-
-// line below is not yet functional
-// function resetGuessNumber() {
-    // var element = guessNumberForm.elements;
-    
-    // var submit = elements.guess;
-    // submit.disabled = false;
-    // guessCount = 0;
-    // guessNumberResponse.textContent = '';
-// }
-
+function resetGuessNumber() {
+    var elements = guessNumberForm.elements;
+    var submit = elements.guess;
+    submit.disabled = false;
+    guessCount = 0;
+    guessNumberResponse.textContent = '';
+}
