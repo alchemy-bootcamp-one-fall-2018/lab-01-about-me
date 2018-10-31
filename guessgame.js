@@ -12,6 +12,8 @@ function checkGuessGame() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
+    
+
 // we mean to use == here because inputs return text (strings)
 // eslint-disable-next-line eqeqeq
     if(guess == 16) {

@@ -23,7 +23,7 @@ function checkAboutMe() {
     var correct = 0;
     var incorrect = 0;
 
-    if(likePizza === 'yes') {
+    if(likePizza.toLowerCase() === 'yes') {
         // run this code if they type yes to pizza
         correct = correct + 1;
         pizzaInput.classList.add('correct');
@@ -36,7 +36,7 @@ function checkAboutMe() {
         pizzaInput.classList.remove('correct');
     }
     
-    if(likePie === 'yes') {
+    if(likePie.toLowerCase() === 'yes') {
         // run this code if they type yes to pie
         correct = correct + 1;
         pieInput.classList.add('correct');
@@ -49,7 +49,7 @@ function checkAboutMe() {
         pieInput.classList.remove('correct');
     }
 
-    if(favBand === 'Beatles' || favBand === 'beatles') {
+    if(favBand.toLowerCase() === 'beatles') {
         // run this code if they type Beatles or beatles
         correct = correct + 1;
         bandInput.classList.add('correct');
@@ -62,7 +62,7 @@ function checkAboutMe() {
         bandInput.classList.remove('correct');
     }
 
-    if(likeArt === 'true') {
+    if(likeArt.toLowerCase() === 'true') {
         // run this code if they type true
         correct = correct + 1;
         artInput.classList.add('correct');
@@ -75,7 +75,7 @@ function checkAboutMe() {
         artInput.classList.remove('correct');
     }
 
-    if(likeMusic === 'yes') {
+    if(likeMusic.toLowerCase() === 'yes') {
         // run this code if they type yes to music
         correct = correct + 1;
         musicInput.classList.add('correct');
