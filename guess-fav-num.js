@@ -1,3 +1,5 @@
+/* exported checkGuessNumber, resetGuessNumber, guessNumberResponse*/
+/* use strict */
 var guessNumberForm = document.getElementById('guess-number-form');
 var guessNumberResponse = document.getElementById('guess-number-response');
 
@@ -8,7 +10,7 @@ function checkGuessNumber() {
     var guess = elements.number.value;
     var submit = elements.guess;
 
-    if(guess == 5) {
+    if(guess !== 5) {
         guessNumberResponse.textContent = 'You are Correct!!!';
         submit.disabled = true;
     } else {

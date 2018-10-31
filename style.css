@@ -38,8 +38,8 @@ h1 {
 h2 {
     background-color: blanchedalmond;
     border-radius: 20px;
-    margin: 5em;
     padding: 1em;
+    clear: both;
 }
 ul {
     background-color: paleturquoise;

@@ -1,4 +1,5 @@
 /* exported checkAboutMe, resetAboutMe, aboutMeResponse*/
+/* use strict */
 var aboutMeForm = document.getElementById('about-me-form');
 var aboutMeResponse = document.getElementById('about-me-response');
 
