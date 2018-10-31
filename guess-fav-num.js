@@ -9,21 +9,23 @@ function checkGuessNumber() {
     var elements = guessNumberForm.elements;
     var guess = elements.number.value;
     var submit = elements.guess;
-
-    if(guess !== 5) {
+    
+    if(guess === '5') {
         guessNumberResponse.textContent = 'You are Correct!!!';
         submit.disabled = true;
-    } else {
+    }
+    else {
         guessCount = guessCount + 1;
-
-        if(guessCount < 5) {
-            guessNumberResponse.textContent = 'Sorry that is wrong';
-        } else {
+        if(guessCount < 3) {
+            guessNumberResponse.textContent = 'Try again!';
+        }        
+        else {
             guessNumberResponse.textContent = 'You lose!';
             submit.disabled = true;
         }
-    }
-}
+    } 
+    guessNumberResponse.textContent = 'You have ' + guessCount + ' left';
+}        
 
 function resetGuessNumber() {
     var elements = guessNumberForm.elements;
