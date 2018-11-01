@@ -93,6 +93,36 @@
 
             </div>
         </section>
+        <section>
+        <h3>Element Counter</h3>
+        <div style="text-align: center">
+        <div id="response">
+            <p id="paragraph-response"></p>
+            <p id="section-response"></p>
+            <p id="label-response"></p>
+        </div>
+        <br><!--Start by creating a series of checkboxes that all have the same name and each one has a value 
+        //indicating what tag name in represents (p, section, input, etc). Try and include a broad set of tag names. 
+        //Each checkbox should also have an associated label to visually show the user the corresponding tag name)-->
+        <form id ="element-count" onsubmit="event.preventDefault();"> 
+            <div id ="element-count">
+                <input type="checkbox" name="element" id="p" value="p" />
+                <label for="p">p</label>
+    
+                <input type="checkbox" name="element" id="section" value="section" />
+                <label for="section">section</label>
+                
+                <input type="checkbox" name="element" id="label" value="label" />
+                <label for="label">label</label>
+
+            </div>
+
+            <div>
+                <button onclick="tryQuerySelector()">Submit</button>     
+            </div>
+                
+        </form>
+</section>
 
     </main>
     <footer>
@@ -100,6 +130,7 @@
     </footer>
     <script src="/game_01.js"></script>
     <script src="/game_02.js"></script>
+    <script src="/elemental-counter.js"></script>
     
 </body>
 
