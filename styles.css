@@ -11,8 +11,12 @@ h2 {
     color:coral;
 }
 
-#profile{
+#profile {
     align-content: center;
+}
+
+#blurb {
+align-content: center;
 }
 
 img {
@@ -22,6 +26,43 @@ img {
     margin-right: auto;
     width: 50%;
 }
+.right {
+    text-align:center;
+}
+form div {
+    padding: 10px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+button[type="submit"]:hover {
+    color:greenyellow;
+}
+
+button[type="reset"]:hover {
+    color:red;
+}
+
+#about-me-response {
+    text-align: center;
+}
+
+#guess-number-response {
+    text-align:center;
+}
+
+#websites {
+    margin:20px;
+}
+
+.forms {
+    padding: 0px 15px;
+}
+
 @media screen and (min-width: 400px) {
     h1, h2 {
         color:cornflowerblue;
