@@ -14,8 +14,8 @@ body {
     background: rgb(183, 216, 235);
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     #words {
         float: right;
+    }
 }
-

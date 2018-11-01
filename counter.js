@@ -8,12 +8,12 @@ function newFunction() {
 }
 
 function resetAboutMe() {
-    var elements = aboutMeForm.elements;
-    var catsInput = elements.cats;
-    var boatsInput = elements.motorcycles;
-    var motorcyclesInput = elements.motorcycles;
-    var coffee = elements.coffee;
-    var sharksInput = elements.sharks;
+  var elements = aboutMeForm.elements;
+  var catsInput = elements.cats;
+  var boatsInput = elements.motorcycles;
+  var motorcyclesInput = elements.motorcycles;
+  var coffee = elements.coffee;
+  var sharksInput = elements.sharks;
 
     catsInput.classList.remove('correct');
     catsInput.classList.remove('incorrect');
