@@ -38,83 +38,110 @@
 
     <section>
         <h4>Guess what food I like!</h4>
-        <form id="about-me-form" 
-            onsubmit="event.preventDefault(); checkAboutMe();"  
-            onreset="resetAboutMe();">
-        <div>
-            <label for="pizza">Do I like pizza?</label>
-            <input type="text" id="pizza" placeholder="yes/no"/>
-        </div>
+            <form id="about-me-form" name="about-me-form"
+                onsubmit="event.preventDefault(); checkAboutMe();"  
+                onreset="resetAboutMe();">
 
-        <div>
-            <label for="cheeseburgers">Do I like cheeseburgers?</label>
-            <input type="text" id="cheeseburgers" placeholder="yes/no"/>
-        </div>
+                <div>
+                    <label for="pizza">Do I like pizza?</label>
+                    <input type="text" name ="pizza" id="pizza" placeholder="yes/no"/>
+                </div>
 
-        <div>
-            <label for="sushi">Do I like sushi?</label>
-            <input type="text" id="sushi" placeholder="yes/no"/>
-        </div>
+                <div>
+                    <label for="cheeseburgers">Do I like cheeseburgers?</label>
+                    <input type="text" name="cheeseburgers" id="cheeseburgers" placeholder="yes/no"/>
+                </div>
 
-        <div>
-            <label for="spaghetti">Do I like spaghetti?</label>
-            <input type="text" id="spaghetti" placeholder="yes/no"/>
-        </div>
+                <div>
+                    <label for="sushi">Do I like sushi?</label>
+                    <input type="text" name="sushi" id="sushi" placeholder="yes/no"/>
+                </div>
 
-        <div>
-            <label for="">Do I like pizza?</label>
-            <input type="text" id="pizza" placeholder="yes/no"/>
-        </div>
+                <div>
+                    <label for="spaghetti">Do I like spaghetti?</label>
+                    <input type="text" name="spaghetti" id="spaghetti" placeholder="yes/no"/>
+                </div>
 
-        <div>
-            <button type="submit">Submit</button>
-            <button type="reset">Play Again</button>
-        </div>
-        </form>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Play Again</button>
+                </div>
+                
+                <p id="about-me-response"></p>
+            </form>
     </section>
-
-    <section>
-        <h5>Guess my favorite TV shows/movies!</h5>
-        <form id="about-me-form" name="about-me-form"
-            onsubmit="event.preventDefault(); checkAboutMe();"  
-            onreset="resetAboutMe();"
-        >
     
     <section class="tvshows">
-        <div>
-            <label for="game-of-thrones">I like to watch Game of Thrones.</label>
-            <input type="text" id="game-of-thrones" placeholder="true/false"/>
-        </div>
 
-        <div>
-            <label for="breaking-bad">I like to watch Breaking Bad.</label>
-            <input type="text" id="breaking-bad" placeholder="true/false"/>
-        </div>
+        <h5>Guess my favorite TV shows/movies!</h5>
+        <form id="about-me-form" name="about-me-form"
+                onsubmit="event.preventDefault(); checkAboutMe();"  
+                onreset="resetAboutMe();">
 
-        <div>
-            <label for="harry-potter">I like to watch Harry Potter.</label>
-            <input type="text" id="harry-potter" placeholder="true/false"/>
-        </div>
+            <div>
+                <label for="game-of-thrones">I like to watch Game of Thrones.</label>
+                <input type="text" name="game-of-thrones" id="game-of-thrones" placeholder="true/false"/>
+            </div>
 
-        <div>
-            <label for="judge-judy">I like to watch Judge Judy.</label>
-            <input type="text" id="judge-judy" placeholder="true/false"/>
-        </div>
+            <div>
+                <label for="breaking-bad">I like to watch Breaking Bad.</label>
+                <input type="text" name="breaking-bad" id="breaking-bad" placeholder="true/false"/>
+            </div>
 
-        <div>
-            <label for="this-is-us">I like to watch This Is Us.</label>
-            <input type="text" id="this-is-us" placeholder="true/false"/>
-        </div>
+            <div>
+                <label for="harry-potter">I like to watch Harry Potter.</label>
+                <input type="text" name="harry-potter" id="harry-potter" placeholder="true/false"/>
+            </div>
 
-        <div>
-            <button type="submit">Submit</button>
-            <button type="reset">Play Again</button>
-        </div>
+            <div>
+                <label for="judge-judy">I like to watch Judge Judy.</label>
+                <input type="text" name="judge-judy" id="judge-judy" placeholder="true/false"/>
+            </div>
+
+            <div>
+                <label for="this-is-us">I like to watch This Is Us.</label>
+                <input type="text" name="this-is-us" id="this-is-us" placeholder="true/false"/>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Play Again</button>
+            </div>
+            </form>
     </section>
 
         <p id="guess-number-response"></p>
-    
-    <script src="aboutme.js"></script>
 
+    <p class="content"></p>
+
+    <form>
+        <p>
+            <label for="name">How many elements are there?:</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <fieldset>
+            <input name="tag" type="checkbox" id="p" value="p">
+            <label for="p">p</label>
+
+            <input name="tag" type="checkbox" id="div" value="div">
+            <label for="div">div</label>
+            
+            <input name="tag" type="checkbox" id="section" value="section">
+            <label for="section">section</label>
+        </fieldset>
+
+        <div>
+            <button onclick="tryQuerySelector()">try query selector</button>
+        </div>
+
+        <p id="p"></p>
+        <p id="div"></p>
+        <p id="section"></p>
+
+    </form>
+
+    <!-- <script src="aboutme.js"></script> -->
+    <script src="elementcounter.js"></script>
 </body>
 </html>
