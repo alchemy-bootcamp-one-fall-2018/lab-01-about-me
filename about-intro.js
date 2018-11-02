@@ -1,7 +1,6 @@
-/* exported checkHowWell */
+/* exported checkHowWell numberGuess */
 
 var aboutMeForm = document.getElementById('how-well');
-//var aboutMeResponse = document.getElementById('how-well-response');
 
 function checkHowWell() {
 
@@ -49,3 +48,19 @@ function checkHowWell() {
     }
 }
 
+
+function numberGuess () {
+    var number = document.querySelector('input[name="number-guess"]:checked');
+    if(number) {
+        if(number.value === '2') {
+            alert('YOU GUESSED RIGHT!! 2 is Intros favorite number');
+        }
+    
+        else {
+            alert('try again');
+        }
+    }
+    
+    
+
+}

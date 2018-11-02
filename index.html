@@ -41,8 +41,8 @@
 
     <form id="how-well" name="how-well"
         onsubmit="event.preventDefault(); checkHowWell();"
-        onreset="resetHowWell()" 
-    >
+        onreset="resetHowWell()">
+
         <div class="game1-form">
             <label for="latin">Does Intro_Mode speak Latin?</label>
             <input type="text" id="latin" name="latin" placeholder="yes/no" />
@@ -69,34 +69,49 @@
 
         </div>
 
-</form>
-<p id="how-well-response"></p>
+    </form>
 
-<section>
-    <div>
-        <label for="p">Paragraphs</label>
-        <input type="checkbox" id="paragraph" name="element" value="p"/>
-    </div>
-    <div>
+    <p id="how-well-response"></p>
+
+    <section>
+        <div>
+            <label for="p">Paragraphs</label>
+            <input type="checkbox" id="paragraph" name="element" value="p"/>
+        </div>
+        <div>
             <label for="div">Div</label>
             <input type="checkbox" id="div" name="element" value="div"/>
         </div>
-    <div>
+        <div>
             <label for="input">Input</label>
             <input type="checkbox" id="input" name="element" value="input"/>
         </div>
-    
-        <button onclick="whenClicked()">Submit</button>
-
-       
-        <p id='inputEl'>submit</p>
         
-    
-    
-</section>
+            <button onclick="whenClicked()">Submit</button>
+
+        
+            <p id='inputEl'>submit</p>   
+    </section>
+
+    <section>
+        <h2>Guess Intro's favorite number!!</h2>
+
+        <label id="7">7</label>
+        <input type="radio" id="guess-7" name="number-guess" value="7">
+
+        <label id="2">2</label>
+        <input type="radio" id="guess-2" name="number-guess" value="2">
+
+        <label id="8">8</label>
+        <input type="radio" id="guess-8" name="number-guess" value="8">
+
+        <button onclick="numberGuess()">Guess!</button>
+
+
+    </section>
+
+
 <script src="about-intro.js"></script>
 <script src="lab-03.js"></script>
-
 </body>
-
 </html>
