@@ -1,6 +1,9 @@
-/* exported checkHowWell numberGuess */
+/* exported checkHowWell numberGuess*/
+
+
 
 var aboutMeForm = document.getElementById('how-well');
+var numberCorrect = document.getElementById('how-well-response');
 
 function checkHowWell() {
 
@@ -22,7 +25,6 @@ function checkHowWell() {
     var howHelp = helpInput.value;
 
    
-   // eslint-disable-next-line
     var correct = 0;
 
     if(speakLatin.toLowerCase() === 'yes') {
@@ -32,7 +34,7 @@ function checkHowWell() {
     }
     if(favColor === 'blue') {
         correct++;
-        alert('correct!');
+        alert('blue is correct!');
     }
     if(favBook === 'robot') {
         correct++;
@@ -46,9 +48,11 @@ function checkHowWell() {
         correct++;
         alert('depends on the day');
     }
+
+    numberCorrect.textContent = 'You scored ' + correct + ' correct!';
 }
 
-
+//eslint-disable-next-line
 function numberGuess () {
     var number = document.querySelector('input[name="number-guess"]:checked');
     if(number) {
