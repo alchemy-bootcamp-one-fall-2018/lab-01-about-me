@@ -52,8 +52,7 @@ function checkHowWell() {
     numberCorrect.textContent = 'You scored ' + correct + ' correct!';
 }
 
-//eslint-disable-next-line
-function numberGuess () {
+function numberGuess() {
     var number = document.querySelector('input[name="number-guess"]:checked');
     if(number) {
         if(number.value === '2') {
