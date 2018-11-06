@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box
+
+}
+h1 {
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+li {  
+    list-style: none;
+}
+.no-bottom-marg {
+    margin-bottom: 0;
+}
+.no-top-marg {
+    margin-top: 0;
+}
+
+body{
+    background-color: rgb(189, 114, 159);  
+       
+}
+img {
+    border-radius: 20%;
+    
+    border: 5pt solid black;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background: rgb(155, 115, 139);
+    }
+    
+    #favLyrics1 {
+        width: 50%;
+        float: left;
+        padding: 10px;
+        
+    }
+    #favLyrics2 {
+        width: 50%;
+        float: left;
+        padding: 10px;
+        
+    }
+    
+
+}
+form {
+    max-width: 500px;
+    box-align: left;
+    background: rgb(223, 207, 207);
+    padding: 10px;
+
+}
+.game1-form {
+    margin: 20px;
+    padding: 5px;
+    
+}
+
+button[type="submit"] {
+    color:rgb(71, 58, 252)
+}
+button[type="reset"] {
+    color:rgb(71, 58, 252)
+}

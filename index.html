@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>Intro_Mode</h1>
+    <img src="img/lab_robot.jpg" alt="robot version of Phoebe, also known as Intro Mode" />
+
+    <h2>All About Intro_Mode:</h2>
+
+    <h3 class="no-bottom-marg">Interests:</h3>
+    <p class="no-top-marg">-Learning to code, expressing purpose, helping evolve humanity!</p>
+
+    <h3 class="no-bottom-marg"> Short-term Goals:</h3>
+
+    <section id="goalsList">
+        <ul>
+            <li> &bull; Kill it in ALC 201!</li>
+            <li> &bull; Run a 5k</li>
+            <li> &bull; Build a robot</li>
+        </ul>
+    </section>
+    eslint-disable
+    <h3 class="no-bottom-marg">Lingua Artes</h3>
+    <p id="favLyrics1">
+    Bacon ipsum dolor amet excepteur laboris porchetta tri-tip andouille, culpa swine fugiat et nulla voluptate. Mollit strip steak pork belly, doner laborum velit short loin landjaeger short ribs beef ribs frankfurter in. Enim hamburger ipsum, beef bacon qui cupidatat incididunt officia elit sirloin ad shank nisi in. Officia ea adipisicing chicken corned beef irure eiusmod laborum alcatra kielbasa deserunt id in sed.</p>
+    <p id="favLyrics2">
+    Cillum sed dolore, anim laborum aliquip ground round dolor brisket chuck. Fatback non short loin quis, alcatra est commodo duis prosciutto nulla shankle proident sirloin consequat. Turducken pork belly bresaola, laboris strip steak qui voluptate in pastrami pariatur. Exercitation adipisicing swine pancetta picanha sed, eu aliqua ground round ut. Et pork loin non, voluptate velit in rump capicola pancetta pastrami occaecat leberkas. </p>
+
+
+
+    <h1 class="no-bottom-marg">GAME TIME!!</h1>
+
+    <h2 class="no-top-marg">Game 1: How Well Do You Know Intro_Mode?</h2>
+
+    <form id="how-well" name="how-well"
+        onsubmit="event.preventDefault(); checkHowWell();"
+        onreset="resetHowWell()">
+
+        <div class="game1-form">
+            <label for="latin">Does Intro_Mode speak Latin?</label>
+            <input type="text" id="latin" name="latin" placeholder="yes/no" />
+        </div>
+        <div class="game1-form">
+            <label for="colors">What is Intro_Mode's favorite color? Purple or blue? </label>
+            <input type="text" id="colors" name="colors"/>
+        </div>
+        <div class="game1-form">
+            <label for="book">What is Intro_Mode's favorite book? Asimov's <em>I,Robot</em> or Scott Peck's <em>Road Less Traveled</em> ? </label>
+            <input type="text" id="book" name="book" placeholder="robot/road"/>
+        </div>
+        <div class="game1-form">
+            <label for="help">How does Intro_Mode plan on contributing to the world? Building a cool robot or sleeping?</label>
+            <input type="text" id="help" name="help" placeholder="robot/sleep" />
+        </div>
+        <div class="game1-form">
+            <label for="run">How fast can Intro_Mode run a mile? 4 hours or 6 minutes?</label>
+            <input type="text" id="run" name="run"/>
+        </div>
+        <div class="game1-form">
+            <button type="submit" name="guess">Guess</button>
+            <button type="reset" name="Play Again"> Play Again</button>
+
+        </div>
+
+    </form>
+
+    <p id="how-well-response"></p>
+
+    <section>
+        <div>
+            <label for="p">Paragraphs</label>
+            <input type="checkbox" id="paragraph" name="element" value="p"/>
+        </div>
+        <div>
+            <label for="div">Div</label>
+            <input type="checkbox" id="div" name="element" value="div"/>
+        </div>
+        <div>
+            <label for="input">Input</label>
+            <input type="checkbox" id="input" name="element" value="input"/>
+        </div>
+        
+            <button onclick="whenClicked()">Submit</button>
+
+        
+            <p id='inputEl'>submit</p>   
+    </section>
+
+    <section>
+        <h2>Guess Intro's favorite number!!</h2>
+
+        <label id="7">7</label>
+        <input type="radio" id="guess-7" name="number-guess" value="7">
+
+        <label id="2">2</label>
+        <input type="radio" id="guess-2" name="number-guess" value="2">
+
+        <label id="8">8</label>
+        <input type="radio" id="guess-8" name="number-guess" value="8">
+
+        <button onclick="numberGuess()">Guess!</button>
+
+
+    </section>
+
+
+<script src="about-intro.js"></script>
+<script src="lab-03.js"></script>
+</body>
+</html>
